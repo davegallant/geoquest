@@ -1,0 +1,16 @@
+{
+  "name": "geoquest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GeoQuest: an HTML5 country-learning game.",
+  "scripts": {
+    "dev": "wrangler pages dev public",
+    "preview": "python3 -m http.server 8000 --directory public",
+    "pages:dev": "wrangler pages dev public",
+    "pages:deploy": "wrangler pages deploy public --project-name geoquest",
+    "deploy": "npm run pages:deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
