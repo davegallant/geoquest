@@ -304,6 +304,7 @@ function handleCountryClick(feature) {
     showCountry(feature);
     state.score += 1;
     mark(feature, "correct");
+    focusCountry(feature);
     setPrompt(`Correct! That is ${countryName(feature)}. Press Continue when you're ready.`, "correct");
     play(els.correctSound);
     showFireworks();
