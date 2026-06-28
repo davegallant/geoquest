@@ -1,0 +1,272 @@
+const WORLD_TOPOJSON = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
+const ISO_COUNTRIES = window.ISO_COUNTRIES || {};
+const COUNTRY_METADATA = window.COUNTRY_METADATA || {};
+const COUNTRY_METADATA_BY_NAME = window.COUNTRY_METADATA_BY_NAME || {};
+
+const state = {
+  mode: "learn",
+  target: null,
+  countries: [],
+  details: new Map(),
+  score: 0,
+  attempts: 0,
+};
+
+const els = {
+  map: document.getElementById("worldMap"),
+  learnBtn: document.getElementById("learnBtn"),
+  quizBtn: document.getElementById("quizBtn"),
+  nextBtn: document.getElementById("nextBtn"),
+  prompt: document.getElementById("prompt"),
+  score: document.getElementById("score"),
+  attempts: document.getElementById("attempts"),
+  flag: document.getElementById("flag"),
+  flagName: document.getElementById("flagName"),
+  countryName: document.getElementById("countryName"),
+  capital: document.getElementById("capital"),
+  population: document.getElementById("population"),
+  area: document.getElementById("area"),
+  currency: document.getElementById("currency"),
+  language: document.getElementById("language"),
+  region: document.getElementById("region"),
+  funFact: document.getElementById("funFact"),
+  correctSound: document.getElementById("correctSound"),
+  wrongSound: document.getElementById("wrongSound"),
+  zoomInBtn: document.getElementById("zoomInBtn"),
+  zoomOutBtn: document.getElementById("zoomOutBtn"),
+  zoomResetBtn: document.getElementById("zoomResetBtn"),
+};
+
+let zoomBehavior = null;
+
+function countryName(feature) {
+  const p = feature.properties || {};
+  return p.name || p.NAME || p.admin || p.ADMIN || `Country ${feature.id}`;
+}
+
+function countryId(feature) {
+  return `country-${String(feature.id || countryName(feature)).replace(/[^a-z0-9_-]/gi, "-")}`;
+}
+
+function isoRecord(feature) {
+  return ISO_COUNTRIES[String(feature.id).padStart(3, "0")];
+}
+
+function metadataRecord(feature) {
+  return COUNTRY_METADATA[String(feature.id).padStart(3, "0")] || COUNTRY_METADATA_BY_NAME[countryName(feature)];
+}
+
+function flagUrl(feature) {
+  const meta = metadataRecord(feature);
+  const iso = isoRecord(feature);
+  const alpha2 = meta?.cca2 || iso?.alpha2;
+  return alpha2 ? `https://flagcdn.com/${alpha2}.svg` : "flags/clear.jpg";
+}
+
+function play(sound) {
+  sound.currentTime = 0;
+  sound.play().catch(() => {});
+}
+
+function setPrompt(text, status = "") {
+  els.prompt.textContent = text;
+  els.prompt.className = `prompt ${status}`.trim();
+}
+
+function updateScore() {
+  els.score.textContent = state.score;
+  els.attempts.textContent = state.attempts;
+}
+
+function first(value) {
+  return Array.isArray(value) ? value[0] : value;
+}
+
+async function fetchDetails(feature) {
+  const key = String(feature.id || countryName(feature)).padStart(3, "0");
+  if (state.details.has(key)) return state.details.get(key);
+  const data = metadataRecord(feature) || null;
+  state.details.set(key, data);
+  return data;
+}
+
+async function showCountry(feature) {
+  const name = countryName(feature);
+  const hasFlag = flagUrl(feature) !== "flags/clear.jpg";
+  els.flag.src = flagUrl(feature);
+  els.flag.alt = hasFlag ? `Flag of ${name}` : "";
+  els.flagName.textContent = hasFlag ? `Flag of ${name}` : "—";
+  els.countryName.textContent = name;
+  els.capital.textContent = "Loading…";
+  els.area.textContent = "—";
+  els.population.textContent = "—";
+  els.currency.textContent = "—";
+  els.language.textContent = "—";
+  els.region.textContent = "—";
+  els.funFact.textContent = "Loading country details…";
+
+  const details = await fetchDetails(feature);
+  if (!details || els.countryName.textContent !== name) {
+    els.capital.textContent = "—";
+    els.region.textContent = isoRecord(feature)?.region || "—";
+    els.funFact.textContent = "Country details were not available, but this country is still playable in the map quiz.";
+    return;
+  }
+
+  els.flag.src = details.flag || flagUrl(feature);
+  els.flag.alt = `Flag of ${details.name || name}`;
+  els.flagName.textContent = `Flag of ${details.name || name}`;
+  els.countryName.textContent = details.name || name;
+  els.capital.textContent = details.capital || "—";
+  els.population.textContent = details.population ? `${details.population.toLocaleString()}${details.populationYear ? ` (${details.populationYear})` : ""}` : "—";
+  els.area.textContent = details.area ? details.area.toLocaleString() : "—";
+  els.currency.textContent = details.currency || "—";
+  els.language.textContent = details.language || "—";
+  els.region.textContent = [details.region, details.subregion].filter(Boolean).join(" / ") || "—";
+  els.funFact.textContent = `Sources: country metadata from mledoze/countries; population from Our World in Data, latest available year.`;
+}
+
+function clearStatusClasses() {
+  d3.selectAll(".country").classed("selected correct wrong", false).attr("fill", null);
+}
+
+function mark(feature, className) {
+  d3.select(`#${countryId(feature)}`).classed(className, true);
+}
+
+function chooseTarget() {
+  let next = state.countries[Math.floor(Math.random() * state.countries.length)];
+  if (state.countries.length > 1) {
+    while (state.target && countryName(next) === countryName(state.target)) {
+      next = state.countries[Math.floor(Math.random() * state.countries.length)];
+    }
+  }
+  state.target = next;
+  clearStatusClasses();
+  setPrompt(`Find ${countryName(next)} on the map.`);
+}
+
+function setMode(mode) {
+  state.mode = mode;
+  els.learnBtn.classList.toggle("active", mode === "learn");
+  els.quizBtn.classList.toggle("active", mode === "quiz");
+  clearStatusClasses();
+  if (mode === "quiz") chooseTarget();
+  else setPrompt("Click a country on the map to see facts, or switch to Quiz mode.");
+}
+
+function handleCountryClick(feature) {
+  showCountry(feature);
+
+  if (state.mode === "learn") {
+    clearStatusClasses();
+    mark(feature, "selected");
+    setPrompt(`${countryName(feature)} selected.`);
+    return;
+  }
+
+  state.attempts += 1;
+  if (countryName(feature) === countryName(state.target)) {
+    state.score += 1;
+    mark(feature, "correct");
+    setPrompt(`Correct! That is ${countryName(feature)}.`, "correct");
+    play(els.correctSound);
+    setTimeout(chooseTarget, 900);
+  } else {
+    mark(feature, "wrong");
+    setPrompt(`Not ${countryName(feature)}. Try again: find ${countryName(state.target)}.`, "wrong");
+    play(els.wrongSound);
+  }
+  updateScore();
+}
+
+function drawMap() {
+  const rect = els.map.getBoundingClientRect();
+  const width = Math.max(640, rect.width || 900);
+  const height = Math.max(420, rect.height || 650);
+  els.map.setAttribute("viewBox", `0 0 ${width} ${height}`);
+
+  const projection = d3.geoNaturalEarth1().fitSize([width, height], { type: "Sphere" });
+  const path = d3.geoPath(projection);
+
+  const svg = d3.select(els.map);
+  svg.selectAll("*").remove();
+
+  const mapLayer = svg.append("g").attr("class", "zoom-layer");
+  mapLayer.append("path").datum({ type: "Sphere" }).attr("class", "sphere").attr("d", path);
+  mapLayer.append("path").datum(d3.geoGraticule10()).attr("class", "graticule").attr("d", path);
+
+  const countryPaths = mapLayer.append("g")
+    .selectAll("path")
+    .data(state.countries)
+    .join("path")
+    .attr("id", countryId)
+    .attr("class", "country")
+    .attr("d", path)
+    .attr("tabindex", 0)
+    .attr("role", "button")
+    .attr("aria-label", countryName)
+    .on("click", (_, feature) => handleCountryClick(feature))
+    .on("keydown", (event, feature) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        handleCountryClick(feature);
+      }
+    });
+
+  countryPaths.append("title").text(countryName);
+
+  let queuedTransform = null;
+  let animationFrame = null;
+
+  function applyQueuedTransform() {
+    if (queuedTransform) mapLayer.attr("transform", queuedTransform);
+    queuedTransform = null;
+    animationFrame = null;
+  }
+
+  zoomBehavior = d3.zoom()
+    .scaleExtent([1, 12])
+    .wheelDelta((event) => -event.deltaY * (event.deltaMode === 1 ? 0.018 : 0.0012))
+    .translateExtent([[-width * 0.5, -height * 0.5], [width * 1.5, height * 1.5]])
+    .filter((event) => {
+      // Keep normal page scrolling usable. Trackpads/mice zoom the map when the
+      // pointer is over it; right-clicks and double-click zoom are disabled.
+      return !event.button && event.type !== "dblclick";
+    })
+    .on("zoom", (event) => {
+      queuedTransform = event.transform;
+      if (!animationFrame) animationFrame = requestAnimationFrame(applyQueuedTransform);
+    });
+
+  svg.call(zoomBehavior).on("dblclick.zoom", null);
+}
+
+async function init() {
+  if (!window.d3 || !window.topojson) {
+    setPrompt("World map libraries could not load. Check your internet connection or vendor the D3/topojson files locally.", "wrong");
+    return;
+  }
+
+  try {
+    const topology = await d3.json(WORLD_TOPOJSON);
+    state.countries = topojson.feature(topology, topology.objects.countries).features
+      .filter((feature) => countryName(feature) !== "Antarctica")
+      .sort((a, b) => countryName(a).localeCompare(countryName(b)));
+    drawMap();
+    setPrompt("Click a country on the map to see facts, or switch to Quiz mode.");
+  } catch (error) {
+    console.error(error);
+    setPrompt("Could not load the world map data. This page needs internet access for the world-atlas dataset.", "wrong");
+  }
+}
+
+els.learnBtn.addEventListener("click", () => setMode("learn"));
+els.quizBtn.addEventListener("click", () => setMode("quiz"));
+els.nextBtn.addEventListener("click", () => state.mode === "quiz" ? chooseTarget() : clearStatusClasses());
+els.zoomInBtn.addEventListener("click", () => zoomBehavior && d3.select(els.map).transition().duration(180).call(zoomBehavior.scaleBy, 1.6));
+els.zoomOutBtn.addEventListener("click", () => zoomBehavior && d3.select(els.map).transition().duration(180).call(zoomBehavior.scaleBy, 1 / 1.6));
+els.zoomResetBtn.addEventListener("click", () => zoomBehavior && d3.select(els.map).transition().duration(180).call(zoomBehavior.transform, d3.zoomIdentity));
+window.addEventListener("resize", () => state.countries.length && drawMap());
+updateScore();
+init();

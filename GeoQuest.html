@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GeoQuest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="map-panel" aria-label="Interactive map of the world">
+      <svg id="worldMap" class="map" role="img" aria-label="Map of the world"></svg>
+      <div class="zoom-controls" aria-label="Map zoom controls">
+        <button id="zoomInBtn" type="button" aria-label="Zoom in">+</button>
+        <button id="zoomOutBtn" type="button" aria-label="Zoom out">−</button>
+        <button id="zoomResetBtn" type="button" aria-label="Reset zoom">⟲</button>
+      </div>
+      <div class="zoom-hint">Scroll/pinch to zoom · drag to pan</div>
+    </section>
+
+    <aside class="side-panel">
+      <header>
+        <p class="eyebrow">GeoQuest</p>
+        <h1>Learn the Countries of the World</h1>
+      </header>
+
+      <div class="controls" role="group" aria-label="Game controls">
+        <button id="learnBtn" class="active" type="button">Learn</button>
+        <button id="quizBtn" type="button">Quiz</button>
+        <button id="nextBtn" type="button">Next</button>
+      </div>
+
+      <section class="score-card" aria-live="polite">
+        <div><strong id="score">0</strong><span>correct</span></div>
+        <div><strong id="attempts">0</strong><span>tries</span></div>
+      </section>
+
+      <section id="prompt" class="prompt" aria-live="polite">
+        Loading the world map…
+      </section>
+
+      <section id="info" class="info-card">
+        <img id="flag" src="flags/clear.jpg" alt="" width="120" height="80">
+        <h2 id="countryName">Choose a country</h2>
+        <dl>
+          <div><dt>Capital</dt><dd id="capital">—</dd></div>
+          <div><dt>Population</dt><dd id="population">—</dd></div>
+          <div><dt>Area (km²)</dt><dd id="area">—</dd></div>
+          <div><dt>Currency</dt><dd id="currency">—</dd></div>
+          <div><dt>Language</dt><dd id="language">—</dd></div>
+          <div><dt>Region</dt><dd id="region">—</dd></div>
+          <div><dt>Flag</dt><dd id="flagName">—</dd></div>
+        </dl>
+        <p id="funFact" class="fun-fact">Click a country to load details.</p>
+      </section>
+    </aside>
+  </main>
+
+  <audio id="correctSound" src="correct.mp3" preload="auto"></audio>
+  <audio id="wrongSound" src="wrong.mp3" preload="auto"></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+  <script src="iso-countries.js"></script>
+  <script src="country-metadata.js"></script>
+  <script src="game-world.js"></script>
+</body>
+</html>
