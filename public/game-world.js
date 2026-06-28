@@ -180,6 +180,15 @@ function handleCountryClick(feature) {
   updateScore();
 }
 
+function panMap(dx, dy) {
+  if (!zoomBehavior) return;
+  const transform = d3.zoomTransform(els.map);
+  d3.select(els.map)
+    .transition()
+    .duration(80)
+    .call(zoomBehavior.translateBy, dx / transform.k, dy / transform.k);
+}
+
 function drawMap() {
   const rect = els.map.getBoundingClientRect();
   const width = Math.max(640, rect.width || 900);
@@ -267,6 +276,17 @@ els.nextBtn.addEventListener("click", () => state.mode === "quiz" ? chooseTarget
 els.zoomInBtn.addEventListener("click", () => zoomBehavior && d3.select(els.map).transition().duration(180).call(zoomBehavior.scaleBy, 1.6));
 els.zoomOutBtn.addEventListener("click", () => zoomBehavior && d3.select(els.map).transition().duration(180).call(zoomBehavior.scaleBy, 1 / 1.6));
 els.zoomResetBtn.addEventListener("click", () => zoomBehavior && d3.select(els.map).transition().duration(180).call(zoomBehavior.transform, d3.zoomIdentity));
+window.addEventListener("keydown", (event) => {
+  if (!["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"].includes(event.key)) return;
+  if (["INPUT", "TEXTAREA", "SELECT", "BUTTON"].includes(document.activeElement?.tagName)) return;
+
+  event.preventDefault();
+  const step = event.shiftKey ? 140 : 70;
+  if (event.key === "ArrowLeft") panMap(step, 0);
+  if (event.key === "ArrowRight") panMap(-step, 0);
+  if (event.key === "ArrowUp") panMap(0, step);
+  if (event.key === "ArrowDown") panMap(0, -step);
+});
 window.addEventListener("resize", () => state.countries.length && drawMap());
 updateScore();
 init();
