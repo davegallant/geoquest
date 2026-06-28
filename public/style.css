@@ -62,7 +62,7 @@ svg.map {
 .country:focus, .country:focus-visible { outline: none; }
 .country.selected { fill: var(--selected); }
 .country.borders-only { fill: transparent; pointer-events: none; stroke: rgba(255,255,255,.75); stroke-width: .18px; }
-.country.correct { fill: var(--correct); }
+.country.correct { fill: var(--country-hover); }
 .country.wrong { fill: var(--wrong); }
 .country.reveal { fill: var(--country-hover); }
 .sphere { fill: #d9f5ff; }

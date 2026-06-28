@@ -115,6 +115,20 @@ async function fetchDetails(feature) {
   return data;
 }
 
+function clearCountryInfo() {
+  els.flag.src = "flags/clear.jpg";
+  els.flag.alt = "";
+  els.flagName.textContent = "—";
+  els.countryName.textContent = "Choose a country";
+  els.capital.textContent = "—";
+  els.area.textContent = "—";
+  els.population.textContent = "—";
+  els.currency.textContent = "—";
+  els.language.textContent = "—";
+  els.region.textContent = "—";
+  els.funFact.textContent = "Click a country to load details.";
+}
+
 async function showCountry(feature) {
   const name = countryName(feature);
   const hasFlag = flagUrl(feature) !== "flags/clear.jpg";
@@ -245,6 +259,7 @@ function chooseTarget() {
   state.awaitingRevealClick = false;
   showContinueButton(false);
   clearStatusClasses();
+  clearCountryInfo();
   updateScore();
   setPrompt(`Question ${state.questionNumber}/${QUIZ_LENGTH}: Find ${countryName(next)}. You have ${MAX_TRIES} tries.`);
 }
@@ -268,9 +283,8 @@ function setMode(mode) {
 }
 
 function handleCountryClick(feature) {
-  showCountry(feature);
-
   if (state.mode === "learn") {
+    showCountry(feature);
     clearStatusClasses();
     mark(feature, "selected");
     setPrompt(`${countryName(feature)} selected.`);
@@ -280,24 +294,28 @@ function handleCountryClick(feature) {
   if (!state.quizActive || state.advancing) return;
 
   if (state.awaitingRevealClick) {
-    setPrompt(`The answer is highlighted: ${countryName(state.target)}. Press Continue when you're ready.`, "wrong");
+    setPrompt(`Press Continue when you're ready for the next question.`);
     return;
   }
 
   state.attempts += 1;
   state.currentTries += 1;
   if (sameCountry(feature, state.target)) {
+    showCountry(feature);
     state.score += 1;
     mark(feature, "correct");
-    setPrompt(`Correct! That is ${countryName(feature)}.`, "correct");
+    setPrompt(`Correct! That is ${countryName(feature)}. Press Continue when you're ready.`, "correct");
     play(els.correctSound);
     showFireworks();
+    state.awaitingRevealClick = true;
+    showContinueButton(true);
     updateScore();
-    advanceQuiz(2000);
   } else {
+    clearCountryInfo();
     mark(feature, "wrong");
     play(els.wrongSound);
     if (state.currentTries >= MAX_TRIES) {
+      showCountry(state.target);
       mark(state.target, "reveal");
       focusCountry(state.target);
       state.awaitingRevealClick = true;
@@ -429,7 +447,13 @@ els.continueBtn.addEventListener("click", () => {
   state.awaitingRevealClick = false;
   showContinueButton(false);
   setPrompt(`Moving on from ${countryName(state.target)}…`);
-  advanceQuiz(250);
+  if (zoomBehavior) {
+    d3.select(els.map)
+      .transition()
+      .duration(600)
+      .call(zoomBehavior.transform, d3.zoomIdentity);
+  }
+  advanceQuiz(650);
 });
 els.zoomInBtn.addEventListener("click", () => zoomBehavior && d3.select(els.map).transition().duration(180).call(zoomBehavior.scaleBy, 1.6));
 els.zoomOutBtn.addEventListener("click", () => zoomBehavior && d3.select(els.map).transition().duration(180).call(zoomBehavior.scaleBy, 1 / 1.6));
