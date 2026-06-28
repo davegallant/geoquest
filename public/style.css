@@ -64,6 +64,7 @@ svg.map {
 .country.borders-only { fill: transparent; pointer-events: none; stroke: rgba(255,255,255,.75); stroke-width: .18px; }
 .country.correct { fill: var(--correct); }
 .country.wrong { fill: var(--wrong); }
+.country.reveal { fill: var(--country-hover); }
 .sphere { fill: #d9f5ff; }
 .graticule { fill: none; stroke: rgba(255,255,255,.45); stroke-width: .22px; vector-effect: non-scaling-stroke; pointer-events: none; }
 .zoom-layer { will-change: transform; }
@@ -83,7 +84,7 @@ svg.map {
 .eyebrow { margin: 0 0 4px; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: .75rem; }
 h1 { margin: 0 0 18px; font-size: clamp(1.7rem, 4vw, 2.25rem); line-height: 1.05; }
 
-.controls { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 14px; }
+.controls { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 14px; }
 button {
   border: 0;
   border-radius: 999px;
@@ -111,6 +112,8 @@ button:hover, button.active { background: var(--country-hover); }
 }
 .prompt.correct { background: var(--correct); }
 .prompt.wrong { background: var(--wrong); }
+.continue-btn { width: 100%; margin: -4px 0 14px; background: var(--country-hover); }
+.continue-btn[hidden] { display: none; }
 
 .info-card { background: #fff; border-radius: 18px; padding: 16px; }
 .info-card img { float: right; width: 120px; height: 80px; object-fit: contain; margin: 0 0 10px 12px; border: 1px solid #ddd; background: #f5f5f5; }
@@ -121,6 +124,29 @@ dl div { display: grid; grid-template-columns: 110px 1fr; gap: 8px; }
 dt { color: var(--muted); font-weight: 700; }
 dd { margin: 0; }
 .fun-fact { margin: 14px 0 0; padding-top: 12px; border-top: 1px solid #eee; font-style: italic; }
+
+.fireworks {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 10;
+}
+.firework {
+  position: absolute;
+  left: 50%;
+  top: 38%;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--color, #f7c948);
+  box-shadow: 0 0 14px var(--color, #f7c948);
+  animation: firework-burst 900ms ease-out forwards;
+}
+@keyframes firework-burst {
+  from { opacity: 1; transform: translate(-50%, -50%) scale(.8); }
+  to { opacity: 0; transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))) scale(.2); }
+}
 
 @media (max-width: 850px) {
   .app { grid-template-columns: 1fr; padding: 12px; }

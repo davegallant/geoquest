@@ -27,17 +27,19 @@
       <div class="controls" role="group" aria-label="Game controls">
         <button id="learnBtn" class="active" type="button">Learn</button>
         <button id="quizBtn" type="button">Quiz</button>
-        <button id="nextBtn" type="button">Next</button>
       </div>
 
       <section class="score-card" aria-live="polite">
-        <div><strong id="score">0</strong><span>correct</span></div>
-        <div><strong id="attempts">0</strong><span>tries</span></div>
+        <div><strong id="score">0/10</strong><span>correct</span></div>
+        <div><strong id="question">0/10</strong><span>question</span></div>
+        <div><strong id="attempts">0/3</strong><span>tries</span></div>
+        <div><strong id="highScore">0/10</strong><span>best</span></div>
       </section>
 
       <section id="prompt" class="prompt" aria-live="polite">
         Loading the world map…
       </section>
+      <button id="continueBtn" class="continue-btn" type="button" hidden>Continue</button>
 
       <section id="info" class="info-card">
         <img id="flag" src="flags/clear.jpg" alt="" width="120" height="80">
@@ -55,6 +57,7 @@
       </section>
     </aside>
   </main>
+  <div id="fireworks" class="fireworks" aria-hidden="true"></div>
 
   <audio id="correctSound" src="correct.mp3" preload="auto"></audio>
   <audio id="wrongSound" src="wrong.mp3" preload="auto"></audio>

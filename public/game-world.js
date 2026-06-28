@@ -2,6 +2,9 @@ const WORLD_TOPOJSON = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110
 const ISO_COUNTRIES = window.ISO_COUNTRIES || {};
 const COUNTRY_METADATA = window.COUNTRY_METADATA || {};
 const COUNTRY_METADATA_BY_NAME = window.COUNTRY_METADATA_BY_NAME || {};
+const QUIZ_LENGTH = 10;
+const MAX_TRIES = 3;
+const HIGH_SCORE_KEY = "geoquest-high-score";
 
 const state = {
   mode: "learn",
@@ -10,16 +13,25 @@ const state = {
   details: new Map(),
   score: 0,
   attempts: 0,
+  questionNumber: 0,
+  currentTries: 0,
+  highScore: Number(localStorage.getItem(HIGH_SCORE_KEY) || 0),
+  quizPool: [],
+  quizActive: false,
+  advancing: false,
+  awaitingRevealClick: false,
 };
 
 const els = {
   map: document.getElementById("worldMap"),
   learnBtn: document.getElementById("learnBtn"),
   quizBtn: document.getElementById("quizBtn"),
-  nextBtn: document.getElementById("nextBtn"),
   prompt: document.getElementById("prompt"),
+  continueBtn: document.getElementById("continueBtn"),
   score: document.getElementById("score"),
+  question: document.getElementById("question"),
   attempts: document.getElementById("attempts"),
+  highScore: document.getElementById("highScore"),
   flag: document.getElementById("flag"),
   flagName: document.getElementById("flagName"),
   countryName: document.getElementById("countryName"),
@@ -35,6 +47,7 @@ const els = {
   zoomInBtn: document.getElementById("zoomInBtn"),
   zoomOutBtn: document.getElementById("zoomOutBtn"),
   zoomResetBtn: document.getElementById("zoomResetBtn"),
+  fireworks: document.getElementById("fireworks"),
 };
 
 let zoomBehavior = null;
@@ -46,6 +59,12 @@ function countryName(feature) {
 
 function countryId(feature) {
   return `country-${String(feature.id || countryName(feature)).replace(/[^a-z0-9_-]/gi, "-")}`;
+}
+
+function sameCountry(a, b) {
+  if (!a || !b) return false;
+  if (a.id != null && b.id != null) return String(a.id) === String(b.id);
+  return countryName(a) === countryName(b);
 }
 
 function isoRecord(feature) {
@@ -73,9 +92,15 @@ function setPrompt(text, status = "") {
   els.prompt.className = `prompt ${status}`.trim();
 }
 
+function showContinueButton(show) {
+  els.continueBtn.hidden = !show;
+}
+
 function updateScore() {
-  els.score.textContent = state.score;
-  els.attempts.textContent = state.attempts;
+  els.score.textContent = `${state.score}/${QUIZ_LENGTH}`;
+  els.question.textContent = `${state.questionNumber}/${QUIZ_LENGTH}`;
+  els.attempts.textContent = state.mode === "quiz" ? `${state.currentTries}/${MAX_TRIES}` : "0/3";
+  els.highScore.textContent = `${state.highScore}/${QUIZ_LENGTH}`;
 }
 
 function first(value) {
@@ -127,23 +152,101 @@ async function showCountry(feature) {
 }
 
 function clearStatusClasses() {
-  d3.selectAll(".country").classed("selected correct wrong", false).attr("fill", null);
+  d3.selectAll(".country").classed("selected correct wrong reveal", false).attr("fill", null);
 }
 
 function mark(feature, className) {
   d3.select(`#${countryId(feature)}`).classed(className, true);
 }
 
-function chooseTarget() {
-  let next = state.countries[Math.floor(Math.random() * state.countries.length)];
-  if (state.countries.length > 1) {
-    while (state.target && countryName(next) === countryName(state.target)) {
-      next = state.countries[Math.floor(Math.random() * state.countries.length)];
+function shuffled(items) {
+  const copy = [...items];
+  for (let i = copy.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+function showFireworks() {
+  const colors = ["#f7c948", "#ff8a3d", "#27ae60", "#4dabf7", "#d946ef"];
+  els.fireworks.replaceChildren();
+
+  for (let burst = 0; burst < 3; burst += 1) {
+    const originX = 35 + Math.random() * 30;
+    const originY = 24 + Math.random() * 28;
+    for (let i = 0; i < 18; i += 1) {
+      const particle = document.createElement("span");
+      const angle = (Math.PI * 2 * i) / 18;
+      const distance = 55 + Math.random() * 95;
+      particle.className = "firework";
+      particle.style.left = `${originX}%`;
+      particle.style.top = `${originY}%`;
+      particle.style.setProperty("--x", `${Math.cos(angle) * distance}px`);
+      particle.style.setProperty("--y", `${Math.sin(angle) * distance}px`);
+      particle.style.setProperty("--color", colors[(i + burst) % colors.length]);
+      particle.style.animationDelay = `${burst * 180}ms`;
+      els.fireworks.append(particle);
     }
   }
-  state.target = next;
+
+  setTimeout(() => els.fireworks.replaceChildren(), 2000);
+}
+
+function startQuiz() {
+  state.score = 0;
+  state.attempts = 0;
+  state.questionNumber = 0;
+  state.currentTries = 0;
+  state.quizPool = shuffled(state.countries).slice(0, QUIZ_LENGTH);
+  state.quizActive = true;
+  state.advancing = false;
+  state.awaitingRevealClick = false;
+  showContinueButton(false);
+  updateScore();
+  chooseTarget();
+}
+
+function endQuiz() {
+  state.quizActive = false;
+  state.target = null;
+  state.awaitingRevealClick = false;
+  showContinueButton(false);
   clearStatusClasses();
-  setPrompt(`Find ${countryName(next)} on the map.`);
+  if (state.score > state.highScore) {
+    state.highScore = state.score;
+    localStorage.setItem(HIGH_SCORE_KEY, String(state.highScore));
+    setPrompt(`Quiz complete! New high score: ${state.score}/${QUIZ_LENGTH}.`, "correct");
+  } else {
+    setPrompt(`Quiz complete! Score: ${state.score}/${QUIZ_LENGTH}. Best: ${state.highScore}/${QUIZ_LENGTH}.`);
+  }
+  updateScore();
+}
+
+function advanceQuiz(delay = 0) {
+  state.advancing = true;
+  setTimeout(() => {
+    state.advancing = false;
+    if (state.questionNumber >= QUIZ_LENGTH) endQuiz();
+    else chooseTarget();
+  }, delay);
+}
+
+function chooseTarget() {
+  const next = state.quizPool[state.questionNumber];
+  if (!next) {
+    endQuiz();
+    return;
+  }
+
+  state.target = next;
+  state.questionNumber += 1;
+  state.currentTries = 0;
+  state.awaitingRevealClick = false;
+  showContinueButton(false);
+  clearStatusClasses();
+  updateScore();
+  setPrompt(`Question ${state.questionNumber}/${QUIZ_LENGTH}: Find ${countryName(next)}. You have ${MAX_TRIES} tries.`);
 }
 
 function setMode(mode) {
@@ -151,8 +254,17 @@ function setMode(mode) {
   els.learnBtn.classList.toggle("active", mode === "learn");
   els.quizBtn.classList.toggle("active", mode === "quiz");
   clearStatusClasses();
-  if (mode === "quiz") chooseTarget();
-  else setPrompt("Click a country on the map to see facts, or switch to Quiz mode.");
+  if (mode === "quiz") startQuiz();
+  else {
+    state.quizActive = false;
+    state.target = null;
+    state.awaitingRevealClick = false;
+    showContinueButton(false);
+    state.questionNumber = 0;
+    state.currentTries = 0;
+    updateScore();
+    setPrompt("Click a country on the map to see facts, or switch to Quiz mode.");
+  }
 }
 
 function handleCountryClick(feature) {
@@ -165,19 +277,38 @@ function handleCountryClick(feature) {
     return;
   }
 
+  if (!state.quizActive || state.advancing) return;
+
+  if (state.awaitingRevealClick) {
+    setPrompt(`The answer is highlighted: ${countryName(state.target)}. Press Continue when you're ready.`, "wrong");
+    return;
+  }
+
   state.attempts += 1;
-  if (countryName(feature) === countryName(state.target)) {
+  state.currentTries += 1;
+  if (sameCountry(feature, state.target)) {
     state.score += 1;
     mark(feature, "correct");
     setPrompt(`Correct! That is ${countryName(feature)}.`, "correct");
     play(els.correctSound);
-    setTimeout(chooseTarget, 900);
+    showFireworks();
+    updateScore();
+    advanceQuiz(2000);
   } else {
     mark(feature, "wrong");
-    setPrompt(`Not ${countryName(feature)}. Try again: find ${countryName(state.target)}.`, "wrong");
     play(els.wrongSound);
+    if (state.currentTries >= MAX_TRIES) {
+      mark(state.target, "reveal");
+      focusCountry(state.target);
+      state.awaitingRevealClick = true;
+      showContinueButton(true);
+      setPrompt(`Out of tries. The answer is highlighted: ${countryName(state.target)}. Press Continue when you're ready.`, "wrong");
+      updateScore();
+    } else {
+      setPrompt(`Not ${countryName(feature)}. Try ${state.currentTries + 1}/${MAX_TRIES}: find ${countryName(state.target)}.`, "wrong");
+      updateScore();
+    }
   }
-  updateScore();
 }
 
 function panMap(dx, dy) {
@@ -187,6 +318,29 @@ function panMap(dx, dy) {
     .transition()
     .duration(80)
     .call(zoomBehavior.translateBy, dx / transform.k, dy / transform.k);
+}
+
+function focusCountry(feature) {
+  if (!zoomBehavior) return;
+  const country = document.getElementById(countryId(feature));
+  if (!country) return;
+
+  const { x, y, width, height } = country.getBBox();
+  const rect = els.map.getBoundingClientRect();
+  const mapWidth = Math.max(640, rect.width || 900);
+  const mapHeight = Math.max(420, rect.height || 650);
+  const scale = Math.max(2, Math.min(8, 0.42 / Math.max(width / mapWidth, height / mapHeight)));
+  const centerX = x + width / 2;
+  const centerY = y + height / 2;
+  const transform = d3.zoomIdentity
+    .translate(mapWidth / 2, mapHeight / 2)
+    .scale(scale)
+    .translate(-centerX, -centerY);
+
+  d3.select(els.map)
+    .transition()
+    .duration(700)
+    .call(zoomBehavior.transform, transform);
 }
 
 function drawMap() {
@@ -270,7 +424,13 @@ async function init() {
 
 els.learnBtn.addEventListener("click", () => setMode("learn"));
 els.quizBtn.addEventListener("click", () => setMode("quiz"));
-els.nextBtn.addEventListener("click", () => state.mode === "quiz" ? chooseTarget() : clearStatusClasses());
+els.continueBtn.addEventListener("click", () => {
+  if (!state.awaitingRevealClick || state.advancing) return;
+  state.awaitingRevealClick = false;
+  showContinueButton(false);
+  setPrompt(`Moving on from ${countryName(state.target)}…`);
+  advanceQuiz(250);
+});
 els.zoomInBtn.addEventListener("click", () => zoomBehavior && d3.select(els.map).transition().duration(180).call(zoomBehavior.scaleBy, 1.6));
 els.zoomOutBtn.addEventListener("click", () => zoomBehavior && d3.select(els.map).transition().duration(180).call(zoomBehavior.scaleBy, 1 / 1.6));
 els.zoomResetBtn.addEventListener("click", () => zoomBehavior && d3.select(els.map).transition().duration(180).call(zoomBehavior.transform, d3.zoomIdentity));
