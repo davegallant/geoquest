@@ -223,8 +223,6 @@ function drawMap() {
       }
     });
 
-  countryPaths.append("title").text(countryName);
-
   let queuedTransform = null;
   let animationFrame = null;
 
