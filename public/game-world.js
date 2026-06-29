@@ -31,6 +31,7 @@ const els = {
   searchList: document.getElementById("countrySearchList"),
   prompt: document.getElementById("prompt"),
   continueBtn: document.getElementById("continueBtn"),
+  scoreCard: document.querySelector(".score-card"),
   score: document.getElementById("score"),
   question: document.getElementById("question"),
   attempts: document.getElementById("attempts"),
@@ -55,6 +56,7 @@ const els = {
 };
 
 let zoomBehavior = null;
+let currentGeoPath = null;
 
 function countryName(feature) {
   const p = feature.properties || {};
@@ -301,6 +303,7 @@ function setMode(mode) {
   state.mode = mode;
   els.learnBtn.classList.toggle("active", mode === "learn");
   els.quizBtn.classList.toggle("active", mode === "quiz");
+  els.scoreCard.hidden = mode !== "quiz";
   els.searchForm.hidden = mode === "quiz";
   if (mode === "quiz") els.searchInput.value = "";
   clearStatusClasses();
@@ -401,9 +404,12 @@ function focusCountry(feature) {
   const rect = els.map.getBoundingClientRect();
   const mapWidth = Math.max(640, rect.width || 900);
   const mapHeight = Math.max(420, rect.height || 650);
-  const scale = Math.max(2, Math.min(8, 0.42 / Math.max(width / mapWidth, height / mapHeight)));
-  const centerX = x + width / 2;
-  const centerY = y + height / 2;
+  const crossesMapSeam = width > mapWidth * 0.4 && height < mapHeight * 0.2;
+  const relativeSize = crossesMapSeam ? height / mapHeight : Math.max(width / mapWidth, height / mapHeight);
+  const scale = Math.max(2, Math.min(8, 0.42 / Math.max(relativeSize, 0.001)));
+  const centroid = currentGeoPath?.centroid(feature) || [x + width / 2, y + height / 2];
+  const centerX = Number.isFinite(centroid[0]) ? centroid[0] : x + width / 2;
+  const centerY = Number.isFinite(centroid[1]) ? centroid[1] : y + height / 2;
   const transform = d3.zoomIdentity
     .translate(mapWidth / 2, mapHeight / 2)
     .scale(scale)
@@ -423,6 +429,7 @@ function drawMap() {
 
   const projection = d3.geoNaturalEarth1().fitSize([width, height], { type: "Sphere" });
   const path = d3.geoPath(projection);
+  currentGeoPath = path;
 
   const svg = d3.select(els.map);
   svg.selectAll("*").remove();

@@ -115,6 +115,7 @@ button {
 button:hover, button.active { background: var(--country-hover); }
 
 .score-card { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+.score-card[hidden] { display: none; }
 .score-card div { background: #fff; border-radius: 16px; padding: 10px; text-align: center; }
 .score-card strong { display: block; font-size: clamp(1.25rem, 2.5vw, 1.8rem); }
 .score-card span { color: var(--muted); font-size: .85rem; }
