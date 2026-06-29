@@ -301,6 +301,8 @@ function setMode(mode) {
   state.mode = mode;
   els.learnBtn.classList.toggle("active", mode === "learn");
   els.quizBtn.classList.toggle("active", mode === "quiz");
+  els.searchForm.hidden = mode === "quiz";
+  if (mode === "quiz") els.searchInput.value = "";
   clearStatusClasses();
   if (mode === "quiz") startQuiz();
   else {
@@ -325,13 +327,14 @@ function selectCountry(feature, promptText = `${countryName(feature)} selected.`
 
 function handleSearch(event) {
   event.preventDefault();
+  if (state.mode !== "learn") return;
+
   const feature = findCountryByName(els.searchInput.value);
   if (!feature) {
     setPrompt(`No country found for “${els.searchInput.value}”. Try another name.`, "wrong");
     return;
   }
 
-  if (state.mode !== "learn") setMode("learn");
   selectCountry(feature, `${countryName(feature)} found.`);
 }
 
