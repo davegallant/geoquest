@@ -20,15 +20,16 @@ body {
 }
 
 .app {
-  min-height: 100%;
+  height: 100vh;
   display: grid;
-  grid-template-columns: minmax(360px, 1fr) 360px;
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 360px);
+  gap: clamp(10px, 1.5vw, 20px);
+  padding: clamp(10px, 1.5vw, 20px);
+  overflow: hidden;
 }
 
 .map-panel {
-  min-height: 560px;
+  min-height: 0;
   display: grid;
   place-items: center;
   border-radius: 24px;
@@ -38,8 +39,10 @@ body {
 }
 
 .map {
-  width: min(100%, 900px);
-  height: min(90vh, 900px);
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+  max-height: 900px;
   border: 0;
 }
 
@@ -76,13 +79,15 @@ svg.map {
 .side-panel {
   border-radius: 24px;
   background: var(--panel);
-  padding: 22px;
+  padding: clamp(14px, 1.6vw, 22px);
   box-shadow: 0 18px 45px rgba(0,0,0,.18);
-  align-self: start;
+  align-self: stretch;
+  max-height: 100%;
+  overflow: auto;
 }
 
 .eyebrow { margin: 0 0 4px; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: .75rem; }
-h1 { margin: 0 0 18px; font-size: clamp(1.7rem, 4vw, 2.25rem); line-height: 1.05; }
+h1 { margin: 0 0 14px; font-size: clamp(1.45rem, 3vw, 2.15rem); line-height: 1.05; }
 
 .controls { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 14px; }
 button {
@@ -97,8 +102,8 @@ button {
 button:hover, button.active { background: var(--country-hover); }
 
 .score-card { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
-.score-card div { background: #fff; border-radius: 16px; padding: 12px; text-align: center; }
-.score-card strong { display: block; font-size: 1.8rem; }
+.score-card div { background: #fff; border-radius: 16px; padding: 10px; text-align: center; }
+.score-card strong { display: block; font-size: clamp(1.25rem, 2.5vw, 1.8rem); }
 .score-card span { color: var(--muted); font-size: .85rem; }
 
 .prompt {
@@ -148,9 +153,18 @@ dd { margin: 0; }
   to { opacity: 0; transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))) scale(.2); }
 }
 
+@media (max-height: 820px) and (min-width: 851px) {
+  .controls, .score-card, .prompt { margin-bottom: 10px; }
+  .prompt { min-height: 48px; padding: 11px; }
+  .info-card { padding: 13px; }
+  .info-card img { width: 96px; height: 64px; }
+  dl { gap: 6px; }
+  .fun-fact { margin-top: 10px; padding-top: 9px; }
+}
+
 @media (max-width: 850px) {
-  .app { grid-template-columns: 1fr; padding: 12px; }
-  .side-panel { order: -1; }
-  .map-panel { min-height: 420px; }
-  .map { height: 62vh; }
+  .app { height: auto; min-height: 100%; grid-template-columns: 1fr; padding: 12px; overflow: visible; }
+  .side-panel { order: -1; max-height: none; }
+  .map-panel { min-height: 420px; height: 62vh; }
+  .map { height: 100%; }
 }
