@@ -26,6 +26,9 @@ const els = {
   map: document.getElementById("worldMap"),
   learnBtn: document.getElementById("learnBtn"),
   quizBtn: document.getElementById("quizBtn"),
+  searchForm: document.getElementById("countrySearchForm"),
+  searchInput: document.getElementById("countrySearch"),
+  searchList: document.getElementById("countrySearchList"),
   prompt: document.getElementById("prompt"),
   continueBtn: document.getElementById("continueBtn"),
   score: document.getElementById("score"),
@@ -37,6 +40,7 @@ const els = {
   countryName: document.getElementById("countryName"),
   capital: document.getElementById("capital"),
   population: document.getElementById("population"),
+  gdpPerCapita: document.getElementById("gdpPerCapita"),
   area: document.getElementById("area"),
   currency: document.getElementById("currency"),
   language: document.getElementById("language"),
@@ -82,6 +86,32 @@ function flagUrl(feature) {
   return alpha2 ? `https://flagcdn.com/${alpha2}.svg` : "flags/clear.jpg";
 }
 
+function searchableNames(feature) {
+  const meta = metadataRecord(feature) || {};
+  return [countryName(feature), meta.name, meta.officialName, meta.cca2, meta.cca3].filter(Boolean);
+}
+
+function normalizeSearch(value) {
+  return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+}
+
+function findCountryByName(query) {
+  const normalized = normalizeSearch(query);
+  if (!normalized) return null;
+
+  return state.countries.find((feature) => searchableNames(feature).some((name) => normalizeSearch(name) === normalized))
+    || state.countries.find((feature) => searchableNames(feature).some((name) => normalizeSearch(name).startsWith(normalized)))
+    || state.countries.find((feature) => searchableNames(feature).some((name) => normalizeSearch(name).includes(normalized)));
+}
+
+function populateSearchList() {
+  els.searchList.replaceChildren(...state.countries.map((feature) => {
+    const option = document.createElement("option");
+    option.value = metadataRecord(feature)?.name || countryName(feature);
+    return option;
+  }));
+}
+
 function play(sound) {
   sound.currentTime = 0;
   sound.play().catch(() => {});
@@ -123,6 +153,7 @@ function clearCountryInfo() {
   els.capital.textContent = "—";
   els.area.textContent = "—";
   els.population.textContent = "—";
+  els.gdpPerCapita.textContent = "—";
   els.currency.textContent = "—";
   els.language.textContent = "—";
   els.region.textContent = "—";
@@ -139,6 +170,7 @@ async function showCountry(feature) {
   els.capital.textContent = "Loading…";
   els.area.textContent = "—";
   els.population.textContent = "—";
+  els.gdpPerCapita.textContent = "—";
   els.currency.textContent = "—";
   els.language.textContent = "—";
   els.region.textContent = "—";
@@ -158,11 +190,12 @@ async function showCountry(feature) {
   els.countryName.textContent = details.name || name;
   els.capital.textContent = details.capital || "—";
   els.population.textContent = details.population ? `${details.population.toLocaleString()}${details.populationYear ? ` (${details.populationYear})` : ""}` : "—";
+  els.gdpPerCapita.textContent = details.gdpPerCapita ? `$${details.gdpPerCapita.toLocaleString()}${details.gdpPerCapitaYear ? ` (${details.gdpPerCapitaYear})` : ""}` : "No World Bank data";
   els.area.textContent = details.area ? details.area.toLocaleString() : "—";
   els.currency.textContent = details.currency || "—";
   els.language.textContent = details.language || "—";
   els.region.textContent = [details.region, details.subregion].filter(Boolean).join(" / ") || "—";
-  els.funFact.textContent = `Sources: country metadata from mledoze/countries; population from Our World in Data, latest available year.`;
+  els.funFact.textContent = details.officialName && details.officialName !== (details.name || name) ? `Official name: ${details.officialName}` : "Click another country to compare details.";
 }
 
 function clearStatusClasses() {
@@ -278,16 +311,33 @@ function setMode(mode) {
     state.questionNumber = 0;
     state.currentTries = 0;
     updateScore();
-    setPrompt("Click a country on the map to see facts, or switch to Quiz mode.");
+    setPrompt("Click a country on the map to see facts, search for a country, or switch to Quiz mode.");
   }
+}
+
+function selectCountry(feature, promptText = `${countryName(feature)} selected.`) {
+  showCountry(feature);
+  clearStatusClasses();
+  mark(feature, "selected");
+  focusCountry(feature);
+  setPrompt(promptText);
+}
+
+function handleSearch(event) {
+  event.preventDefault();
+  const feature = findCountryByName(els.searchInput.value);
+  if (!feature) {
+    setPrompt(`No country found for “${els.searchInput.value}”. Try another name.`, "wrong");
+    return;
+  }
+
+  if (state.mode !== "learn") setMode("learn");
+  selectCountry(feature, `${countryName(feature)} found.`);
 }
 
 function handleCountryClick(feature) {
   if (state.mode === "learn") {
-    showCountry(feature);
-    clearStatusClasses();
-    mark(feature, "selected");
-    setPrompt(`${countryName(feature)} selected.`);
+    selectCountry(feature);
     return;
   }
 
@@ -434,7 +484,8 @@ async function init() {
       .filter((feature) => countryName(feature) !== "Antarctica")
       .sort((a, b) => countryName(a).localeCompare(countryName(b)));
     drawMap();
-    setPrompt("Click a country on the map to see facts, or switch to Quiz mode.");
+    populateSearchList();
+    setPrompt("Click a country on the map to see facts, search for a country, or switch to Quiz mode.");
   } catch (error) {
     console.error(error);
     setPrompt("Could not load the world map data. This page needs internet access for the world-atlas dataset.", "wrong");
@@ -443,6 +494,7 @@ async function init() {
 
 els.learnBtn.addEventListener("click", () => setMode("learn"));
 els.quizBtn.addEventListener("click", () => setMode("quiz"));
+els.searchForm.addEventListener("submit", handleSearch);
 els.continueBtn.addEventListener("click", () => {
   if (!state.awaitingRevealClick || state.advancing) return;
   state.awaitingRevealClick = false;

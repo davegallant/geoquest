@@ -1,4 +1,4 @@
-// Sources: country metadata from mledoze/countries (derived from REST Countries data); population from Our World in Data grapher/population, latest available year.
+// Sources: country metadata from mledoze/countries (derived from REST Countries data); population from Our World in Data grapher/population, latest available year; GDP per person from World Bank indicator NY.GDP.PCAP.CD (current US$), latest available year.
 window.COUNTRY_METADATA = {
   "533": {
     "name": "Aruba",
@@ -13,7 +13,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "aw",
     "cca3": "ABW",
-    "flag": "https://flagcdn.com/aw.svg"
+    "flag": "https://flagcdn.com/aw.svg",
+    "gdpPerCapita": 39499,
+    "gdpPerCapitaYear": 2024
   },
   "004": {
     "name": "Afghanistan",
@@ -28,7 +30,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Asia",
     "cca2": "af",
     "cca3": "AFG",
-    "flag": "https://flagcdn.com/af.svg"
+    "flag": "https://flagcdn.com/af.svg",
+    "gdpPerCapita": 414,
+    "gdpPerCapitaYear": 2023
   },
   "024": {
     "name": "Angola",
@@ -43,7 +47,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Middle Africa",
     "cca2": "ao",
     "cca3": "AGO",
-    "flag": "https://flagcdn.com/ao.svg"
+    "flag": "https://flagcdn.com/ao.svg",
+    "gdpPerCapita": 2666,
+    "gdpPerCapitaYear": 2024
   },
   "660": {
     "name": "Anguilla",
@@ -58,7 +64,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "ai",
     "cca3": "AIA",
-    "flag": "https://flagcdn.com/ai.svg"
+    "flag": "https://flagcdn.com/ai.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "248": {
     "name": "Åland Islands",
@@ -73,7 +81,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Europe",
     "cca2": "ax",
     "cca3": "ALA",
-    "flag": "https://flagcdn.com/ax.svg"
+    "flag": "https://flagcdn.com/ax.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "008": {
     "name": "Albania",
@@ -88,7 +98,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southeast Europe",
     "cca2": "al",
     "cca3": "ALB",
-    "flag": "https://flagcdn.com/al.svg"
+    "flag": "https://flagcdn.com/al.svg",
+    "gdpPerCapita": 11378,
+    "gdpPerCapitaYear": 2024
   },
   "020": {
     "name": "Andorra",
@@ -103,7 +115,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Europe",
     "cca2": "ad",
     "cca3": "AND",
-    "flag": "https://flagcdn.com/ad.svg"
+    "flag": "https://flagcdn.com/ad.svg",
+    "gdpPerCapita": 49304,
+    "gdpPerCapitaYear": 2024
   },
   "784": {
     "name": "United Arab Emirates",
@@ -118,7 +132,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Asia",
     "cca2": "ae",
     "cca3": "ARE",
-    "flag": "https://flagcdn.com/ae.svg"
+    "flag": "https://flagcdn.com/ae.svg",
+    "gdpPerCapita": 50274,
+    "gdpPerCapitaYear": 2024
   },
   "032": {
     "name": "Argentina",
@@ -133,7 +149,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South America",
     "cca2": "ar",
     "cca3": "ARG",
-    "flag": "https://flagcdn.com/ar.svg"
+    "flag": "https://flagcdn.com/ar.svg",
+    "gdpPerCapita": 13970,
+    "gdpPerCapitaYear": 2024
   },
   "051": {
     "name": "Armenia",
@@ -148,7 +166,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Asia",
     "cca2": "am",
     "cca3": "ARM",
-    "flag": "https://flagcdn.com/am.svg"
+    "flag": "https://flagcdn.com/am.svg",
+    "gdpPerCapita": 8556,
+    "gdpPerCapitaYear": 2024
   },
   "016": {
     "name": "American Samoa",
@@ -163,7 +183,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Polynesia",
     "cca2": "as",
     "cca3": "ASM",
-    "flag": "https://flagcdn.com/as.svg"
+    "flag": "https://flagcdn.com/as.svg",
+    "gdpPerCapita": 18017,
+    "gdpPerCapitaYear": 2022
   },
   "010": {
     "name": "Antarctica",
@@ -178,7 +200,9 @@ window.COUNTRY_METADATA = {
     "subregion": "",
     "cca2": "aq",
     "cca3": "ATA",
-    "flag": "https://flagcdn.com/aq.svg"
+    "flag": "https://flagcdn.com/aq.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "260": {
     "name": "French Southern and Antarctic Lands",
@@ -193,7 +217,9 @@ window.COUNTRY_METADATA = {
     "subregion": "",
     "cca2": "tf",
     "cca3": "ATF",
-    "flag": "https://flagcdn.com/tf.svg"
+    "flag": "https://flagcdn.com/tf.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "028": {
     "name": "Antigua and Barbuda",
@@ -208,7 +234,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "ag",
     "cca3": "ATG",
-    "flag": "https://flagcdn.com/ag.svg"
+    "flag": "https://flagcdn.com/ag.svg",
+    "gdpPerCapita": 23542,
+    "gdpPerCapitaYear": 2024
   },
   "036": {
     "name": "Australia",
@@ -223,7 +251,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Australia and New Zealand",
     "cca2": "au",
     "cca3": "AUS",
-    "flag": "https://flagcdn.com/au.svg"
+    "flag": "https://flagcdn.com/au.svg",
+    "gdpPerCapita": 64604,
+    "gdpPerCapitaYear": 2024
   },
   "040": {
     "name": "Austria",
@@ -238,7 +268,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Central Europe",
     "cca2": "at",
     "cca3": "AUT",
-    "flag": "https://flagcdn.com/at.svg"
+    "flag": "https://flagcdn.com/at.svg",
+    "gdpPerCapita": 58269,
+    "gdpPerCapitaYear": 2024
   },
   "031": {
     "name": "Azerbaijan",
@@ -253,7 +285,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Asia",
     "cca2": "az",
     "cca3": "AZE",
-    "flag": "https://flagcdn.com/az.svg"
+    "flag": "https://flagcdn.com/az.svg",
+    "gdpPerCapita": 7284,
+    "gdpPerCapitaYear": 2024
   },
   "108": {
     "name": "Burundi",
@@ -268,7 +302,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "bi",
     "cca3": "BDI",
-    "flag": "https://flagcdn.com/bi.svg"
+    "flag": "https://flagcdn.com/bi.svg",
+    "gdpPerCapita": 219,
+    "gdpPerCapitaYear": 2024
   },
   "056": {
     "name": "Belgium",
@@ -283,7 +319,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Europe",
     "cca2": "be",
     "cca3": "BEL",
-    "flag": "https://flagcdn.com/be.svg"
+    "flag": "https://flagcdn.com/be.svg",
+    "gdpPerCapita": 56615,
+    "gdpPerCapitaYear": 2024
   },
   "204": {
     "name": "Benin",
@@ -298,7 +336,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Africa",
     "cca2": "bj",
     "cca3": "BEN",
-    "flag": "https://flagcdn.com/bj.svg"
+    "flag": "https://flagcdn.com/bj.svg",
+    "gdpPerCapita": 1485,
+    "gdpPerCapitaYear": 2024
   },
   "854": {
     "name": "Burkina Faso",
@@ -313,7 +353,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Africa",
     "cca2": "bf",
     "cca3": "BFA",
-    "flag": "https://flagcdn.com/bf.svg"
+    "flag": "https://flagcdn.com/bf.svg",
+    "gdpPerCapita": 982,
+    "gdpPerCapitaYear": 2024
   },
   "050": {
     "name": "Bangladesh",
@@ -328,7 +370,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Asia",
     "cca2": "bd",
     "cca3": "BGD",
-    "flag": "https://flagcdn.com/bd.svg"
+    "flag": "https://flagcdn.com/bd.svg",
+    "gdpPerCapita": 2593,
+    "gdpPerCapitaYear": 2024
   },
   "100": {
     "name": "Bulgaria",
@@ -343,7 +387,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southeast Europe",
     "cca2": "bg",
     "cca3": "BGR",
-    "flag": "https://flagcdn.com/bg.svg"
+    "flag": "https://flagcdn.com/bg.svg",
+    "gdpPerCapita": 17596,
+    "gdpPerCapitaYear": 2024
   },
   "048": {
     "name": "Bahrain",
@@ -358,7 +404,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Asia",
     "cca2": "bh",
     "cca3": "BHR",
-    "flag": "https://flagcdn.com/bh.svg"
+    "flag": "https://flagcdn.com/bh.svg",
+    "gdpPerCapita": 29654,
+    "gdpPerCapitaYear": 2024
   },
   "044": {
     "name": "Bahamas",
@@ -373,7 +421,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "bs",
     "cca3": "BHS",
-    "flag": "https://flagcdn.com/bs.svg"
+    "flag": "https://flagcdn.com/bs.svg",
+    "gdpPerCapita": 39455,
+    "gdpPerCapitaYear": 2024
   },
   "070": {
     "name": "Bosnia and Herzegovina",
@@ -388,7 +438,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southeast Europe",
     "cca2": "ba",
     "cca3": "BIH",
-    "flag": "https://flagcdn.com/ba.svg"
+    "flag": "https://flagcdn.com/ba.svg",
+    "gdpPerCapita": 9359,
+    "gdpPerCapitaYear": 2024
   },
   "652": {
     "name": "Saint Barthélemy",
@@ -403,7 +455,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "bl",
     "cca3": "BLM",
-    "flag": "https://flagcdn.com/bl.svg"
+    "flag": "https://flagcdn.com/bl.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "654": {
     "name": "Saint Helena, Ascension and Tristan da Cunha",
@@ -418,7 +472,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Africa",
     "cca2": "sh",
     "cca3": "SHN",
-    "flag": "https://flagcdn.com/sh.svg"
+    "flag": "https://flagcdn.com/sh.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "112": {
     "name": "Belarus",
@@ -433,7 +489,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Europe",
     "cca2": "by",
     "cca3": "BLR",
-    "flag": "https://flagcdn.com/by.svg"
+    "flag": "https://flagcdn.com/by.svg",
+    "gdpPerCapita": 8318,
+    "gdpPerCapitaYear": 2024
   },
   "084": {
     "name": "Belize",
@@ -448,7 +506,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Central America",
     "cca2": "bz",
     "cca3": "BLZ",
-    "flag": "https://flagcdn.com/bz.svg"
+    "flag": "https://flagcdn.com/bz.svg",
+    "gdpPerCapita": 7681,
+    "gdpPerCapitaYear": 2024
   },
   "060": {
     "name": "Bermuda",
@@ -463,7 +523,9 @@ window.COUNTRY_METADATA = {
     "subregion": "North America",
     "cca2": "bm",
     "cca3": "BMU",
-    "flag": "https://flagcdn.com/bm.svg"
+    "flag": "https://flagcdn.com/bm.svg",
+    "gdpPerCapita": 142855,
+    "gdpPerCapitaYear": 2024
   },
   "068": {
     "name": "Bolivia",
@@ -478,7 +540,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South America",
     "cca2": "bo",
     "cca3": "BOL",
-    "flag": "https://flagcdn.com/bo.svg"
+    "flag": "https://flagcdn.com/bo.svg",
+    "gdpPerCapita": 4421,
+    "gdpPerCapitaYear": 2024
   },
   "535": {
     "name": "Caribbean Netherlands",
@@ -493,7 +557,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "bq",
     "cca3": "BES",
-    "flag": "https://flagcdn.com/bq.svg"
+    "flag": "https://flagcdn.com/bq.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "076": {
     "name": "Brazil",
@@ -508,7 +574,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South America",
     "cca2": "br",
     "cca3": "BRA",
-    "flag": "https://flagcdn.com/br.svg"
+    "flag": "https://flagcdn.com/br.svg",
+    "gdpPerCapita": 10311,
+    "gdpPerCapitaYear": 2024
   },
   "052": {
     "name": "Barbados",
@@ -523,7 +591,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "bb",
     "cca3": "BRB",
-    "flag": "https://flagcdn.com/bb.svg"
+    "flag": "https://flagcdn.com/bb.svg",
+    "gdpPerCapita": 26545,
+    "gdpPerCapitaYear": 2024
   },
   "096": {
     "name": "Brunei",
@@ -538,7 +608,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South-Eastern Asia",
     "cca2": "bn",
     "cca3": "BRN",
-    "flag": "https://flagcdn.com/bn.svg"
+    "flag": "https://flagcdn.com/bn.svg",
+    "gdpPerCapita": 33153,
+    "gdpPerCapitaYear": 2024
   },
   "064": {
     "name": "Bhutan",
@@ -553,7 +625,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Asia",
     "cca2": "bt",
     "cca3": "BTN",
-    "flag": "https://flagcdn.com/bt.svg"
+    "flag": "https://flagcdn.com/bt.svg",
+    "gdpPerCapita": 3831,
+    "gdpPerCapitaYear": 2023
   },
   "074": {
     "name": "Bouvet Island",
@@ -568,7 +642,9 @@ window.COUNTRY_METADATA = {
     "subregion": "",
     "cca2": "bv",
     "cca3": "BVT",
-    "flag": "https://flagcdn.com/bv.svg"
+    "flag": "https://flagcdn.com/bv.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "072": {
     "name": "Botswana",
@@ -583,7 +659,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Africa",
     "cca2": "bw",
     "cca3": "BWA",
-    "flag": "https://flagcdn.com/bw.svg"
+    "flag": "https://flagcdn.com/bw.svg",
+    "gdpPerCapita": 7696,
+    "gdpPerCapitaYear": 2024
   },
   "140": {
     "name": "Central African Republic",
@@ -598,7 +676,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Middle Africa",
     "cca2": "cf",
     "cca3": "CAF",
-    "flag": "https://flagcdn.com/cf.svg"
+    "flag": "https://flagcdn.com/cf.svg",
+    "gdpPerCapita": 516,
+    "gdpPerCapitaYear": 2024
   },
   "124": {
     "name": "Canada",
@@ -613,7 +693,9 @@ window.COUNTRY_METADATA = {
     "subregion": "North America",
     "cca2": "ca",
     "cca3": "CAN",
-    "flag": "https://flagcdn.com/ca.svg"
+    "flag": "https://flagcdn.com/ca.svg",
+    "gdpPerCapita": 54340,
+    "gdpPerCapitaYear": 2024
   },
   "166": {
     "name": "Cocos (Keeling) Islands",
@@ -628,7 +710,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Australia and New Zealand",
     "cca2": "cc",
     "cca3": "CCK",
-    "flag": "https://flagcdn.com/cc.svg"
+    "flag": "https://flagcdn.com/cc.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "756": {
     "name": "Switzerland",
@@ -643,7 +727,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Europe",
     "cca2": "ch",
     "cca3": "CHE",
-    "flag": "https://flagcdn.com/ch.svg"
+    "flag": "https://flagcdn.com/ch.svg",
+    "gdpPerCapita": 103998,
+    "gdpPerCapitaYear": 2024
   },
   "152": {
     "name": "Chile",
@@ -658,7 +744,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South America",
     "cca2": "cl",
     "cca3": "CHL",
-    "flag": "https://flagcdn.com/cl.svg"
+    "flag": "https://flagcdn.com/cl.svg",
+    "gdpPerCapita": 16710,
+    "gdpPerCapitaYear": 2024
   },
   "156": {
     "name": "China",
@@ -673,7 +761,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Asia",
     "cca2": "cn",
     "cca3": "CHN",
-    "flag": "https://flagcdn.com/cn.svg"
+    "flag": "https://flagcdn.com/cn.svg",
+    "gdpPerCapita": 13303,
+    "gdpPerCapitaYear": 2024
   },
   "384": {
     "name": "Ivory Coast",
@@ -688,7 +778,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Africa",
     "cca2": "ci",
     "cca3": "CIV",
-    "flag": "https://flagcdn.com/ci.svg"
+    "flag": "https://flagcdn.com/ci.svg",
+    "gdpPerCapita": 2728,
+    "gdpPerCapitaYear": 2024
   },
   "120": {
     "name": "Cameroon",
@@ -703,7 +795,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Middle Africa",
     "cca2": "cm",
     "cca3": "CMR",
-    "flag": "https://flagcdn.com/cm.svg"
+    "flag": "https://flagcdn.com/cm.svg",
+    "gdpPerCapita": 1830,
+    "gdpPerCapitaYear": 2024
   },
   "180": {
     "name": "DR Congo",
@@ -718,7 +812,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Middle Africa",
     "cca2": "cd",
     "cca3": "COD",
-    "flag": "https://flagcdn.com/cd.svg"
+    "flag": "https://flagcdn.com/cd.svg",
+    "gdpPerCapita": 649,
+    "gdpPerCapitaYear": 2024
   },
   "178": {
     "name": "Congo",
@@ -733,7 +829,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Middle Africa",
     "cca2": "cg",
     "cca3": "COG",
-    "flag": "https://flagcdn.com/cg.svg"
+    "flag": "https://flagcdn.com/cg.svg",
+    "gdpPerCapita": 2482,
+    "gdpPerCapitaYear": 2024
   },
   "184": {
     "name": "Cook Islands",
@@ -748,7 +846,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Polynesia",
     "cca2": "ck",
     "cca3": "COK",
-    "flag": "https://flagcdn.com/ck.svg"
+    "flag": "https://flagcdn.com/ck.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "170": {
     "name": "Colombia",
@@ -763,7 +863,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South America",
     "cca2": "co",
     "cca3": "COL",
-    "flag": "https://flagcdn.com/co.svg"
+    "flag": "https://flagcdn.com/co.svg",
+    "gdpPerCapita": 7919,
+    "gdpPerCapitaYear": 2024
   },
   "174": {
     "name": "Comoros",
@@ -778,7 +880,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "km",
     "cca3": "COM",
-    "flag": "https://flagcdn.com/km.svg"
+    "flag": "https://flagcdn.com/km.svg",
+    "gdpPerCapita": 1663,
+    "gdpPerCapitaYear": 2024
   },
   "132": {
     "name": "Cape Verde",
@@ -793,7 +897,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Africa",
     "cca2": "cv",
     "cca3": "CPV",
-    "flag": "https://flagcdn.com/cv.svg"
+    "flag": "https://flagcdn.com/cv.svg",
+    "gdpPerCapita": 5192,
+    "gdpPerCapitaYear": 2024
   },
   "188": {
     "name": "Costa Rica",
@@ -808,7 +914,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Central America",
     "cca2": "cr",
     "cca3": "CRI",
-    "flag": "https://flagcdn.com/cr.svg"
+    "flag": "https://flagcdn.com/cr.svg",
+    "gdpPerCapita": 18587,
+    "gdpPerCapitaYear": 2024
   },
   "192": {
     "name": "Cuba",
@@ -823,7 +931,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "cu",
     "cca3": "CUB",
-    "flag": "https://flagcdn.com/cu.svg"
+    "flag": "https://flagcdn.com/cu.svg",
+    "gdpPerCapita": 9605,
+    "gdpPerCapitaYear": 2020
   },
   "531": {
     "name": "Curaçao",
@@ -838,7 +948,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "cw",
     "cca3": "CUW",
-    "flag": "https://flagcdn.com/cw.svg"
+    "flag": "https://flagcdn.com/cw.svg",
+    "gdpPerCapita": 22833,
+    "gdpPerCapitaYear": 2024
   },
   "162": {
     "name": "Christmas Island",
@@ -853,7 +965,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Australia and New Zealand",
     "cca2": "cx",
     "cca3": "CXR",
-    "flag": "https://flagcdn.com/cx.svg"
+    "flag": "https://flagcdn.com/cx.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "136": {
     "name": "Cayman Islands",
@@ -868,7 +982,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "ky",
     "cca3": "CYM",
-    "flag": "https://flagcdn.com/ky.svg"
+    "flag": "https://flagcdn.com/ky.svg",
+    "gdpPerCapita": 99144,
+    "gdpPerCapitaYear": 2023
   },
   "196": {
     "name": "Cyprus",
@@ -883,7 +999,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Europe",
     "cca2": "cy",
     "cca3": "CYP",
-    "flag": "https://flagcdn.com/cy.svg"
+    "flag": "https://flagcdn.com/cy.svg",
+    "gdpPerCapita": 38674,
+    "gdpPerCapitaYear": 2024
   },
   "203": {
     "name": "Czechia",
@@ -898,7 +1016,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Central Europe",
     "cca2": "cz",
     "cca3": "CZE",
-    "flag": "https://flagcdn.com/cz.svg"
+    "flag": "https://flagcdn.com/cz.svg",
+    "gdpPerCapita": 31823,
+    "gdpPerCapitaYear": 2024
   },
   "276": {
     "name": "Germany",
@@ -913,7 +1033,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Europe",
     "cca2": "de",
     "cca3": "DEU",
-    "flag": "https://flagcdn.com/de.svg"
+    "flag": "https://flagcdn.com/de.svg",
+    "gdpPerCapita": 56104,
+    "gdpPerCapitaYear": 2024
   },
   "262": {
     "name": "Djibouti",
@@ -928,7 +1050,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "dj",
     "cca3": "DJI",
-    "flag": "https://flagcdn.com/dj.svg"
+    "flag": "https://flagcdn.com/dj.svg",
+    "gdpPerCapita": 3553,
+    "gdpPerCapitaYear": 2024
   },
   "212": {
     "name": "Dominica",
@@ -943,7 +1067,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "dm",
     "cca3": "DMA",
-    "flag": "https://flagcdn.com/dm.svg"
+    "flag": "https://flagcdn.com/dm.svg",
+    "gdpPerCapita": 10405,
+    "gdpPerCapitaYear": 2024
   },
   "208": {
     "name": "Denmark",
@@ -958,7 +1084,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Europe",
     "cca2": "dk",
     "cca3": "DNK",
-    "flag": "https://flagcdn.com/dk.svg"
+    "flag": "https://flagcdn.com/dk.svg",
+    "gdpPerCapita": 71026,
+    "gdpPerCapitaYear": 2024
   },
   "214": {
     "name": "Dominican Republic",
@@ -973,7 +1101,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "do",
     "cca3": "DOM",
-    "flag": "https://flagcdn.com/do.svg"
+    "flag": "https://flagcdn.com/do.svg",
+    "gdpPerCapita": 10876,
+    "gdpPerCapitaYear": 2024
   },
   "012": {
     "name": "Algeria",
@@ -988,7 +1118,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Africa",
     "cca2": "dz",
     "cca3": "DZA",
-    "flag": "https://flagcdn.com/dz.svg"
+    "flag": "https://flagcdn.com/dz.svg",
+    "gdpPerCapita": 5753,
+    "gdpPerCapitaYear": 2024
   },
   "218": {
     "name": "Ecuador",
@@ -1003,7 +1135,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South America",
     "cca2": "ec",
     "cca3": "ECU",
-    "flag": "https://flagcdn.com/ec.svg"
+    "flag": "https://flagcdn.com/ec.svg",
+    "gdpPerCapita": 6875,
+    "gdpPerCapitaYear": 2024
   },
   "818": {
     "name": "Egypt",
@@ -1018,7 +1152,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Africa",
     "cca2": "eg",
     "cca3": "EGY",
-    "flag": "https://flagcdn.com/eg.svg"
+    "flag": "https://flagcdn.com/eg.svg",
+    "gdpPerCapita": 3338,
+    "gdpPerCapitaYear": 2024
   },
   "232": {
     "name": "Eritrea",
@@ -1033,7 +1169,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "er",
     "cca3": "ERI",
-    "flag": "https://flagcdn.com/er.svg"
+    "flag": "https://flagcdn.com/er.svg",
+    "gdpPerCapita": 689,
+    "gdpPerCapitaYear": 2011
   },
   "732": {
     "name": "Western Sahara",
@@ -1048,7 +1186,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Africa",
     "cca2": "eh",
     "cca3": "ESH",
-    "flag": "https://flagcdn.com/eh.svg"
+    "flag": "https://flagcdn.com/eh.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "724": {
     "name": "Spain",
@@ -1063,7 +1203,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Europe",
     "cca2": "es",
     "cca3": "ESP",
-    "flag": "https://flagcdn.com/es.svg"
+    "flag": "https://flagcdn.com/es.svg",
+    "gdpPerCapita": 35327,
+    "gdpPerCapitaYear": 2024
   },
   "233": {
     "name": "Estonia",
@@ -1078,7 +1220,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Europe",
     "cca2": "ee",
     "cca3": "EST",
-    "flag": "https://flagcdn.com/ee.svg"
+    "flag": "https://flagcdn.com/ee.svg",
+    "gdpPerCapita": 31428,
+    "gdpPerCapitaYear": 2024
   },
   "231": {
     "name": "Ethiopia",
@@ -1093,7 +1237,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "et",
     "cca3": "ETH",
-    "flag": "https://flagcdn.com/et.svg"
+    "flag": "https://flagcdn.com/et.svg",
+    "gdpPerCapita": 1134,
+    "gdpPerCapitaYear": 2024
   },
   "246": {
     "name": "Finland",
@@ -1108,7 +1254,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Europe",
     "cca2": "fi",
     "cca3": "FIN",
-    "flag": "https://flagcdn.com/fi.svg"
+    "flag": "https://flagcdn.com/fi.svg",
+    "gdpPerCapita": 53150,
+    "gdpPerCapitaYear": 2024
   },
   "242": {
     "name": "Fiji",
@@ -1123,7 +1271,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Melanesia",
     "cca2": "fj",
     "cca3": "FJI",
-    "flag": "https://flagcdn.com/fj.svg"
+    "flag": "https://flagcdn.com/fj.svg",
+    "gdpPerCapita": 6426,
+    "gdpPerCapitaYear": 2024
   },
   "238": {
     "name": "Falkland Islands",
@@ -1138,7 +1288,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South America",
     "cca2": "fk",
     "cca3": "FLK",
-    "flag": "https://flagcdn.com/fk.svg"
+    "flag": "https://flagcdn.com/fk.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "250": {
     "name": "France",
@@ -1153,7 +1305,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Europe",
     "cca2": "fr",
     "cca3": "FRA",
-    "flag": "https://flagcdn.com/fr.svg"
+    "flag": "https://flagcdn.com/fr.svg",
+    "gdpPerCapita": 46103,
+    "gdpPerCapitaYear": 2024
   },
   "234": {
     "name": "Faroe Islands",
@@ -1168,7 +1322,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Europe",
     "cca2": "fo",
     "cca3": "FRO",
-    "flag": "https://flagcdn.com/fo.svg"
+    "flag": "https://flagcdn.com/fo.svg",
+    "gdpPerCapita": 74120,
+    "gdpPerCapitaYear": 2024
   },
   "583": {
     "name": "Micronesia",
@@ -1183,7 +1339,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Micronesia",
     "cca2": "fm",
     "cca3": "FSM",
-    "flag": "https://flagcdn.com/fm.svg"
+    "flag": "https://flagcdn.com/fm.svg",
+    "gdpPerCapita": 4166,
+    "gdpPerCapitaYear": 2024
   },
   "266": {
     "name": "Gabon",
@@ -1198,7 +1356,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Middle Africa",
     "cca2": "ga",
     "cca3": "GAB",
-    "flag": "https://flagcdn.com/ga.svg"
+    "flag": "https://flagcdn.com/ga.svg",
+    "gdpPerCapita": 8230,
+    "gdpPerCapitaYear": 2024
   },
   "826": {
     "name": "United Kingdom",
@@ -1213,7 +1373,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Europe",
     "cca2": "gb",
     "cca3": "GBR",
-    "flag": "https://flagcdn.com/gb.svg"
+    "flag": "https://flagcdn.com/gb.svg",
+    "gdpPerCapita": 53246,
+    "gdpPerCapitaYear": 2024
   },
   "268": {
     "name": "Georgia",
@@ -1228,7 +1390,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Asia",
     "cca2": "ge",
     "cca3": "GEO",
-    "flag": "https://flagcdn.com/ge.svg"
+    "flag": "https://flagcdn.com/ge.svg",
+    "gdpPerCapita": 9241,
+    "gdpPerCapitaYear": 2024
   },
   "831": {
     "name": "Guernsey",
@@ -1243,7 +1407,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Europe",
     "cca2": "gg",
     "cca3": "GGY",
-    "flag": "https://flagcdn.com/gg.svg"
+    "flag": "https://flagcdn.com/gg.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "288": {
     "name": "Ghana",
@@ -1258,7 +1424,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Africa",
     "cca2": "gh",
     "cca3": "GHA",
-    "flag": "https://flagcdn.com/gh.svg"
+    "flag": "https://flagcdn.com/gh.svg",
+    "gdpPerCapita": 2391,
+    "gdpPerCapitaYear": 2024
   },
   "292": {
     "name": "Gibraltar",
@@ -1273,7 +1441,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Europe",
     "cca2": "gi",
     "cca3": "GIB",
-    "flag": "https://flagcdn.com/gi.svg"
+    "flag": "https://flagcdn.com/gi.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "324": {
     "name": "Guinea",
@@ -1288,7 +1458,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Africa",
     "cca2": "gn",
     "cca3": "GIN",
-    "flag": "https://flagcdn.com/gn.svg"
+    "flag": "https://flagcdn.com/gn.svg",
+    "gdpPerCapita": 1695,
+    "gdpPerCapitaYear": 2024
   },
   "312": {
     "name": "Guadeloupe",
@@ -1303,7 +1475,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "gp",
     "cca3": "GLP",
-    "flag": "https://flagcdn.com/gp.svg"
+    "flag": "https://flagcdn.com/gp.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "270": {
     "name": "Gambia",
@@ -1318,7 +1492,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Africa",
     "cca2": "gm",
     "cca3": "GMB",
-    "flag": "https://flagcdn.com/gm.svg"
+    "flag": "https://flagcdn.com/gm.svg",
+    "gdpPerCapita": 871,
+    "gdpPerCapitaYear": 2024
   },
   "624": {
     "name": "Guinea-Bissau",
@@ -1333,7 +1509,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Africa",
     "cca2": "gw",
     "cca3": "GNB",
-    "flag": "https://flagcdn.com/gw.svg"
+    "flag": "https://flagcdn.com/gw.svg",
+    "gdpPerCapita": 1008,
+    "gdpPerCapitaYear": 2024
   },
   "226": {
     "name": "Equatorial Guinea",
@@ -1348,7 +1526,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Middle Africa",
     "cca2": "gq",
     "cca3": "GNQ",
-    "flag": "https://flagcdn.com/gq.svg"
+    "flag": "https://flagcdn.com/gq.svg",
+    "gdpPerCapita": 6745,
+    "gdpPerCapitaYear": 2024
   },
   "300": {
     "name": "Greece",
@@ -1363,7 +1543,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Europe",
     "cca2": "gr",
     "cca3": "GRC",
-    "flag": "https://flagcdn.com/gr.svg"
+    "flag": "https://flagcdn.com/gr.svg",
+    "gdpPerCapita": 24626,
+    "gdpPerCapitaYear": 2024
   },
   "308": {
     "name": "Grenada",
@@ -1378,7 +1560,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "gd",
     "cca3": "GRD",
-    "flag": "https://flagcdn.com/gd.svg"
+    "flag": "https://flagcdn.com/gd.svg",
+    "gdpPerCapita": 11705,
+    "gdpPerCapitaYear": 2024
   },
   "304": {
     "name": "Greenland",
@@ -1393,7 +1577,9 @@ window.COUNTRY_METADATA = {
     "subregion": "North America",
     "cca2": "gl",
     "cca3": "GRL",
-    "flag": "https://flagcdn.com/gl.svg"
+    "flag": "https://flagcdn.com/gl.svg",
+    "gdpPerCapita": 58499,
+    "gdpPerCapitaYear": 2023
   },
   "320": {
     "name": "Guatemala",
@@ -1408,7 +1594,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Central America",
     "cca2": "gt",
     "cca3": "GTM",
-    "flag": "https://flagcdn.com/gt.svg"
+    "flag": "https://flagcdn.com/gt.svg",
+    "gdpPerCapita": 6150,
+    "gdpPerCapitaYear": 2024
   },
   "254": {
     "name": "French Guiana",
@@ -1423,7 +1611,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South America",
     "cca2": "gf",
     "cca3": "GUF",
-    "flag": "https://flagcdn.com/gf.svg"
+    "flag": "https://flagcdn.com/gf.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "316": {
     "name": "Guam",
@@ -1438,7 +1628,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Micronesia",
     "cca2": "gu",
     "cca3": "GUM",
-    "flag": "https://flagcdn.com/gu.svg"
+    "flag": "https://flagcdn.com/gu.svg",
+    "gdpPerCapita": 41833,
+    "gdpPerCapitaYear": 2022
   },
   "328": {
     "name": "Guyana",
@@ -1453,7 +1645,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South America",
     "cca2": "gy",
     "cca3": "GUY",
-    "flag": "https://flagcdn.com/gy.svg"
+    "flag": "https://flagcdn.com/gy.svg",
+    "gdpPerCapita": 29675,
+    "gdpPerCapitaYear": 2024
   },
   "344": {
     "name": "Hong Kong",
@@ -1468,7 +1662,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Asia",
     "cca2": "hk",
     "cca3": "HKG",
-    "flag": "https://flagcdn.com/hk.svg"
+    "flag": "https://flagcdn.com/hk.svg",
+    "gdpPerCapita": 54075,
+    "gdpPerCapitaYear": 2024
   },
   "334": {
     "name": "Heard Island and McDonald Islands",
@@ -1483,7 +1679,9 @@ window.COUNTRY_METADATA = {
     "subregion": "",
     "cca2": "hm",
     "cca3": "HMD",
-    "flag": "https://flagcdn.com/hm.svg"
+    "flag": "https://flagcdn.com/hm.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "340": {
     "name": "Honduras",
@@ -1498,7 +1696,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Central America",
     "cca2": "hn",
     "cca3": "HND",
-    "flag": "https://flagcdn.com/hn.svg"
+    "flag": "https://flagcdn.com/hn.svg",
+    "gdpPerCapita": 3426,
+    "gdpPerCapitaYear": 2024
   },
   "191": {
     "name": "Croatia",
@@ -1513,7 +1713,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southeast Europe",
     "cca2": "hr",
     "cca3": "HRV",
-    "flag": "https://flagcdn.com/hr.svg"
+    "flag": "https://flagcdn.com/hr.svg",
+    "gdpPerCapita": 24050,
+    "gdpPerCapitaYear": 2024
   },
   "332": {
     "name": "Haiti",
@@ -1528,7 +1730,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "ht",
     "cca3": "HTI",
-    "flag": "https://flagcdn.com/ht.svg"
+    "flag": "https://flagcdn.com/ht.svg",
+    "gdpPerCapita": 2143,
+    "gdpPerCapitaYear": 2024
   },
   "348": {
     "name": "Hungary",
@@ -1543,7 +1747,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Central Europe",
     "cca2": "hu",
     "cca3": "HUN",
-    "flag": "https://flagcdn.com/hu.svg"
+    "flag": "https://flagcdn.com/hu.svg",
+    "gdpPerCapita": 23292,
+    "gdpPerCapitaYear": 2024
   },
   "360": {
     "name": "Indonesia",
@@ -1558,7 +1764,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South-Eastern Asia",
     "cca2": "id",
     "cca3": "IDN",
-    "flag": "https://flagcdn.com/id.svg"
+    "flag": "https://flagcdn.com/id.svg",
+    "gdpPerCapita": 4925,
+    "gdpPerCapitaYear": 2024
   },
   "833": {
     "name": "Isle of Man",
@@ -1573,7 +1781,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Europe",
     "cca2": "im",
     "cca3": "IMN",
-    "flag": "https://flagcdn.com/im.svg"
+    "flag": "https://flagcdn.com/im.svg",
+    "gdpPerCapita": 88329,
+    "gdpPerCapitaYear": 2022
   },
   "356": {
     "name": "India",
@@ -1588,7 +1798,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Asia",
     "cca2": "in",
     "cca3": "IND",
-    "flag": "https://flagcdn.com/in.svg"
+    "flag": "https://flagcdn.com/in.svg",
+    "gdpPerCapita": 2695,
+    "gdpPerCapitaYear": 2024
   },
   "086": {
     "name": "British Indian Ocean Territory",
@@ -1603,7 +1815,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "io",
     "cca3": "IOT",
-    "flag": "https://flagcdn.com/io.svg"
+    "flag": "https://flagcdn.com/io.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "372": {
     "name": "Ireland",
@@ -1618,7 +1832,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Europe",
     "cca2": "ie",
     "cca3": "IRL",
-    "flag": "https://flagcdn.com/ie.svg"
+    "flag": "https://flagcdn.com/ie.svg",
+    "gdpPerCapita": 112895,
+    "gdpPerCapitaYear": 2024
   },
   "364": {
     "name": "Iran",
@@ -1633,7 +1849,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Asia",
     "cca2": "ir",
     "cca3": "IRN",
-    "flag": "https://flagcdn.com/ir.svg"
+    "flag": "https://flagcdn.com/ir.svg",
+    "gdpPerCapita": 5190,
+    "gdpPerCapitaYear": 2024
   },
   "368": {
     "name": "Iraq",
@@ -1648,7 +1866,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Asia",
     "cca2": "iq",
     "cca3": "IRQ",
-    "flag": "https://flagcdn.com/iq.svg"
+    "flag": "https://flagcdn.com/iq.svg",
+    "gdpPerCapita": 6074,
+    "gdpPerCapitaYear": 2024
   },
   "352": {
     "name": "Iceland",
@@ -1663,7 +1883,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Europe",
     "cca2": "is",
     "cca3": "ISL",
-    "flag": "https://flagcdn.com/is.svg"
+    "flag": "https://flagcdn.com/is.svg",
+    "gdpPerCapita": 86041,
+    "gdpPerCapitaYear": 2024
   },
   "376": {
     "name": "Israel",
@@ -1678,7 +1900,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Asia",
     "cca2": "il",
     "cca3": "ISR",
-    "flag": "https://flagcdn.com/il.svg"
+    "flag": "https://flagcdn.com/il.svg",
+    "gdpPerCapita": 54177,
+    "gdpPerCapitaYear": 2024
   },
   "380": {
     "name": "Italy",
@@ -1693,7 +1917,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Europe",
     "cca2": "it",
     "cca3": "ITA",
-    "flag": "https://flagcdn.com/it.svg"
+    "flag": "https://flagcdn.com/it.svg",
+    "gdpPerCapita": 40385,
+    "gdpPerCapitaYear": 2024
   },
   "388": {
     "name": "Jamaica",
@@ -1708,7 +1934,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "jm",
     "cca3": "JAM",
-    "flag": "https://flagcdn.com/jm.svg"
+    "flag": "https://flagcdn.com/jm.svg",
+    "gdpPerCapita": 7754,
+    "gdpPerCapitaYear": 2024
   },
   "832": {
     "name": "Jersey",
@@ -1723,7 +1951,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Europe",
     "cca2": "je",
     "cca3": "JEY",
-    "flag": "https://flagcdn.com/je.svg"
+    "flag": "https://flagcdn.com/je.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "400": {
     "name": "Jordan",
@@ -1738,7 +1968,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Asia",
     "cca2": "jo",
     "cca3": "JOR",
-    "flag": "https://flagcdn.com/jo.svg"
+    "flag": "https://flagcdn.com/jo.svg",
+    "gdpPerCapita": 4618,
+    "gdpPerCapitaYear": 2024
   },
   "392": {
     "name": "Japan",
@@ -1753,7 +1985,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Asia",
     "cca2": "jp",
     "cca3": "JPN",
-    "flag": "https://flagcdn.com/jp.svg"
+    "flag": "https://flagcdn.com/jp.svg",
+    "gdpPerCapita": 32487,
+    "gdpPerCapitaYear": 2024
   },
   "398": {
     "name": "Kazakhstan",
@@ -1768,7 +2002,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Central Asia",
     "cca2": "kz",
     "cca3": "KAZ",
-    "flag": "https://flagcdn.com/kz.svg"
+    "flag": "https://flagcdn.com/kz.svg",
+    "gdpPerCapita": 14155,
+    "gdpPerCapitaYear": 2024
   },
   "404": {
     "name": "Kenya",
@@ -1783,7 +2019,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "ke",
     "cca3": "KEN",
-    "flag": "https://flagcdn.com/ke.svg"
+    "flag": "https://flagcdn.com/ke.svg",
+    "gdpPerCapita": 2132,
+    "gdpPerCapitaYear": 2024
   },
   "417": {
     "name": "Kyrgyzstan",
@@ -1798,7 +2036,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Central Asia",
     "cca2": "kg",
     "cca3": "KGZ",
-    "flag": "https://flagcdn.com/kg.svg"
+    "flag": "https://flagcdn.com/kg.svg",
+    "gdpPerCapita": 2420,
+    "gdpPerCapitaYear": 2024
   },
   "116": {
     "name": "Cambodia",
@@ -1813,7 +2053,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South-Eastern Asia",
     "cca2": "kh",
     "cca3": "KHM",
-    "flag": "https://flagcdn.com/kh.svg"
+    "flag": "https://flagcdn.com/kh.svg",
+    "gdpPerCapita": 2628,
+    "gdpPerCapitaYear": 2024
   },
   "296": {
     "name": "Kiribati",
@@ -1828,7 +2070,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Micronesia",
     "cca2": "ki",
     "cca3": "KIR",
-    "flag": "https://flagcdn.com/ki.svg"
+    "flag": "https://flagcdn.com/ki.svg",
+    "gdpPerCapita": 2289,
+    "gdpPerCapitaYear": 2024
   },
   "659": {
     "name": "Saint Kitts and Nevis",
@@ -1843,7 +2087,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "kn",
     "cca3": "KNA",
-    "flag": "https://flagcdn.com/kn.svg"
+    "flag": "https://flagcdn.com/kn.svg",
+    "gdpPerCapita": 23961,
+    "gdpPerCapitaYear": 2024
   },
   "410": {
     "name": "South Korea",
@@ -1858,7 +2104,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Asia",
     "cca2": "kr",
     "cca3": "KOR",
-    "flag": "https://flagcdn.com/kr.svg"
+    "flag": "https://flagcdn.com/kr.svg",
+    "gdpPerCapita": 36239,
+    "gdpPerCapitaYear": 2024
   },
   "414": {
     "name": "Kuwait",
@@ -1873,7 +2121,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Asia",
     "cca2": "kw",
     "cca3": "KWT",
-    "flag": "https://flagcdn.com/kw.svg"
+    "flag": "https://flagcdn.com/kw.svg",
+    "gdpPerCapita": 32718,
+    "gdpPerCapitaYear": 2024
   },
   "418": {
     "name": "Laos",
@@ -1888,7 +2138,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South-Eastern Asia",
     "cca2": "la",
     "cca3": "LAO",
-    "flag": "https://flagcdn.com/la.svg"
+    "flag": "https://flagcdn.com/la.svg",
+    "gdpPerCapita": 2124,
+    "gdpPerCapitaYear": 2024
   },
   "422": {
     "name": "Lebanon",
@@ -1903,7 +2155,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Asia",
     "cca2": "lb",
     "cca3": "LBN",
-    "flag": "https://flagcdn.com/lb.svg"
+    "flag": "https://flagcdn.com/lb.svg",
+    "gdpPerCapita": 3478,
+    "gdpPerCapitaYear": 2023
   },
   "430": {
     "name": "Liberia",
@@ -1918,7 +2172,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Africa",
     "cca2": "lr",
     "cca3": "LBR",
-    "flag": "https://flagcdn.com/lr.svg"
+    "flag": "https://flagcdn.com/lr.svg",
+    "gdpPerCapita": 851,
+    "gdpPerCapitaYear": 2024
   },
   "434": {
     "name": "Libya",
@@ -1933,7 +2189,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Africa",
     "cca2": "ly",
     "cca3": "LBY",
-    "flag": "https://flagcdn.com/ly.svg"
+    "flag": "https://flagcdn.com/ly.svg",
+    "gdpPerCapita": 6569,
+    "gdpPerCapitaYear": 2024
   },
   "662": {
     "name": "Saint Lucia",
@@ -1948,7 +2206,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "lc",
     "cca3": "LCA",
-    "flag": "https://flagcdn.com/lc.svg"
+    "flag": "https://flagcdn.com/lc.svg",
+    "gdpPerCapita": 14182,
+    "gdpPerCapitaYear": 2024
   },
   "438": {
     "name": "Liechtenstein",
@@ -1963,7 +2223,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Europe",
     "cca2": "li",
     "cca3": "LIE",
-    "flag": "https://flagcdn.com/li.svg"
+    "flag": "https://flagcdn.com/li.svg",
+    "gdpPerCapita": 206781,
+    "gdpPerCapitaYear": 2023
   },
   "144": {
     "name": "Sri Lanka",
@@ -1978,7 +2240,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Asia",
     "cca2": "lk",
     "cca3": "LKA",
-    "flag": "https://flagcdn.com/lk.svg"
+    "flag": "https://flagcdn.com/lk.svg",
+    "gdpPerCapita": 4516,
+    "gdpPerCapitaYear": 2024
   },
   "426": {
     "name": "Lesotho",
@@ -1993,7 +2257,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Africa",
     "cca2": "ls",
     "cca3": "LSO",
-    "flag": "https://flagcdn.com/ls.svg"
+    "flag": "https://flagcdn.com/ls.svg",
+    "gdpPerCapita": 972,
+    "gdpPerCapitaYear": 2024
   },
   "440": {
     "name": "Lithuania",
@@ -2008,7 +2274,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Europe",
     "cca2": "lt",
     "cca3": "LTU",
-    "flag": "https://flagcdn.com/lt.svg"
+    "flag": "https://flagcdn.com/lt.svg",
+    "gdpPerCapita": 29384,
+    "gdpPerCapitaYear": 2024
   },
   "442": {
     "name": "Luxembourg",
@@ -2023,7 +2291,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Europe",
     "cca2": "lu",
     "cca3": "LUX",
-    "flag": "https://flagcdn.com/lu.svg"
+    "flag": "https://flagcdn.com/lu.svg",
+    "gdpPerCapita": 137782,
+    "gdpPerCapitaYear": 2024
   },
   "428": {
     "name": "Latvia",
@@ -2038,7 +2308,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Europe",
     "cca2": "lv",
     "cca3": "LVA",
-    "flag": "https://flagcdn.com/lv.svg"
+    "flag": "https://flagcdn.com/lv.svg",
+    "gdpPerCapita": 23409,
+    "gdpPerCapitaYear": 2024
   },
   "446": {
     "name": "Macau",
@@ -2053,7 +2325,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Asia",
     "cca2": "mo",
     "cca3": "MAC",
-    "flag": "https://flagcdn.com/mo.svg"
+    "flag": "https://flagcdn.com/mo.svg",
+    "gdpPerCapita": 72005,
+    "gdpPerCapitaYear": 2024
   },
   "663": {
     "name": "Saint Martin",
@@ -2068,7 +2342,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "mf",
     "cca3": "MAF",
-    "flag": "https://flagcdn.com/mf.svg"
+    "flag": "https://flagcdn.com/mf.svg",
+    "gdpPerCapita": 21668,
+    "gdpPerCapitaYear": 2021
   },
   "504": {
     "name": "Morocco",
@@ -2083,7 +2359,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Africa",
     "cca2": "ma",
     "cca3": "MAR",
-    "flag": "https://flagcdn.com/ma.svg"
+    "flag": "https://flagcdn.com/ma.svg",
+    "gdpPerCapita": 4153,
+    "gdpPerCapitaYear": 2024
   },
   "492": {
     "name": "Monaco",
@@ -2098,7 +2376,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Europe",
     "cca2": "mc",
     "cca3": "MCO",
-    "flag": "https://flagcdn.com/mc.svg"
+    "flag": "https://flagcdn.com/mc.svg",
+    "gdpPerCapita": 288001,
+    "gdpPerCapitaYear": 2024
   },
   "498": {
     "name": "Moldova",
@@ -2113,7 +2393,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Europe",
     "cca2": "md",
     "cca3": "MDA",
-    "flag": "https://flagcdn.com/md.svg"
+    "flag": "https://flagcdn.com/md.svg",
+    "gdpPerCapita": 7576,
+    "gdpPerCapitaYear": 2024
   },
   "450": {
     "name": "Madagascar",
@@ -2128,7 +2410,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "mg",
     "cca3": "MDG",
-    "flag": "https://flagcdn.com/mg.svg"
+    "flag": "https://flagcdn.com/mg.svg",
+    "gdpPerCapita": 545,
+    "gdpPerCapitaYear": 2024
   },
   "462": {
     "name": "Maldives",
@@ -2143,7 +2427,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Asia",
     "cca2": "mv",
     "cca3": "MDV",
-    "flag": "https://flagcdn.com/mv.svg"
+    "flag": "https://flagcdn.com/mv.svg",
+    "gdpPerCapita": 13379,
+    "gdpPerCapitaYear": 2024
   },
   "484": {
     "name": "Mexico",
@@ -2158,7 +2444,9 @@ window.COUNTRY_METADATA = {
     "subregion": "North America",
     "cca2": "mx",
     "cca3": "MEX",
-    "flag": "https://flagcdn.com/mx.svg"
+    "flag": "https://flagcdn.com/mx.svg",
+    "gdpPerCapita": 14186,
+    "gdpPerCapitaYear": 2024
   },
   "584": {
     "name": "Marshall Islands",
@@ -2173,7 +2461,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Micronesia",
     "cca2": "mh",
     "cca3": "MHL",
-    "flag": "https://flagcdn.com/mh.svg"
+    "flag": "https://flagcdn.com/mh.svg",
+    "gdpPerCapita": 7726,
+    "gdpPerCapitaYear": 2024
   },
   "807": {
     "name": "North Macedonia",
@@ -2188,7 +2478,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southeast Europe",
     "cca2": "mk",
     "cca3": "MKD",
-    "flag": "https://flagcdn.com/mk.svg"
+    "flag": "https://flagcdn.com/mk.svg",
+    "gdpPerCapita": 9292,
+    "gdpPerCapitaYear": 2024
   },
   "466": {
     "name": "Mali",
@@ -2203,7 +2495,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Africa",
     "cca2": "ml",
     "cca3": "MLI",
-    "flag": "https://flagcdn.com/ml.svg"
+    "flag": "https://flagcdn.com/ml.svg",
+    "gdpPerCapita": 1095,
+    "gdpPerCapitaYear": 2024
   },
   "470": {
     "name": "Malta",
@@ -2218,7 +2512,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Europe",
     "cca2": "mt",
     "cca3": "MLT",
-    "flag": "https://flagcdn.com/mt.svg"
+    "flag": "https://flagcdn.com/mt.svg",
+    "gdpPerCapita": 43899,
+    "gdpPerCapitaYear": 2024
   },
   "104": {
     "name": "Myanmar",
@@ -2233,7 +2529,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South-Eastern Asia",
     "cca2": "mm",
     "cca3": "MMR",
-    "flag": "https://flagcdn.com/mm.svg"
+    "flag": "https://flagcdn.com/mm.svg",
+    "gdpPerCapita": 1359,
+    "gdpPerCapitaYear": 2024
   },
   "499": {
     "name": "Montenegro",
@@ -2248,7 +2546,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southeast Europe",
     "cca2": "me",
     "cca3": "MNE",
-    "flag": "https://flagcdn.com/me.svg"
+    "flag": "https://flagcdn.com/me.svg",
+    "gdpPerCapita": 13263,
+    "gdpPerCapitaYear": 2024
   },
   "496": {
     "name": "Mongolia",
@@ -2263,7 +2563,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Asia",
     "cca2": "mn",
     "cca3": "MNG",
-    "flag": "https://flagcdn.com/mn.svg"
+    "flag": "https://flagcdn.com/mn.svg",
+    "gdpPerCapita": 6751,
+    "gdpPerCapitaYear": 2024
   },
   "580": {
     "name": "Northern Mariana Islands",
@@ -2278,7 +2580,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Micronesia",
     "cca2": "mp",
     "cca3": "MNP",
-    "flag": "https://flagcdn.com/mp.svg"
+    "flag": "https://flagcdn.com/mp.svg",
+    "gdpPerCapita": 23786,
+    "gdpPerCapitaYear": 2022
   },
   "508": {
     "name": "Mozambique",
@@ -2293,7 +2597,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "mz",
     "cca3": "MOZ",
-    "flag": "https://flagcdn.com/mz.svg"
+    "flag": "https://flagcdn.com/mz.svg",
+    "gdpPerCapita": 657,
+    "gdpPerCapitaYear": 2024
   },
   "478": {
     "name": "Mauritania",
@@ -2308,7 +2614,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Africa",
     "cca2": "mr",
     "cca3": "MRT",
-    "flag": "https://flagcdn.com/mr.svg"
+    "flag": "https://flagcdn.com/mr.svg",
+    "gdpPerCapita": 2110,
+    "gdpPerCapitaYear": 2024
   },
   "500": {
     "name": "Montserrat",
@@ -2323,7 +2631,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "ms",
     "cca3": "MSR",
-    "flag": "https://flagcdn.com/ms.svg"
+    "flag": "https://flagcdn.com/ms.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "474": {
     "name": "Martinique",
@@ -2338,7 +2648,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "mq",
     "cca3": "MTQ",
-    "flag": "https://flagcdn.com/mq.svg"
+    "flag": "https://flagcdn.com/mq.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "480": {
     "name": "Mauritius",
@@ -2353,7 +2665,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "mu",
     "cca3": "MUS",
-    "flag": "https://flagcdn.com/mu.svg"
+    "flag": "https://flagcdn.com/mu.svg",
+    "gdpPerCapita": 11991,
+    "gdpPerCapitaYear": 2024
   },
   "454": {
     "name": "Malawi",
@@ -2368,7 +2682,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "mw",
     "cca3": "MWI",
-    "flag": "https://flagcdn.com/mw.svg"
+    "flag": "https://flagcdn.com/mw.svg",
+    "gdpPerCapita": 523,
+    "gdpPerCapitaYear": 2024
   },
   "458": {
     "name": "Malaysia",
@@ -2383,7 +2699,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South-Eastern Asia",
     "cca2": "my",
     "cca3": "MYS",
-    "flag": "https://flagcdn.com/my.svg"
+    "flag": "https://flagcdn.com/my.svg",
+    "gdpPerCapita": 11874,
+    "gdpPerCapitaYear": 2024
   },
   "175": {
     "name": "Mayotte",
@@ -2398,7 +2716,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "yt",
     "cca3": "MYT",
-    "flag": "https://flagcdn.com/yt.svg"
+    "flag": "https://flagcdn.com/yt.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "516": {
     "name": "Namibia",
@@ -2413,7 +2733,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Africa",
     "cca2": "na",
     "cca3": "NAM",
-    "flag": "https://flagcdn.com/na.svg"
+    "flag": "https://flagcdn.com/na.svg",
+    "gdpPerCapita": 4413,
+    "gdpPerCapitaYear": 2024
   },
   "540": {
     "name": "New Caledonia",
@@ -2428,7 +2750,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Melanesia",
     "cca2": "nc",
     "cca3": "NCL",
-    "flag": "https://flagcdn.com/nc.svg"
+    "flag": "https://flagcdn.com/nc.svg",
+    "gdpPerCapita": 29213,
+    "gdpPerCapitaYear": 2024
   },
   "562": {
     "name": "Niger",
@@ -2443,7 +2767,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Africa",
     "cca2": "ne",
     "cca3": "NER",
-    "flag": "https://flagcdn.com/ne.svg"
+    "flag": "https://flagcdn.com/ne.svg",
+    "gdpPerCapita": 735,
+    "gdpPerCapitaYear": 2024
   },
   "574": {
     "name": "Norfolk Island",
@@ -2458,7 +2784,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Australia and New Zealand",
     "cca2": "nf",
     "cca3": "NFK",
-    "flag": "https://flagcdn.com/nf.svg"
+    "flag": "https://flagcdn.com/nf.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "566": {
     "name": "Nigeria",
@@ -2473,7 +2801,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Africa",
     "cca2": "ng",
     "cca3": "NGA",
-    "flag": "https://flagcdn.com/ng.svg"
+    "flag": "https://flagcdn.com/ng.svg",
+    "gdpPerCapita": 1084,
+    "gdpPerCapitaYear": 2024
   },
   "558": {
     "name": "Nicaragua",
@@ -2488,7 +2818,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Central America",
     "cca2": "ni",
     "cca3": "NIC",
-    "flag": "https://flagcdn.com/ni.svg"
+    "flag": "https://flagcdn.com/ni.svg",
+    "gdpPerCapita": 2848,
+    "gdpPerCapitaYear": 2024
   },
   "570": {
     "name": "Niue",
@@ -2503,7 +2835,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Polynesia",
     "cca2": "nu",
     "cca3": "NIU",
-    "flag": "https://flagcdn.com/nu.svg"
+    "flag": "https://flagcdn.com/nu.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "528": {
     "name": "Netherlands",
@@ -2518,7 +2852,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Europe",
     "cca2": "nl",
     "cca3": "NLD",
-    "flag": "https://flagcdn.com/nl.svg"
+    "flag": "https://flagcdn.com/nl.svg",
+    "gdpPerCapita": 67520,
+    "gdpPerCapitaYear": 2024
   },
   "578": {
     "name": "Norway",
@@ -2533,7 +2869,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Europe",
     "cca2": "no",
     "cca3": "NOR",
-    "flag": "https://flagcdn.com/no.svg"
+    "flag": "https://flagcdn.com/no.svg",
+    "gdpPerCapita": 86785,
+    "gdpPerCapitaYear": 2024
   },
   "524": {
     "name": "Nepal",
@@ -2548,7 +2886,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Asia",
     "cca2": "np",
     "cca3": "NPL",
-    "flag": "https://flagcdn.com/np.svg"
+    "flag": "https://flagcdn.com/np.svg",
+    "gdpPerCapita": 1447,
+    "gdpPerCapitaYear": 2024
   },
   "520": {
     "name": "Nauru",
@@ -2563,7 +2903,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Micronesia",
     "cca2": "nr",
     "cca3": "NRU",
-    "flag": "https://flagcdn.com/nr.svg"
+    "flag": "https://flagcdn.com/nr.svg",
+    "gdpPerCapita": 13609,
+    "gdpPerCapitaYear": 2024
   },
   "554": {
     "name": "New Zealand",
@@ -2578,7 +2920,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Australia and New Zealand",
     "cca2": "nz",
     "cca3": "NZL",
-    "flag": "https://flagcdn.com/nz.svg"
+    "flag": "https://flagcdn.com/nz.svg",
+    "gdpPerCapita": 49205,
+    "gdpPerCapitaYear": 2024
   },
   "512": {
     "name": "Oman",
@@ -2593,7 +2937,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Asia",
     "cca2": "om",
     "cca3": "OMN",
-    "flag": "https://flagcdn.com/om.svg"
+    "flag": "https://flagcdn.com/om.svg",
+    "gdpPerCapita": 20285,
+    "gdpPerCapitaYear": 2024
   },
   "586": {
     "name": "Pakistan",
@@ -2608,7 +2954,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Asia",
     "cca2": "pk",
     "cca3": "PAK",
-    "flag": "https://flagcdn.com/pk.svg"
+    "flag": "https://flagcdn.com/pk.svg",
+    "gdpPerCapita": 1479,
+    "gdpPerCapitaYear": 2024
   },
   "591": {
     "name": "Panama",
@@ -2623,7 +2971,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Central America",
     "cca2": "pa",
     "cca3": "PAN",
-    "flag": "https://flagcdn.com/pa.svg"
+    "flag": "https://flagcdn.com/pa.svg",
+    "gdpPerCapita": 19161,
+    "gdpPerCapitaYear": 2024
   },
   "612": {
     "name": "Pitcairn Islands",
@@ -2638,7 +2988,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Polynesia",
     "cca2": "pn",
     "cca3": "PCN",
-    "flag": "https://flagcdn.com/pn.svg"
+    "flag": "https://flagcdn.com/pn.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "604": {
     "name": "Peru",
@@ -2653,7 +3005,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South America",
     "cca2": "pe",
     "cca3": "PER",
-    "flag": "https://flagcdn.com/pe.svg"
+    "flag": "https://flagcdn.com/pe.svg",
+    "gdpPerCapita": 8452,
+    "gdpPerCapitaYear": 2024
   },
   "608": {
     "name": "Philippines",
@@ -2668,7 +3022,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South-Eastern Asia",
     "cca2": "ph",
     "cca3": "PHL",
-    "flag": "https://flagcdn.com/ph.svg"
+    "flag": "https://flagcdn.com/ph.svg",
+    "gdpPerCapita": 3985,
+    "gdpPerCapitaYear": 2024
   },
   "585": {
     "name": "Palau",
@@ -2683,7 +3039,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Micronesia",
     "cca2": "pw",
     "cca3": "PLW",
-    "flag": "https://flagcdn.com/pw.svg"
+    "flag": "https://flagcdn.com/pw.svg",
+    "gdpPerCapita": 15611,
+    "gdpPerCapitaYear": 2023
   },
   "598": {
     "name": "Papua New Guinea",
@@ -2698,7 +3056,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Melanesia",
     "cca2": "pg",
     "cca3": "PNG",
-    "flag": "https://flagcdn.com/pg.svg"
+    "flag": "https://flagcdn.com/pg.svg",
+    "gdpPerCapita": 3007,
+    "gdpPerCapitaYear": 2024
   },
   "616": {
     "name": "Poland",
@@ -2713,7 +3073,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Central Europe",
     "cca2": "pl",
     "cca3": "POL",
-    "flag": "https://flagcdn.com/pl.svg"
+    "flag": "https://flagcdn.com/pl.svg",
+    "gdpPerCapita": 25104,
+    "gdpPerCapitaYear": 2024
   },
   "630": {
     "name": "Puerto Rico",
@@ -2728,7 +3090,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "pr",
     "cca3": "PRI",
-    "flag": "https://flagcdn.com/pr.svg"
+    "flag": "https://flagcdn.com/pr.svg",
+    "gdpPerCapita": 39344,
+    "gdpPerCapitaYear": 2024
   },
   "408": {
     "name": "North Korea",
@@ -2743,7 +3107,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Asia",
     "cca2": "kp",
     "cca3": "PRK",
-    "flag": "https://flagcdn.com/kp.svg"
+    "flag": "https://flagcdn.com/kp.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "620": {
     "name": "Portugal",
@@ -2758,7 +3124,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Europe",
     "cca2": "pt",
     "cca3": "PRT",
-    "flag": "https://flagcdn.com/pt.svg"
+    "flag": "https://flagcdn.com/pt.svg",
+    "gdpPerCapita": 29292,
+    "gdpPerCapitaYear": 2024
   },
   "600": {
     "name": "Paraguay",
@@ -2773,7 +3141,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South America",
     "cca2": "py",
     "cca3": "PRY",
-    "flag": "https://flagcdn.com/py.svg"
+    "flag": "https://flagcdn.com/py.svg",
+    "gdpPerCapita": 6416,
+    "gdpPerCapitaYear": 2024
   },
   "275": {
     "name": "Palestine",
@@ -2788,7 +3158,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Asia",
     "cca2": "ps",
     "cca3": "PSE",
-    "flag": "https://flagcdn.com/ps.svg"
+    "flag": "https://flagcdn.com/ps.svg",
+    "gdpPerCapita": 2592,
+    "gdpPerCapitaYear": 2024
   },
   "258": {
     "name": "French Polynesia",
@@ -2803,7 +3175,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Polynesia",
     "cca2": "pf",
     "cca3": "PYF",
-    "flag": "https://flagcdn.com/pf.svg"
+    "flag": "https://flagcdn.com/pf.svg",
+    "gdpPerCapita": 22440,
+    "gdpPerCapitaYear": 2024
   },
   "634": {
     "name": "Qatar",
@@ -2818,7 +3192,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Asia",
     "cca2": "qa",
     "cca3": "QAT",
-    "flag": "https://flagcdn.com/qa.svg"
+    "flag": "https://flagcdn.com/qa.svg",
+    "gdpPerCapita": 76689,
+    "gdpPerCapitaYear": 2024
   },
   "638": {
     "name": "Réunion",
@@ -2833,7 +3209,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "re",
     "cca3": "REU",
-    "flag": "https://flagcdn.com/re.svg"
+    "flag": "https://flagcdn.com/re.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "642": {
     "name": "Romania",
@@ -2848,7 +3226,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southeast Europe",
     "cca2": "ro",
     "cca3": "ROU",
-    "flag": "https://flagcdn.com/ro.svg"
+    "flag": "https://flagcdn.com/ro.svg",
+    "gdpPerCapita": 20080,
+    "gdpPerCapitaYear": 2024
   },
   "643": {
     "name": "Russia",
@@ -2863,7 +3243,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Europe",
     "cca2": "ru",
     "cca3": "RUS",
-    "flag": "https://flagcdn.com/ru.svg"
+    "flag": "https://flagcdn.com/ru.svg",
+    "gdpPerCapita": 14889,
+    "gdpPerCapitaYear": 2024
   },
   "646": {
     "name": "Rwanda",
@@ -2878,7 +3260,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "rw",
     "cca3": "RWA",
-    "flag": "https://flagcdn.com/rw.svg"
+    "flag": "https://flagcdn.com/rw.svg",
+    "gdpPerCapita": 1000,
+    "gdpPerCapitaYear": 2024
   },
   "682": {
     "name": "Saudi Arabia",
@@ -2893,7 +3277,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Asia",
     "cca2": "sa",
     "cca3": "SAU",
-    "flag": "https://flagcdn.com/sa.svg"
+    "flag": "https://flagcdn.com/sa.svg",
+    "gdpPerCapita": 35122,
+    "gdpPerCapitaYear": 2024
   },
   "729": {
     "name": "Sudan",
@@ -2908,7 +3294,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Africa",
     "cca2": "sd",
     "cca3": "SDN",
-    "flag": "https://flagcdn.com/sd.svg"
+    "flag": "https://flagcdn.com/sd.svg",
+    "gdpPerCapita": 985,
+    "gdpPerCapitaYear": 2024
   },
   "686": {
     "name": "Senegal",
@@ -2923,7 +3311,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Africa",
     "cca2": "sn",
     "cca3": "SEN",
-    "flag": "https://flagcdn.com/sn.svg"
+    "flag": "https://flagcdn.com/sn.svg",
+    "gdpPerCapita": 1773,
+    "gdpPerCapitaYear": 2024
   },
   "702": {
     "name": "Singapore",
@@ -2938,7 +3328,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South-Eastern Asia",
     "cca2": "sg",
     "cca3": "SGP",
-    "flag": "https://flagcdn.com/sg.svg"
+    "flag": "https://flagcdn.com/sg.svg",
+    "gdpPerCapita": 90674,
+    "gdpPerCapitaYear": 2024
   },
   "239": {
     "name": "South Georgia",
@@ -2953,7 +3345,9 @@ window.COUNTRY_METADATA = {
     "subregion": "",
     "cca2": "gs",
     "cca3": "SGS",
-    "flag": "https://flagcdn.com/gs.svg"
+    "flag": "https://flagcdn.com/gs.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "744": {
     "name": "Svalbard and Jan Mayen",
@@ -2968,7 +3362,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Europe",
     "cca2": "sj",
     "cca3": "SJM",
-    "flag": "https://flagcdn.com/sj.svg"
+    "flag": "https://flagcdn.com/sj.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "090": {
     "name": "Solomon Islands",
@@ -2983,7 +3379,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Melanesia",
     "cca2": "sb",
     "cca3": "SLB",
-    "flag": "https://flagcdn.com/sb.svg"
+    "flag": "https://flagcdn.com/sb.svg",
+    "gdpPerCapita": 1934,
+    "gdpPerCapitaYear": 2024
   },
   "694": {
     "name": "Sierra Leone",
@@ -2998,7 +3396,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Africa",
     "cca2": "sl",
     "cca3": "SLE",
-    "flag": "https://flagcdn.com/sl.svg"
+    "flag": "https://flagcdn.com/sl.svg",
+    "gdpPerCapita": 807,
+    "gdpPerCapitaYear": 2024
   },
   "222": {
     "name": "El Salvador",
@@ -3013,7 +3413,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Central America",
     "cca2": "sv",
     "cca3": "SLV",
-    "flag": "https://flagcdn.com/sv.svg"
+    "flag": "https://flagcdn.com/sv.svg",
+    "gdpPerCapita": 5580,
+    "gdpPerCapitaYear": 2024
   },
   "674": {
     "name": "San Marino",
@@ -3028,7 +3430,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Europe",
     "cca2": "sm",
     "cca3": "SMR",
-    "flag": "https://flagcdn.com/sm.svg"
+    "flag": "https://flagcdn.com/sm.svg",
+    "gdpPerCapita": 59880,
+    "gdpPerCapitaYear": 2023
   },
   "706": {
     "name": "Somalia",
@@ -3043,7 +3447,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "so",
     "cca3": "SOM",
-    "flag": "https://flagcdn.com/so.svg"
+    "flag": "https://flagcdn.com/so.svg",
+    "gdpPerCapita": 630,
+    "gdpPerCapitaYear": 2024
   },
   "666": {
     "name": "Saint Pierre and Miquelon",
@@ -3058,7 +3464,9 @@ window.COUNTRY_METADATA = {
     "subregion": "North America",
     "cca2": "pm",
     "cca3": "SPM",
-    "flag": "https://flagcdn.com/pm.svg"
+    "flag": "https://flagcdn.com/pm.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "688": {
     "name": "Serbia",
@@ -3073,7 +3481,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southeast Europe",
     "cca2": "rs",
     "cca3": "SRB",
-    "flag": "https://flagcdn.com/rs.svg"
+    "flag": "https://flagcdn.com/rs.svg",
+    "gdpPerCapita": 13679,
+    "gdpPerCapitaYear": 2024
   },
   "728": {
     "name": "South Sudan",
@@ -3088,7 +3498,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Middle Africa",
     "cca2": "ss",
     "cca3": "SSD",
-    "flag": "https://flagcdn.com/ss.svg"
+    "flag": "https://flagcdn.com/ss.svg",
+    "gdpPerCapita": 1080,
+    "gdpPerCapitaYear": 2015
   },
   "678": {
     "name": "São Tomé and Príncipe",
@@ -3103,7 +3515,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Middle Africa",
     "cca2": "st",
     "cca3": "STP",
-    "flag": "https://flagcdn.com/st.svg"
+    "flag": "https://flagcdn.com/st.svg",
+    "gdpPerCapita": 3491,
+    "gdpPerCapitaYear": 2024
   },
   "740": {
     "name": "Suriname",
@@ -3118,7 +3532,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South America",
     "cca2": "sr",
     "cca3": "SUR",
-    "flag": "https://flagcdn.com/sr.svg"
+    "flag": "https://flagcdn.com/sr.svg",
+    "gdpPerCapita": 6962,
+    "gdpPerCapitaYear": 2024
   },
   "703": {
     "name": "Slovakia",
@@ -3133,7 +3549,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Central Europe",
     "cca2": "sk",
     "cca3": "SVK",
-    "flag": "https://flagcdn.com/sk.svg"
+    "flag": "https://flagcdn.com/sk.svg",
+    "gdpPerCapita": 25993,
+    "gdpPerCapitaYear": 2024
   },
   "705": {
     "name": "Slovenia",
@@ -3148,7 +3566,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Central Europe",
     "cca2": "si",
     "cca3": "SVN",
-    "flag": "https://flagcdn.com/si.svg"
+    "flag": "https://flagcdn.com/si.svg",
+    "gdpPerCapita": 34301,
+    "gdpPerCapitaYear": 2024
   },
   "752": {
     "name": "Sweden",
@@ -3163,7 +3583,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Europe",
     "cca2": "se",
     "cca3": "SWE",
-    "flag": "https://flagcdn.com/se.svg"
+    "flag": "https://flagcdn.com/se.svg",
+    "gdpPerCapita": 57117,
+    "gdpPerCapitaYear": 2024
   },
   "748": {
     "name": "Eswatini",
@@ -3178,7 +3600,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Africa",
     "cca2": "sz",
     "cca3": "SWZ",
-    "flag": "https://flagcdn.com/sz.svg"
+    "flag": "https://flagcdn.com/sz.svg",
+    "gdpPerCapita": 3910,
+    "gdpPerCapitaYear": 2024
   },
   "534": {
     "name": "Sint Maarten",
@@ -3193,7 +3617,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "sx",
     "cca3": "SXM",
-    "flag": "https://flagcdn.com/sx.svg"
+    "flag": "https://flagcdn.com/sx.svg",
+    "gdpPerCapita": 41473,
+    "gdpPerCapitaYear": 2024
   },
   "690": {
     "name": "Seychelles",
@@ -3208,7 +3634,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "sc",
     "cca3": "SYC",
-    "flag": "https://flagcdn.com/sc.svg"
+    "flag": "https://flagcdn.com/sc.svg",
+    "gdpPerCapita": 17859,
+    "gdpPerCapitaYear": 2024
   },
   "760": {
     "name": "Syria",
@@ -3223,7 +3651,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Asia",
     "cca2": "sy",
     "cca3": "SYR",
-    "flag": "https://flagcdn.com/sy.svg"
+    "flag": "https://flagcdn.com/sy.svg",
+    "gdpPerCapita": 1052,
+    "gdpPerCapitaYear": 2022
   },
   "796": {
     "name": "Turks and Caicos Islands",
@@ -3238,7 +3668,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "tc",
     "cca3": "TCA",
-    "flag": "https://flagcdn.com/tc.svg"
+    "flag": "https://flagcdn.com/tc.svg",
+    "gdpPerCapita": 37507,
+    "gdpPerCapitaYear": 2024
   },
   "148": {
     "name": "Chad",
@@ -3253,7 +3685,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Middle Africa",
     "cca2": "td",
     "cca3": "TCD",
-    "flag": "https://flagcdn.com/td.svg"
+    "flag": "https://flagcdn.com/td.svg",
+    "gdpPerCapita": 962,
+    "gdpPerCapitaYear": 2024
   },
   "768": {
     "name": "Togo",
@@ -3268,7 +3702,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Africa",
     "cca2": "tg",
     "cca3": "TGO",
-    "flag": "https://flagcdn.com/tg.svg"
+    "flag": "https://flagcdn.com/tg.svg",
+    "gdpPerCapita": 1119,
+    "gdpPerCapitaYear": 2024
   },
   "764": {
     "name": "Thailand",
@@ -3283,7 +3719,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South-Eastern Asia",
     "cca2": "th",
     "cca3": "THA",
-    "flag": "https://flagcdn.com/th.svg"
+    "flag": "https://flagcdn.com/th.svg",
+    "gdpPerCapita": 7347,
+    "gdpPerCapitaYear": 2024
   },
   "762": {
     "name": "Tajikistan",
@@ -3298,7 +3736,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Central Asia",
     "cca2": "tj",
     "cca3": "TJK",
-    "flag": "https://flagcdn.com/tj.svg"
+    "flag": "https://flagcdn.com/tj.svg",
+    "gdpPerCapita": 1341,
+    "gdpPerCapitaYear": 2024
   },
   "772": {
     "name": "Tokelau",
@@ -3313,7 +3753,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Polynesia",
     "cca2": "tk",
     "cca3": "TKL",
-    "flag": "https://flagcdn.com/tk.svg"
+    "flag": "https://flagcdn.com/tk.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "795": {
     "name": "Turkmenistan",
@@ -3328,7 +3770,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Central Asia",
     "cca2": "tm",
     "cca3": "TKM",
-    "flag": "https://flagcdn.com/tm.svg"
+    "flag": "https://flagcdn.com/tm.svg",
+    "gdpPerCapita": 6857,
+    "gdpPerCapitaYear": 2024
   },
   "626": {
     "name": "Timor-Leste",
@@ -3343,7 +3787,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South-Eastern Asia",
     "cca2": "tl",
     "cca3": "TLS",
-    "flag": "https://flagcdn.com/tl.svg"
+    "flag": "https://flagcdn.com/tl.svg",
+    "gdpPerCapita": 1332,
+    "gdpPerCapitaYear": 2024
   },
   "776": {
     "name": "Tonga",
@@ -3358,7 +3804,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Polynesia",
     "cca2": "to",
     "cca3": "TON",
-    "flag": "https://flagcdn.com/to.svg"
+    "flag": "https://flagcdn.com/to.svg",
+    "gdpPerCapita": 5652,
+    "gdpPerCapitaYear": 2023
   },
   "780": {
     "name": "Trinidad and Tobago",
@@ -3373,7 +3821,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "tt",
     "cca3": "TTO",
-    "flag": "https://flagcdn.com/tt.svg"
+    "flag": "https://flagcdn.com/tt.svg",
+    "gdpPerCapita": 18733,
+    "gdpPerCapitaYear": 2024
   },
   "788": {
     "name": "Tunisia",
@@ -3388,7 +3838,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Northern Africa",
     "cca2": "tn",
     "cca3": "TUN",
-    "flag": "https://flagcdn.com/tn.svg"
+    "flag": "https://flagcdn.com/tn.svg",
+    "gdpPerCapita": 4181,
+    "gdpPerCapitaYear": 2024
   },
   "792": {
     "name": "Türkiye",
@@ -3403,7 +3855,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Asia",
     "cca2": "tr",
     "cca3": "TUR",
-    "flag": "https://flagcdn.com/tr.svg"
+    "flag": "https://flagcdn.com/tr.svg",
+    "gdpPerCapita": 15893,
+    "gdpPerCapitaYear": 2024
   },
   "798": {
     "name": "Tuvalu",
@@ -3418,7 +3872,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Polynesia",
     "cca2": "tv",
     "cca3": "TUV",
-    "flag": "https://flagcdn.com/tv.svg"
+    "flag": "https://flagcdn.com/tv.svg",
+    "gdpPerCapita": 6345,
+    "gdpPerCapitaYear": 2023
   },
   "158": {
     "name": "Taiwan",
@@ -3433,7 +3889,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Asia",
     "cca2": "tw",
     "cca3": "TWN",
-    "flag": "https://flagcdn.com/tw.svg"
+    "flag": "https://flagcdn.com/tw.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "834": {
     "name": "Tanzania",
@@ -3448,7 +3906,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "tz",
     "cca3": "TZA",
-    "flag": "https://flagcdn.com/tz.svg"
+    "flag": "https://flagcdn.com/tz.svg",
+    "gdpPerCapita": 1187,
+    "gdpPerCapitaYear": 2024
   },
   "800": {
     "name": "Uganda",
@@ -3463,7 +3923,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "ug",
     "cca3": "UGA",
-    "flag": "https://flagcdn.com/ug.svg"
+    "flag": "https://flagcdn.com/ug.svg",
+    "gdpPerCapita": 1078,
+    "gdpPerCapitaYear": 2024
   },
   "804": {
     "name": "Ukraine",
@@ -3478,7 +3940,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Europe",
     "cca2": "ua",
     "cca3": "UKR",
-    "flag": "https://flagcdn.com/ua.svg"
+    "flag": "https://flagcdn.com/ua.svg",
+    "gdpPerCapita": 5389,
+    "gdpPerCapitaYear": 2024
   },
   "581": {
     "name": "United States Minor Outlying Islands",
@@ -3493,7 +3957,9 @@ window.COUNTRY_METADATA = {
     "subregion": "North America",
     "cca2": "um",
     "cca3": "UMI",
-    "flag": "https://flagcdn.com/um.svg"
+    "flag": "https://flagcdn.com/um.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "858": {
     "name": "Uruguay",
@@ -3508,7 +3974,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South America",
     "cca2": "uy",
     "cca3": "URY",
-    "flag": "https://flagcdn.com/uy.svg"
+    "flag": "https://flagcdn.com/uy.svg",
+    "gdpPerCapita": 23907,
+    "gdpPerCapitaYear": 2024
   },
   "840": {
     "name": "United States",
@@ -3523,7 +3991,9 @@ window.COUNTRY_METADATA = {
     "subregion": "North America",
     "cca2": "us",
     "cca3": "USA",
-    "flag": "https://flagcdn.com/us.svg"
+    "flag": "https://flagcdn.com/us.svg",
+    "gdpPerCapita": 84534,
+    "gdpPerCapitaYear": 2024
   },
   "860": {
     "name": "Uzbekistan",
@@ -3538,7 +4008,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Central Asia",
     "cca2": "uz",
     "cca3": "UZB",
-    "flag": "https://flagcdn.com/uz.svg"
+    "flag": "https://flagcdn.com/uz.svg",
+    "gdpPerCapita": 3162,
+    "gdpPerCapitaYear": 2024
   },
   "336": {
     "name": "Vatican City",
@@ -3553,7 +4025,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Europe",
     "cca2": "va",
     "cca3": "VAT",
-    "flag": "https://flagcdn.com/va.svg"
+    "flag": "https://flagcdn.com/va.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "670": {
     "name": "Saint Vincent and the Grenadines",
@@ -3568,7 +4042,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "vc",
     "cca3": "VCT",
-    "flag": "https://flagcdn.com/vc.svg"
+    "flag": "https://flagcdn.com/vc.svg",
+    "gdpPerCapita": 11501,
+    "gdpPerCapitaYear": 2024
   },
   "862": {
     "name": "Venezuela",
@@ -3583,7 +4059,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South America",
     "cca2": "ve",
     "cca3": "VEN",
-    "flag": "https://flagcdn.com/ve.svg"
+    "flag": "https://flagcdn.com/ve.svg",
+    "gdpPerCapita": 4218,
+    "gdpPerCapitaYear": 2024
   },
   "092": {
     "name": "British Virgin Islands",
@@ -3598,7 +4076,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "vg",
     "cca3": "VGB",
-    "flag": "https://flagcdn.com/vg.svg"
+    "flag": "https://flagcdn.com/vg.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "850": {
     "name": "United States Virgin Islands",
@@ -3613,7 +4093,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Caribbean",
     "cca2": "vi",
     "cca3": "VIR",
-    "flag": "https://flagcdn.com/vi.svg"
+    "flag": "https://flagcdn.com/vi.svg",
+    "gdpPerCapita": 44321,
+    "gdpPerCapitaYear": 2022
   },
   "704": {
     "name": "Vietnam",
@@ -3628,7 +4110,9 @@ window.COUNTRY_METADATA = {
     "subregion": "South-Eastern Asia",
     "cca2": "vn",
     "cca3": "VNM",
-    "flag": "https://flagcdn.com/vn.svg"
+    "flag": "https://flagcdn.com/vn.svg",
+    "gdpPerCapita": 4717,
+    "gdpPerCapitaYear": 2024
   },
   "548": {
     "name": "Vanuatu",
@@ -3643,7 +4127,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Melanesia",
     "cca2": "vu",
     "cca3": "VUT",
-    "flag": "https://flagcdn.com/vu.svg"
+    "flag": "https://flagcdn.com/vu.svg",
+    "gdpPerCapita": 3411,
+    "gdpPerCapitaYear": 2024
   },
   "876": {
     "name": "Wallis and Futuna",
@@ -3658,7 +4144,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Polynesia",
     "cca2": "wf",
     "cca3": "WLF",
-    "flag": "https://flagcdn.com/wf.svg"
+    "flag": "https://flagcdn.com/wf.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "882": {
     "name": "Samoa",
@@ -3673,7 +4161,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Polynesia",
     "cca2": "ws",
     "cca3": "WSM",
-    "flag": "https://flagcdn.com/ws.svg"
+    "flag": "https://flagcdn.com/ws.svg",
+    "gdpPerCapita": 5393,
+    "gdpPerCapitaYear": 2024
   },
   "887": {
     "name": "Yemen",
@@ -3688,7 +4178,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Western Asia",
     "cca2": "ye",
     "cca3": "YEM",
-    "flag": "https://flagcdn.com/ye.svg"
+    "flag": "https://flagcdn.com/ye.svg",
+    "gdpPerCapita": 634,
+    "gdpPerCapitaYear": 2018
   },
   "710": {
     "name": "South Africa",
@@ -3703,7 +4195,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Southern Africa",
     "cca2": "za",
     "cca3": "ZAF",
-    "flag": "https://flagcdn.com/za.svg"
+    "flag": "https://flagcdn.com/za.svg",
+    "gdpPerCapita": 6267,
+    "gdpPerCapitaYear": 2024
   },
   "894": {
     "name": "Zambia",
@@ -3718,7 +4212,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "zm",
     "cca3": "ZMB",
-    "flag": "https://flagcdn.com/zm.svg"
+    "flag": "https://flagcdn.com/zm.svg",
+    "gdpPerCapita": 1187,
+    "gdpPerCapitaYear": 2024
   },
   "716": {
     "name": "Zimbabwe",
@@ -3733,7 +4229,9 @@ window.COUNTRY_METADATA = {
     "subregion": "Eastern Africa",
     "cca2": "zw",
     "cca3": "ZWE",
-    "flag": "https://flagcdn.com/zw.svg"
+    "flag": "https://flagcdn.com/zw.svg",
+    "gdpPerCapita": 2497,
+    "gdpPerCapitaYear": 2024
   }
 };
 window.COUNTRY_METADATA_BY_NAME = {
@@ -3750,7 +4248,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "aw",
     "cca3": "ABW",
-    "flag": "https://flagcdn.com/aw.svg"
+    "flag": "https://flagcdn.com/aw.svg",
+    "gdpPerCapita": 39499,
+    "gdpPerCapitaYear": 2024
   },
   "Afghanistan": {
     "name": "Afghanistan",
@@ -3765,7 +4265,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Asia",
     "cca2": "af",
     "cca3": "AFG",
-    "flag": "https://flagcdn.com/af.svg"
+    "flag": "https://flagcdn.com/af.svg",
+    "gdpPerCapita": 414,
+    "gdpPerCapitaYear": 2023
   },
   "Angola": {
     "name": "Angola",
@@ -3780,7 +4282,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Middle Africa",
     "cca2": "ao",
     "cca3": "AGO",
-    "flag": "https://flagcdn.com/ao.svg"
+    "flag": "https://flagcdn.com/ao.svg",
+    "gdpPerCapita": 2666,
+    "gdpPerCapitaYear": 2024
   },
   "Anguilla": {
     "name": "Anguilla",
@@ -3795,7 +4299,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "ai",
     "cca3": "AIA",
-    "flag": "https://flagcdn.com/ai.svg"
+    "flag": "https://flagcdn.com/ai.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Åland Islands": {
     "name": "Åland Islands",
@@ -3810,7 +4316,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Europe",
     "cca2": "ax",
     "cca3": "ALA",
-    "flag": "https://flagcdn.com/ax.svg"
+    "flag": "https://flagcdn.com/ax.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Albania": {
     "name": "Albania",
@@ -3825,7 +4333,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southeast Europe",
     "cca2": "al",
     "cca3": "ALB",
-    "flag": "https://flagcdn.com/al.svg"
+    "flag": "https://flagcdn.com/al.svg",
+    "gdpPerCapita": 11378,
+    "gdpPerCapitaYear": 2024
   },
   "Andorra": {
     "name": "Andorra",
@@ -3840,7 +4350,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Europe",
     "cca2": "ad",
     "cca3": "AND",
-    "flag": "https://flagcdn.com/ad.svg"
+    "flag": "https://flagcdn.com/ad.svg",
+    "gdpPerCapita": 49304,
+    "gdpPerCapitaYear": 2024
   },
   "United Arab Emirates": {
     "name": "United Arab Emirates",
@@ -3855,7 +4367,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Asia",
     "cca2": "ae",
     "cca3": "ARE",
-    "flag": "https://flagcdn.com/ae.svg"
+    "flag": "https://flagcdn.com/ae.svg",
+    "gdpPerCapita": 50274,
+    "gdpPerCapitaYear": 2024
   },
   "Argentina": {
     "name": "Argentina",
@@ -3870,7 +4384,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South America",
     "cca2": "ar",
     "cca3": "ARG",
-    "flag": "https://flagcdn.com/ar.svg"
+    "flag": "https://flagcdn.com/ar.svg",
+    "gdpPerCapita": 13970,
+    "gdpPerCapitaYear": 2024
   },
   "Armenia": {
     "name": "Armenia",
@@ -3885,7 +4401,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Asia",
     "cca2": "am",
     "cca3": "ARM",
-    "flag": "https://flagcdn.com/am.svg"
+    "flag": "https://flagcdn.com/am.svg",
+    "gdpPerCapita": 8556,
+    "gdpPerCapitaYear": 2024
   },
   "American Samoa": {
     "name": "American Samoa",
@@ -3900,7 +4418,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Polynesia",
     "cca2": "as",
     "cca3": "ASM",
-    "flag": "https://flagcdn.com/as.svg"
+    "flag": "https://flagcdn.com/as.svg",
+    "gdpPerCapita": 18017,
+    "gdpPerCapitaYear": 2022
   },
   "Antarctica": {
     "name": "Antarctica",
@@ -3915,7 +4435,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "",
     "cca2": "aq",
     "cca3": "ATA",
-    "flag": "https://flagcdn.com/aq.svg"
+    "flag": "https://flagcdn.com/aq.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "French Southern and Antarctic Lands": {
     "name": "French Southern and Antarctic Lands",
@@ -3930,7 +4452,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "",
     "cca2": "tf",
     "cca3": "ATF",
-    "flag": "https://flagcdn.com/tf.svg"
+    "flag": "https://flagcdn.com/tf.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Antigua and Barbuda": {
     "name": "Antigua and Barbuda",
@@ -3945,7 +4469,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "ag",
     "cca3": "ATG",
-    "flag": "https://flagcdn.com/ag.svg"
+    "flag": "https://flagcdn.com/ag.svg",
+    "gdpPerCapita": 23542,
+    "gdpPerCapitaYear": 2024
   },
   "Australia": {
     "name": "Australia",
@@ -3960,7 +4486,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Australia and New Zealand",
     "cca2": "au",
     "cca3": "AUS",
-    "flag": "https://flagcdn.com/au.svg"
+    "flag": "https://flagcdn.com/au.svg",
+    "gdpPerCapita": 64604,
+    "gdpPerCapitaYear": 2024
   },
   "Austria": {
     "name": "Austria",
@@ -3975,7 +4503,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Central Europe",
     "cca2": "at",
     "cca3": "AUT",
-    "flag": "https://flagcdn.com/at.svg"
+    "flag": "https://flagcdn.com/at.svg",
+    "gdpPerCapita": 58269,
+    "gdpPerCapitaYear": 2024
   },
   "Azerbaijan": {
     "name": "Azerbaijan",
@@ -3990,7 +4520,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Asia",
     "cca2": "az",
     "cca3": "AZE",
-    "flag": "https://flagcdn.com/az.svg"
+    "flag": "https://flagcdn.com/az.svg",
+    "gdpPerCapita": 7284,
+    "gdpPerCapitaYear": 2024
   },
   "Burundi": {
     "name": "Burundi",
@@ -4005,7 +4537,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "bi",
     "cca3": "BDI",
-    "flag": "https://flagcdn.com/bi.svg"
+    "flag": "https://flagcdn.com/bi.svg",
+    "gdpPerCapita": 219,
+    "gdpPerCapitaYear": 2024
   },
   "Belgium": {
     "name": "Belgium",
@@ -4020,7 +4554,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Europe",
     "cca2": "be",
     "cca3": "BEL",
-    "flag": "https://flagcdn.com/be.svg"
+    "flag": "https://flagcdn.com/be.svg",
+    "gdpPerCapita": 56615,
+    "gdpPerCapitaYear": 2024
   },
   "Benin": {
     "name": "Benin",
@@ -4035,7 +4571,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Africa",
     "cca2": "bj",
     "cca3": "BEN",
-    "flag": "https://flagcdn.com/bj.svg"
+    "flag": "https://flagcdn.com/bj.svg",
+    "gdpPerCapita": 1485,
+    "gdpPerCapitaYear": 2024
   },
   "Burkina Faso": {
     "name": "Burkina Faso",
@@ -4050,7 +4588,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Africa",
     "cca2": "bf",
     "cca3": "BFA",
-    "flag": "https://flagcdn.com/bf.svg"
+    "flag": "https://flagcdn.com/bf.svg",
+    "gdpPerCapita": 982,
+    "gdpPerCapitaYear": 2024
   },
   "Bangladesh": {
     "name": "Bangladesh",
@@ -4065,7 +4605,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Asia",
     "cca2": "bd",
     "cca3": "BGD",
-    "flag": "https://flagcdn.com/bd.svg"
+    "flag": "https://flagcdn.com/bd.svg",
+    "gdpPerCapita": 2593,
+    "gdpPerCapitaYear": 2024
   },
   "Bulgaria": {
     "name": "Bulgaria",
@@ -4080,7 +4622,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southeast Europe",
     "cca2": "bg",
     "cca3": "BGR",
-    "flag": "https://flagcdn.com/bg.svg"
+    "flag": "https://flagcdn.com/bg.svg",
+    "gdpPerCapita": 17596,
+    "gdpPerCapitaYear": 2024
   },
   "Bahrain": {
     "name": "Bahrain",
@@ -4095,7 +4639,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Asia",
     "cca2": "bh",
     "cca3": "BHR",
-    "flag": "https://flagcdn.com/bh.svg"
+    "flag": "https://flagcdn.com/bh.svg",
+    "gdpPerCapita": 29654,
+    "gdpPerCapitaYear": 2024
   },
   "Bahamas": {
     "name": "Bahamas",
@@ -4110,7 +4656,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "bs",
     "cca3": "BHS",
-    "flag": "https://flagcdn.com/bs.svg"
+    "flag": "https://flagcdn.com/bs.svg",
+    "gdpPerCapita": 39455,
+    "gdpPerCapitaYear": 2024
   },
   "Bosnia and Herzegovina": {
     "name": "Bosnia and Herzegovina",
@@ -4125,7 +4673,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southeast Europe",
     "cca2": "ba",
     "cca3": "BIH",
-    "flag": "https://flagcdn.com/ba.svg"
+    "flag": "https://flagcdn.com/ba.svg",
+    "gdpPerCapita": 9359,
+    "gdpPerCapitaYear": 2024
   },
   "Saint Barthélemy": {
     "name": "Saint Barthélemy",
@@ -4140,7 +4690,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "bl",
     "cca3": "BLM",
-    "flag": "https://flagcdn.com/bl.svg"
+    "flag": "https://flagcdn.com/bl.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Saint Helena, Ascension and Tristan da Cunha": {
     "name": "Saint Helena, Ascension and Tristan da Cunha",
@@ -4155,7 +4707,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Africa",
     "cca2": "sh",
     "cca3": "SHN",
-    "flag": "https://flagcdn.com/sh.svg"
+    "flag": "https://flagcdn.com/sh.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Belarus": {
     "name": "Belarus",
@@ -4170,7 +4724,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Europe",
     "cca2": "by",
     "cca3": "BLR",
-    "flag": "https://flagcdn.com/by.svg"
+    "flag": "https://flagcdn.com/by.svg",
+    "gdpPerCapita": 8318,
+    "gdpPerCapitaYear": 2024
   },
   "Belize": {
     "name": "Belize",
@@ -4185,7 +4741,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Central America",
     "cca2": "bz",
     "cca3": "BLZ",
-    "flag": "https://flagcdn.com/bz.svg"
+    "flag": "https://flagcdn.com/bz.svg",
+    "gdpPerCapita": 7681,
+    "gdpPerCapitaYear": 2024
   },
   "Bermuda": {
     "name": "Bermuda",
@@ -4200,7 +4758,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "North America",
     "cca2": "bm",
     "cca3": "BMU",
-    "flag": "https://flagcdn.com/bm.svg"
+    "flag": "https://flagcdn.com/bm.svg",
+    "gdpPerCapita": 142855,
+    "gdpPerCapitaYear": 2024
   },
   "Bolivia": {
     "name": "Bolivia",
@@ -4215,7 +4775,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South America",
     "cca2": "bo",
     "cca3": "BOL",
-    "flag": "https://flagcdn.com/bo.svg"
+    "flag": "https://flagcdn.com/bo.svg",
+    "gdpPerCapita": 4421,
+    "gdpPerCapitaYear": 2024
   },
   "Caribbean Netherlands": {
     "name": "Caribbean Netherlands",
@@ -4230,7 +4792,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "bq",
     "cca3": "BES",
-    "flag": "https://flagcdn.com/bq.svg"
+    "flag": "https://flagcdn.com/bq.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Brazil": {
     "name": "Brazil",
@@ -4245,7 +4809,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South America",
     "cca2": "br",
     "cca3": "BRA",
-    "flag": "https://flagcdn.com/br.svg"
+    "flag": "https://flagcdn.com/br.svg",
+    "gdpPerCapita": 10311,
+    "gdpPerCapitaYear": 2024
   },
   "Barbados": {
     "name": "Barbados",
@@ -4260,7 +4826,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "bb",
     "cca3": "BRB",
-    "flag": "https://flagcdn.com/bb.svg"
+    "flag": "https://flagcdn.com/bb.svg",
+    "gdpPerCapita": 26545,
+    "gdpPerCapitaYear": 2024
   },
   "Brunei": {
     "name": "Brunei",
@@ -4275,7 +4843,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South-Eastern Asia",
     "cca2": "bn",
     "cca3": "BRN",
-    "flag": "https://flagcdn.com/bn.svg"
+    "flag": "https://flagcdn.com/bn.svg",
+    "gdpPerCapita": 33153,
+    "gdpPerCapitaYear": 2024
   },
   "Bhutan": {
     "name": "Bhutan",
@@ -4290,7 +4860,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Asia",
     "cca2": "bt",
     "cca3": "BTN",
-    "flag": "https://flagcdn.com/bt.svg"
+    "flag": "https://flagcdn.com/bt.svg",
+    "gdpPerCapita": 3831,
+    "gdpPerCapitaYear": 2023
   },
   "Bouvet Island": {
     "name": "Bouvet Island",
@@ -4305,7 +4877,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "",
     "cca2": "bv",
     "cca3": "BVT",
-    "flag": "https://flagcdn.com/bv.svg"
+    "flag": "https://flagcdn.com/bv.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Botswana": {
     "name": "Botswana",
@@ -4320,7 +4894,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Africa",
     "cca2": "bw",
     "cca3": "BWA",
-    "flag": "https://flagcdn.com/bw.svg"
+    "flag": "https://flagcdn.com/bw.svg",
+    "gdpPerCapita": 7696,
+    "gdpPerCapitaYear": 2024
   },
   "Central African Republic": {
     "name": "Central African Republic",
@@ -4335,7 +4911,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Middle Africa",
     "cca2": "cf",
     "cca3": "CAF",
-    "flag": "https://flagcdn.com/cf.svg"
+    "flag": "https://flagcdn.com/cf.svg",
+    "gdpPerCapita": 516,
+    "gdpPerCapitaYear": 2024
   },
   "Canada": {
     "name": "Canada",
@@ -4350,7 +4928,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "North America",
     "cca2": "ca",
     "cca3": "CAN",
-    "flag": "https://flagcdn.com/ca.svg"
+    "flag": "https://flagcdn.com/ca.svg",
+    "gdpPerCapita": 54340,
+    "gdpPerCapitaYear": 2024
   },
   "Cocos (Keeling) Islands": {
     "name": "Cocos (Keeling) Islands",
@@ -4365,7 +4945,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Australia and New Zealand",
     "cca2": "cc",
     "cca3": "CCK",
-    "flag": "https://flagcdn.com/cc.svg"
+    "flag": "https://flagcdn.com/cc.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Switzerland": {
     "name": "Switzerland",
@@ -4380,7 +4962,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Europe",
     "cca2": "ch",
     "cca3": "CHE",
-    "flag": "https://flagcdn.com/ch.svg"
+    "flag": "https://flagcdn.com/ch.svg",
+    "gdpPerCapita": 103998,
+    "gdpPerCapitaYear": 2024
   },
   "Chile": {
     "name": "Chile",
@@ -4395,7 +4979,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South America",
     "cca2": "cl",
     "cca3": "CHL",
-    "flag": "https://flagcdn.com/cl.svg"
+    "flag": "https://flagcdn.com/cl.svg",
+    "gdpPerCapita": 16710,
+    "gdpPerCapitaYear": 2024
   },
   "China": {
     "name": "China",
@@ -4410,7 +4996,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Asia",
     "cca2": "cn",
     "cca3": "CHN",
-    "flag": "https://flagcdn.com/cn.svg"
+    "flag": "https://flagcdn.com/cn.svg",
+    "gdpPerCapita": 13303,
+    "gdpPerCapitaYear": 2024
   },
   "Ivory Coast": {
     "name": "Ivory Coast",
@@ -4425,7 +5013,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Africa",
     "cca2": "ci",
     "cca3": "CIV",
-    "flag": "https://flagcdn.com/ci.svg"
+    "flag": "https://flagcdn.com/ci.svg",
+    "gdpPerCapita": 2728,
+    "gdpPerCapitaYear": 2024
   },
   "Cameroon": {
     "name": "Cameroon",
@@ -4440,7 +5030,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Middle Africa",
     "cca2": "cm",
     "cca3": "CMR",
-    "flag": "https://flagcdn.com/cm.svg"
+    "flag": "https://flagcdn.com/cm.svg",
+    "gdpPerCapita": 1830,
+    "gdpPerCapitaYear": 2024
   },
   "DR Congo": {
     "name": "DR Congo",
@@ -4455,7 +5047,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Middle Africa",
     "cca2": "cd",
     "cca3": "COD",
-    "flag": "https://flagcdn.com/cd.svg"
+    "flag": "https://flagcdn.com/cd.svg",
+    "gdpPerCapita": 649,
+    "gdpPerCapitaYear": 2024
   },
   "Congo": {
     "name": "Congo",
@@ -4470,7 +5064,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Middle Africa",
     "cca2": "cg",
     "cca3": "COG",
-    "flag": "https://flagcdn.com/cg.svg"
+    "flag": "https://flagcdn.com/cg.svg",
+    "gdpPerCapita": 2482,
+    "gdpPerCapitaYear": 2024
   },
   "Cook Islands": {
     "name": "Cook Islands",
@@ -4485,7 +5081,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Polynesia",
     "cca2": "ck",
     "cca3": "COK",
-    "flag": "https://flagcdn.com/ck.svg"
+    "flag": "https://flagcdn.com/ck.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Colombia": {
     "name": "Colombia",
@@ -4500,7 +5098,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South America",
     "cca2": "co",
     "cca3": "COL",
-    "flag": "https://flagcdn.com/co.svg"
+    "flag": "https://flagcdn.com/co.svg",
+    "gdpPerCapita": 7919,
+    "gdpPerCapitaYear": 2024
   },
   "Comoros": {
     "name": "Comoros",
@@ -4515,7 +5115,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "km",
     "cca3": "COM",
-    "flag": "https://flagcdn.com/km.svg"
+    "flag": "https://flagcdn.com/km.svg",
+    "gdpPerCapita": 1663,
+    "gdpPerCapitaYear": 2024
   },
   "Cape Verde": {
     "name": "Cape Verde",
@@ -4530,7 +5132,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Africa",
     "cca2": "cv",
     "cca3": "CPV",
-    "flag": "https://flagcdn.com/cv.svg"
+    "flag": "https://flagcdn.com/cv.svg",
+    "gdpPerCapita": 5192,
+    "gdpPerCapitaYear": 2024
   },
   "Costa Rica": {
     "name": "Costa Rica",
@@ -4545,7 +5149,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Central America",
     "cca2": "cr",
     "cca3": "CRI",
-    "flag": "https://flagcdn.com/cr.svg"
+    "flag": "https://flagcdn.com/cr.svg",
+    "gdpPerCapita": 18587,
+    "gdpPerCapitaYear": 2024
   },
   "Cuba": {
     "name": "Cuba",
@@ -4560,7 +5166,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "cu",
     "cca3": "CUB",
-    "flag": "https://flagcdn.com/cu.svg"
+    "flag": "https://flagcdn.com/cu.svg",
+    "gdpPerCapita": 9605,
+    "gdpPerCapitaYear": 2020
   },
   "Curaçao": {
     "name": "Curaçao",
@@ -4575,7 +5183,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "cw",
     "cca3": "CUW",
-    "flag": "https://flagcdn.com/cw.svg"
+    "flag": "https://flagcdn.com/cw.svg",
+    "gdpPerCapita": 22833,
+    "gdpPerCapitaYear": 2024
   },
   "Christmas Island": {
     "name": "Christmas Island",
@@ -4590,7 +5200,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Australia and New Zealand",
     "cca2": "cx",
     "cca3": "CXR",
-    "flag": "https://flagcdn.com/cx.svg"
+    "flag": "https://flagcdn.com/cx.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Cayman Islands": {
     "name": "Cayman Islands",
@@ -4605,7 +5217,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "ky",
     "cca3": "CYM",
-    "flag": "https://flagcdn.com/ky.svg"
+    "flag": "https://flagcdn.com/ky.svg",
+    "gdpPerCapita": 99144,
+    "gdpPerCapitaYear": 2023
   },
   "Cyprus": {
     "name": "Cyprus",
@@ -4620,7 +5234,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Europe",
     "cca2": "cy",
     "cca3": "CYP",
-    "flag": "https://flagcdn.com/cy.svg"
+    "flag": "https://flagcdn.com/cy.svg",
+    "gdpPerCapita": 38674,
+    "gdpPerCapitaYear": 2024
   },
   "Czechia": {
     "name": "Czechia",
@@ -4635,7 +5251,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Central Europe",
     "cca2": "cz",
     "cca3": "CZE",
-    "flag": "https://flagcdn.com/cz.svg"
+    "flag": "https://flagcdn.com/cz.svg",
+    "gdpPerCapita": 31823,
+    "gdpPerCapitaYear": 2024
   },
   "Germany": {
     "name": "Germany",
@@ -4650,7 +5268,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Europe",
     "cca2": "de",
     "cca3": "DEU",
-    "flag": "https://flagcdn.com/de.svg"
+    "flag": "https://flagcdn.com/de.svg",
+    "gdpPerCapita": 56104,
+    "gdpPerCapitaYear": 2024
   },
   "Djibouti": {
     "name": "Djibouti",
@@ -4665,7 +5285,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "dj",
     "cca3": "DJI",
-    "flag": "https://flagcdn.com/dj.svg"
+    "flag": "https://flagcdn.com/dj.svg",
+    "gdpPerCapita": 3553,
+    "gdpPerCapitaYear": 2024
   },
   "Dominica": {
     "name": "Dominica",
@@ -4680,7 +5302,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "dm",
     "cca3": "DMA",
-    "flag": "https://flagcdn.com/dm.svg"
+    "flag": "https://flagcdn.com/dm.svg",
+    "gdpPerCapita": 10405,
+    "gdpPerCapitaYear": 2024
   },
   "Denmark": {
     "name": "Denmark",
@@ -4695,7 +5319,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Europe",
     "cca2": "dk",
     "cca3": "DNK",
-    "flag": "https://flagcdn.com/dk.svg"
+    "flag": "https://flagcdn.com/dk.svg",
+    "gdpPerCapita": 71026,
+    "gdpPerCapitaYear": 2024
   },
   "Dominican Republic": {
     "name": "Dominican Republic",
@@ -4710,7 +5336,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "do",
     "cca3": "DOM",
-    "flag": "https://flagcdn.com/do.svg"
+    "flag": "https://flagcdn.com/do.svg",
+    "gdpPerCapita": 10876,
+    "gdpPerCapitaYear": 2024
   },
   "Algeria": {
     "name": "Algeria",
@@ -4725,7 +5353,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Africa",
     "cca2": "dz",
     "cca3": "DZA",
-    "flag": "https://flagcdn.com/dz.svg"
+    "flag": "https://flagcdn.com/dz.svg",
+    "gdpPerCapita": 5753,
+    "gdpPerCapitaYear": 2024
   },
   "Ecuador": {
     "name": "Ecuador",
@@ -4740,7 +5370,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South America",
     "cca2": "ec",
     "cca3": "ECU",
-    "flag": "https://flagcdn.com/ec.svg"
+    "flag": "https://flagcdn.com/ec.svg",
+    "gdpPerCapita": 6875,
+    "gdpPerCapitaYear": 2024
   },
   "Egypt": {
     "name": "Egypt",
@@ -4755,7 +5387,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Africa",
     "cca2": "eg",
     "cca3": "EGY",
-    "flag": "https://flagcdn.com/eg.svg"
+    "flag": "https://flagcdn.com/eg.svg",
+    "gdpPerCapita": 3338,
+    "gdpPerCapitaYear": 2024
   },
   "Eritrea": {
     "name": "Eritrea",
@@ -4770,7 +5404,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "er",
     "cca3": "ERI",
-    "flag": "https://flagcdn.com/er.svg"
+    "flag": "https://flagcdn.com/er.svg",
+    "gdpPerCapita": 689,
+    "gdpPerCapitaYear": 2011
   },
   "Western Sahara": {
     "name": "Western Sahara",
@@ -4785,7 +5421,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Africa",
     "cca2": "eh",
     "cca3": "ESH",
-    "flag": "https://flagcdn.com/eh.svg"
+    "flag": "https://flagcdn.com/eh.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Spain": {
     "name": "Spain",
@@ -4800,7 +5438,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Europe",
     "cca2": "es",
     "cca3": "ESP",
-    "flag": "https://flagcdn.com/es.svg"
+    "flag": "https://flagcdn.com/es.svg",
+    "gdpPerCapita": 35327,
+    "gdpPerCapitaYear": 2024
   },
   "Estonia": {
     "name": "Estonia",
@@ -4815,7 +5455,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Europe",
     "cca2": "ee",
     "cca3": "EST",
-    "flag": "https://flagcdn.com/ee.svg"
+    "flag": "https://flagcdn.com/ee.svg",
+    "gdpPerCapita": 31428,
+    "gdpPerCapitaYear": 2024
   },
   "Ethiopia": {
     "name": "Ethiopia",
@@ -4830,7 +5472,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "et",
     "cca3": "ETH",
-    "flag": "https://flagcdn.com/et.svg"
+    "flag": "https://flagcdn.com/et.svg",
+    "gdpPerCapita": 1134,
+    "gdpPerCapitaYear": 2024
   },
   "Finland": {
     "name": "Finland",
@@ -4845,7 +5489,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Europe",
     "cca2": "fi",
     "cca3": "FIN",
-    "flag": "https://flagcdn.com/fi.svg"
+    "flag": "https://flagcdn.com/fi.svg",
+    "gdpPerCapita": 53150,
+    "gdpPerCapitaYear": 2024
   },
   "Fiji": {
     "name": "Fiji",
@@ -4860,7 +5506,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Melanesia",
     "cca2": "fj",
     "cca3": "FJI",
-    "flag": "https://flagcdn.com/fj.svg"
+    "flag": "https://flagcdn.com/fj.svg",
+    "gdpPerCapita": 6426,
+    "gdpPerCapitaYear": 2024
   },
   "Falkland Islands": {
     "name": "Falkland Islands",
@@ -4875,7 +5523,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South America",
     "cca2": "fk",
     "cca3": "FLK",
-    "flag": "https://flagcdn.com/fk.svg"
+    "flag": "https://flagcdn.com/fk.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "France": {
     "name": "France",
@@ -4890,7 +5540,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Europe",
     "cca2": "fr",
     "cca3": "FRA",
-    "flag": "https://flagcdn.com/fr.svg"
+    "flag": "https://flagcdn.com/fr.svg",
+    "gdpPerCapita": 46103,
+    "gdpPerCapitaYear": 2024
   },
   "Faroe Islands": {
     "name": "Faroe Islands",
@@ -4905,7 +5557,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Europe",
     "cca2": "fo",
     "cca3": "FRO",
-    "flag": "https://flagcdn.com/fo.svg"
+    "flag": "https://flagcdn.com/fo.svg",
+    "gdpPerCapita": 74120,
+    "gdpPerCapitaYear": 2024
   },
   "Micronesia": {
     "name": "Micronesia",
@@ -4920,7 +5574,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Micronesia",
     "cca2": "fm",
     "cca3": "FSM",
-    "flag": "https://flagcdn.com/fm.svg"
+    "flag": "https://flagcdn.com/fm.svg",
+    "gdpPerCapita": 4166,
+    "gdpPerCapitaYear": 2024
   },
   "Gabon": {
     "name": "Gabon",
@@ -4935,7 +5591,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Middle Africa",
     "cca2": "ga",
     "cca3": "GAB",
-    "flag": "https://flagcdn.com/ga.svg"
+    "flag": "https://flagcdn.com/ga.svg",
+    "gdpPerCapita": 8230,
+    "gdpPerCapitaYear": 2024
   },
   "United Kingdom": {
     "name": "United Kingdom",
@@ -4950,7 +5608,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Europe",
     "cca2": "gb",
     "cca3": "GBR",
-    "flag": "https://flagcdn.com/gb.svg"
+    "flag": "https://flagcdn.com/gb.svg",
+    "gdpPerCapita": 53246,
+    "gdpPerCapitaYear": 2024
   },
   "Georgia": {
     "name": "Georgia",
@@ -4965,7 +5625,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Asia",
     "cca2": "ge",
     "cca3": "GEO",
-    "flag": "https://flagcdn.com/ge.svg"
+    "flag": "https://flagcdn.com/ge.svg",
+    "gdpPerCapita": 9241,
+    "gdpPerCapitaYear": 2024
   },
   "Guernsey": {
     "name": "Guernsey",
@@ -4980,7 +5642,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Europe",
     "cca2": "gg",
     "cca3": "GGY",
-    "flag": "https://flagcdn.com/gg.svg"
+    "flag": "https://flagcdn.com/gg.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Ghana": {
     "name": "Ghana",
@@ -4995,7 +5659,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Africa",
     "cca2": "gh",
     "cca3": "GHA",
-    "flag": "https://flagcdn.com/gh.svg"
+    "flag": "https://flagcdn.com/gh.svg",
+    "gdpPerCapita": 2391,
+    "gdpPerCapitaYear": 2024
   },
   "Gibraltar": {
     "name": "Gibraltar",
@@ -5010,7 +5676,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Europe",
     "cca2": "gi",
     "cca3": "GIB",
-    "flag": "https://flagcdn.com/gi.svg"
+    "flag": "https://flagcdn.com/gi.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Guinea": {
     "name": "Guinea",
@@ -5025,7 +5693,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Africa",
     "cca2": "gn",
     "cca3": "GIN",
-    "flag": "https://flagcdn.com/gn.svg"
+    "flag": "https://flagcdn.com/gn.svg",
+    "gdpPerCapita": 1695,
+    "gdpPerCapitaYear": 2024
   },
   "Guadeloupe": {
     "name": "Guadeloupe",
@@ -5040,7 +5710,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "gp",
     "cca3": "GLP",
-    "flag": "https://flagcdn.com/gp.svg"
+    "flag": "https://flagcdn.com/gp.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Gambia": {
     "name": "Gambia",
@@ -5055,7 +5727,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Africa",
     "cca2": "gm",
     "cca3": "GMB",
-    "flag": "https://flagcdn.com/gm.svg"
+    "flag": "https://flagcdn.com/gm.svg",
+    "gdpPerCapita": 871,
+    "gdpPerCapitaYear": 2024
   },
   "Guinea-Bissau": {
     "name": "Guinea-Bissau",
@@ -5070,7 +5744,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Africa",
     "cca2": "gw",
     "cca3": "GNB",
-    "flag": "https://flagcdn.com/gw.svg"
+    "flag": "https://flagcdn.com/gw.svg",
+    "gdpPerCapita": 1008,
+    "gdpPerCapitaYear": 2024
   },
   "Equatorial Guinea": {
     "name": "Equatorial Guinea",
@@ -5085,7 +5761,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Middle Africa",
     "cca2": "gq",
     "cca3": "GNQ",
-    "flag": "https://flagcdn.com/gq.svg"
+    "flag": "https://flagcdn.com/gq.svg",
+    "gdpPerCapita": 6745,
+    "gdpPerCapitaYear": 2024
   },
   "Greece": {
     "name": "Greece",
@@ -5100,7 +5778,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Europe",
     "cca2": "gr",
     "cca3": "GRC",
-    "flag": "https://flagcdn.com/gr.svg"
+    "flag": "https://flagcdn.com/gr.svg",
+    "gdpPerCapita": 24626,
+    "gdpPerCapitaYear": 2024
   },
   "Grenada": {
     "name": "Grenada",
@@ -5115,7 +5795,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "gd",
     "cca3": "GRD",
-    "flag": "https://flagcdn.com/gd.svg"
+    "flag": "https://flagcdn.com/gd.svg",
+    "gdpPerCapita": 11705,
+    "gdpPerCapitaYear": 2024
   },
   "Greenland": {
     "name": "Greenland",
@@ -5130,7 +5812,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "North America",
     "cca2": "gl",
     "cca3": "GRL",
-    "flag": "https://flagcdn.com/gl.svg"
+    "flag": "https://flagcdn.com/gl.svg",
+    "gdpPerCapita": 58499,
+    "gdpPerCapitaYear": 2023
   },
   "Guatemala": {
     "name": "Guatemala",
@@ -5145,7 +5829,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Central America",
     "cca2": "gt",
     "cca3": "GTM",
-    "flag": "https://flagcdn.com/gt.svg"
+    "flag": "https://flagcdn.com/gt.svg",
+    "gdpPerCapita": 6150,
+    "gdpPerCapitaYear": 2024
   },
   "French Guiana": {
     "name": "French Guiana",
@@ -5160,7 +5846,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South America",
     "cca2": "gf",
     "cca3": "GUF",
-    "flag": "https://flagcdn.com/gf.svg"
+    "flag": "https://flagcdn.com/gf.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Guam": {
     "name": "Guam",
@@ -5175,7 +5863,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Micronesia",
     "cca2": "gu",
     "cca3": "GUM",
-    "flag": "https://flagcdn.com/gu.svg"
+    "flag": "https://flagcdn.com/gu.svg",
+    "gdpPerCapita": 41833,
+    "gdpPerCapitaYear": 2022
   },
   "Guyana": {
     "name": "Guyana",
@@ -5190,7 +5880,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South America",
     "cca2": "gy",
     "cca3": "GUY",
-    "flag": "https://flagcdn.com/gy.svg"
+    "flag": "https://flagcdn.com/gy.svg",
+    "gdpPerCapita": 29675,
+    "gdpPerCapitaYear": 2024
   },
   "Hong Kong": {
     "name": "Hong Kong",
@@ -5205,7 +5897,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Asia",
     "cca2": "hk",
     "cca3": "HKG",
-    "flag": "https://flagcdn.com/hk.svg"
+    "flag": "https://flagcdn.com/hk.svg",
+    "gdpPerCapita": 54075,
+    "gdpPerCapitaYear": 2024
   },
   "Heard Island and McDonald Islands": {
     "name": "Heard Island and McDonald Islands",
@@ -5220,7 +5914,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "",
     "cca2": "hm",
     "cca3": "HMD",
-    "flag": "https://flagcdn.com/hm.svg"
+    "flag": "https://flagcdn.com/hm.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Honduras": {
     "name": "Honduras",
@@ -5235,7 +5931,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Central America",
     "cca2": "hn",
     "cca3": "HND",
-    "flag": "https://flagcdn.com/hn.svg"
+    "flag": "https://flagcdn.com/hn.svg",
+    "gdpPerCapita": 3426,
+    "gdpPerCapitaYear": 2024
   },
   "Croatia": {
     "name": "Croatia",
@@ -5250,7 +5948,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southeast Europe",
     "cca2": "hr",
     "cca3": "HRV",
-    "flag": "https://flagcdn.com/hr.svg"
+    "flag": "https://flagcdn.com/hr.svg",
+    "gdpPerCapita": 24050,
+    "gdpPerCapitaYear": 2024
   },
   "Haiti": {
     "name": "Haiti",
@@ -5265,7 +5965,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "ht",
     "cca3": "HTI",
-    "flag": "https://flagcdn.com/ht.svg"
+    "flag": "https://flagcdn.com/ht.svg",
+    "gdpPerCapita": 2143,
+    "gdpPerCapitaYear": 2024
   },
   "Hungary": {
     "name": "Hungary",
@@ -5280,7 +5982,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Central Europe",
     "cca2": "hu",
     "cca3": "HUN",
-    "flag": "https://flagcdn.com/hu.svg"
+    "flag": "https://flagcdn.com/hu.svg",
+    "gdpPerCapita": 23292,
+    "gdpPerCapitaYear": 2024
   },
   "Indonesia": {
     "name": "Indonesia",
@@ -5295,7 +5999,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South-Eastern Asia",
     "cca2": "id",
     "cca3": "IDN",
-    "flag": "https://flagcdn.com/id.svg"
+    "flag": "https://flagcdn.com/id.svg",
+    "gdpPerCapita": 4925,
+    "gdpPerCapitaYear": 2024
   },
   "Isle of Man": {
     "name": "Isle of Man",
@@ -5310,7 +6016,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Europe",
     "cca2": "im",
     "cca3": "IMN",
-    "flag": "https://flagcdn.com/im.svg"
+    "flag": "https://flagcdn.com/im.svg",
+    "gdpPerCapita": 88329,
+    "gdpPerCapitaYear": 2022
   },
   "India": {
     "name": "India",
@@ -5325,7 +6033,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Asia",
     "cca2": "in",
     "cca3": "IND",
-    "flag": "https://flagcdn.com/in.svg"
+    "flag": "https://flagcdn.com/in.svg",
+    "gdpPerCapita": 2695,
+    "gdpPerCapitaYear": 2024
   },
   "British Indian Ocean Territory": {
     "name": "British Indian Ocean Territory",
@@ -5340,7 +6050,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "io",
     "cca3": "IOT",
-    "flag": "https://flagcdn.com/io.svg"
+    "flag": "https://flagcdn.com/io.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Ireland": {
     "name": "Ireland",
@@ -5355,7 +6067,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Europe",
     "cca2": "ie",
     "cca3": "IRL",
-    "flag": "https://flagcdn.com/ie.svg"
+    "flag": "https://flagcdn.com/ie.svg",
+    "gdpPerCapita": 112895,
+    "gdpPerCapitaYear": 2024
   },
   "Iran": {
     "name": "Iran",
@@ -5370,7 +6084,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Asia",
     "cca2": "ir",
     "cca3": "IRN",
-    "flag": "https://flagcdn.com/ir.svg"
+    "flag": "https://flagcdn.com/ir.svg",
+    "gdpPerCapita": 5190,
+    "gdpPerCapitaYear": 2024
   },
   "Iraq": {
     "name": "Iraq",
@@ -5385,7 +6101,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Asia",
     "cca2": "iq",
     "cca3": "IRQ",
-    "flag": "https://flagcdn.com/iq.svg"
+    "flag": "https://flagcdn.com/iq.svg",
+    "gdpPerCapita": 6074,
+    "gdpPerCapitaYear": 2024
   },
   "Iceland": {
     "name": "Iceland",
@@ -5400,7 +6118,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Europe",
     "cca2": "is",
     "cca3": "ISL",
-    "flag": "https://flagcdn.com/is.svg"
+    "flag": "https://flagcdn.com/is.svg",
+    "gdpPerCapita": 86041,
+    "gdpPerCapitaYear": 2024
   },
   "Israel": {
     "name": "Israel",
@@ -5415,7 +6135,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Asia",
     "cca2": "il",
     "cca3": "ISR",
-    "flag": "https://flagcdn.com/il.svg"
+    "flag": "https://flagcdn.com/il.svg",
+    "gdpPerCapita": 54177,
+    "gdpPerCapitaYear": 2024
   },
   "Italy": {
     "name": "Italy",
@@ -5430,7 +6152,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Europe",
     "cca2": "it",
     "cca3": "ITA",
-    "flag": "https://flagcdn.com/it.svg"
+    "flag": "https://flagcdn.com/it.svg",
+    "gdpPerCapita": 40385,
+    "gdpPerCapitaYear": 2024
   },
   "Jamaica": {
     "name": "Jamaica",
@@ -5445,7 +6169,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "jm",
     "cca3": "JAM",
-    "flag": "https://flagcdn.com/jm.svg"
+    "flag": "https://flagcdn.com/jm.svg",
+    "gdpPerCapita": 7754,
+    "gdpPerCapitaYear": 2024
   },
   "Jersey": {
     "name": "Jersey",
@@ -5460,7 +6186,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Europe",
     "cca2": "je",
     "cca3": "JEY",
-    "flag": "https://flagcdn.com/je.svg"
+    "flag": "https://flagcdn.com/je.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Jordan": {
     "name": "Jordan",
@@ -5475,7 +6203,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Asia",
     "cca2": "jo",
     "cca3": "JOR",
-    "flag": "https://flagcdn.com/jo.svg"
+    "flag": "https://flagcdn.com/jo.svg",
+    "gdpPerCapita": 4618,
+    "gdpPerCapitaYear": 2024
   },
   "Japan": {
     "name": "Japan",
@@ -5490,7 +6220,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Asia",
     "cca2": "jp",
     "cca3": "JPN",
-    "flag": "https://flagcdn.com/jp.svg"
+    "flag": "https://flagcdn.com/jp.svg",
+    "gdpPerCapita": 32487,
+    "gdpPerCapitaYear": 2024
   },
   "Kazakhstan": {
     "name": "Kazakhstan",
@@ -5505,7 +6237,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Central Asia",
     "cca2": "kz",
     "cca3": "KAZ",
-    "flag": "https://flagcdn.com/kz.svg"
+    "flag": "https://flagcdn.com/kz.svg",
+    "gdpPerCapita": 14155,
+    "gdpPerCapitaYear": 2024
   },
   "Kenya": {
     "name": "Kenya",
@@ -5520,7 +6254,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "ke",
     "cca3": "KEN",
-    "flag": "https://flagcdn.com/ke.svg"
+    "flag": "https://flagcdn.com/ke.svg",
+    "gdpPerCapita": 2132,
+    "gdpPerCapitaYear": 2024
   },
   "Kyrgyzstan": {
     "name": "Kyrgyzstan",
@@ -5535,7 +6271,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Central Asia",
     "cca2": "kg",
     "cca3": "KGZ",
-    "flag": "https://flagcdn.com/kg.svg"
+    "flag": "https://flagcdn.com/kg.svg",
+    "gdpPerCapita": 2420,
+    "gdpPerCapitaYear": 2024
   },
   "Cambodia": {
     "name": "Cambodia",
@@ -5550,7 +6288,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South-Eastern Asia",
     "cca2": "kh",
     "cca3": "KHM",
-    "flag": "https://flagcdn.com/kh.svg"
+    "flag": "https://flagcdn.com/kh.svg",
+    "gdpPerCapita": 2628,
+    "gdpPerCapitaYear": 2024
   },
   "Kiribati": {
     "name": "Kiribati",
@@ -5565,7 +6305,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Micronesia",
     "cca2": "ki",
     "cca3": "KIR",
-    "flag": "https://flagcdn.com/ki.svg"
+    "flag": "https://flagcdn.com/ki.svg",
+    "gdpPerCapita": 2289,
+    "gdpPerCapitaYear": 2024
   },
   "Saint Kitts and Nevis": {
     "name": "Saint Kitts and Nevis",
@@ -5580,7 +6322,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "kn",
     "cca3": "KNA",
-    "flag": "https://flagcdn.com/kn.svg"
+    "flag": "https://flagcdn.com/kn.svg",
+    "gdpPerCapita": 23961,
+    "gdpPerCapitaYear": 2024
   },
   "South Korea": {
     "name": "South Korea",
@@ -5595,7 +6339,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Asia",
     "cca2": "kr",
     "cca3": "KOR",
-    "flag": "https://flagcdn.com/kr.svg"
+    "flag": "https://flagcdn.com/kr.svg",
+    "gdpPerCapita": 36239,
+    "gdpPerCapitaYear": 2024
   },
   "Kosovo": {
     "name": "Kosovo",
@@ -5610,7 +6356,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southeast Europe",
     "cca2": "xk",
     "cca3": "UNK",
-    "flag": "https://flagcdn.com/xk.svg"
+    "flag": "https://flagcdn.com/xk.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Kuwait": {
     "name": "Kuwait",
@@ -5625,7 +6373,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Asia",
     "cca2": "kw",
     "cca3": "KWT",
-    "flag": "https://flagcdn.com/kw.svg"
+    "flag": "https://flagcdn.com/kw.svg",
+    "gdpPerCapita": 32718,
+    "gdpPerCapitaYear": 2024
   },
   "Laos": {
     "name": "Laos",
@@ -5640,7 +6390,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South-Eastern Asia",
     "cca2": "la",
     "cca3": "LAO",
-    "flag": "https://flagcdn.com/la.svg"
+    "flag": "https://flagcdn.com/la.svg",
+    "gdpPerCapita": 2124,
+    "gdpPerCapitaYear": 2024
   },
   "Lebanon": {
     "name": "Lebanon",
@@ -5655,7 +6407,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Asia",
     "cca2": "lb",
     "cca3": "LBN",
-    "flag": "https://flagcdn.com/lb.svg"
+    "flag": "https://flagcdn.com/lb.svg",
+    "gdpPerCapita": 3478,
+    "gdpPerCapitaYear": 2023
   },
   "Liberia": {
     "name": "Liberia",
@@ -5670,7 +6424,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Africa",
     "cca2": "lr",
     "cca3": "LBR",
-    "flag": "https://flagcdn.com/lr.svg"
+    "flag": "https://flagcdn.com/lr.svg",
+    "gdpPerCapita": 851,
+    "gdpPerCapitaYear": 2024
   },
   "Libya": {
     "name": "Libya",
@@ -5685,7 +6441,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Africa",
     "cca2": "ly",
     "cca3": "LBY",
-    "flag": "https://flagcdn.com/ly.svg"
+    "flag": "https://flagcdn.com/ly.svg",
+    "gdpPerCapita": 6569,
+    "gdpPerCapitaYear": 2024
   },
   "Saint Lucia": {
     "name": "Saint Lucia",
@@ -5700,7 +6458,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "lc",
     "cca3": "LCA",
-    "flag": "https://flagcdn.com/lc.svg"
+    "flag": "https://flagcdn.com/lc.svg",
+    "gdpPerCapita": 14182,
+    "gdpPerCapitaYear": 2024
   },
   "Liechtenstein": {
     "name": "Liechtenstein",
@@ -5715,7 +6475,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Europe",
     "cca2": "li",
     "cca3": "LIE",
-    "flag": "https://flagcdn.com/li.svg"
+    "flag": "https://flagcdn.com/li.svg",
+    "gdpPerCapita": 206781,
+    "gdpPerCapitaYear": 2023
   },
   "Sri Lanka": {
     "name": "Sri Lanka",
@@ -5730,7 +6492,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Asia",
     "cca2": "lk",
     "cca3": "LKA",
-    "flag": "https://flagcdn.com/lk.svg"
+    "flag": "https://flagcdn.com/lk.svg",
+    "gdpPerCapita": 4516,
+    "gdpPerCapitaYear": 2024
   },
   "Lesotho": {
     "name": "Lesotho",
@@ -5745,7 +6509,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Africa",
     "cca2": "ls",
     "cca3": "LSO",
-    "flag": "https://flagcdn.com/ls.svg"
+    "flag": "https://flagcdn.com/ls.svg",
+    "gdpPerCapita": 972,
+    "gdpPerCapitaYear": 2024
   },
   "Lithuania": {
     "name": "Lithuania",
@@ -5760,7 +6526,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Europe",
     "cca2": "lt",
     "cca3": "LTU",
-    "flag": "https://flagcdn.com/lt.svg"
+    "flag": "https://flagcdn.com/lt.svg",
+    "gdpPerCapita": 29384,
+    "gdpPerCapitaYear": 2024
   },
   "Luxembourg": {
     "name": "Luxembourg",
@@ -5775,7 +6543,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Europe",
     "cca2": "lu",
     "cca3": "LUX",
-    "flag": "https://flagcdn.com/lu.svg"
+    "flag": "https://flagcdn.com/lu.svg",
+    "gdpPerCapita": 137782,
+    "gdpPerCapitaYear": 2024
   },
   "Latvia": {
     "name": "Latvia",
@@ -5790,7 +6560,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Europe",
     "cca2": "lv",
     "cca3": "LVA",
-    "flag": "https://flagcdn.com/lv.svg"
+    "flag": "https://flagcdn.com/lv.svg",
+    "gdpPerCapita": 23409,
+    "gdpPerCapitaYear": 2024
   },
   "Macau": {
     "name": "Macau",
@@ -5805,7 +6577,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Asia",
     "cca2": "mo",
     "cca3": "MAC",
-    "flag": "https://flagcdn.com/mo.svg"
+    "flag": "https://flagcdn.com/mo.svg",
+    "gdpPerCapita": 72005,
+    "gdpPerCapitaYear": 2024
   },
   "Saint Martin": {
     "name": "Saint Martin",
@@ -5820,7 +6594,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "mf",
     "cca3": "MAF",
-    "flag": "https://flagcdn.com/mf.svg"
+    "flag": "https://flagcdn.com/mf.svg",
+    "gdpPerCapita": 21668,
+    "gdpPerCapitaYear": 2021
   },
   "Morocco": {
     "name": "Morocco",
@@ -5835,7 +6611,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Africa",
     "cca2": "ma",
     "cca3": "MAR",
-    "flag": "https://flagcdn.com/ma.svg"
+    "flag": "https://flagcdn.com/ma.svg",
+    "gdpPerCapita": 4153,
+    "gdpPerCapitaYear": 2024
   },
   "Monaco": {
     "name": "Monaco",
@@ -5850,7 +6628,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Europe",
     "cca2": "mc",
     "cca3": "MCO",
-    "flag": "https://flagcdn.com/mc.svg"
+    "flag": "https://flagcdn.com/mc.svg",
+    "gdpPerCapita": 288001,
+    "gdpPerCapitaYear": 2024
   },
   "Moldova": {
     "name": "Moldova",
@@ -5865,7 +6645,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Europe",
     "cca2": "md",
     "cca3": "MDA",
-    "flag": "https://flagcdn.com/md.svg"
+    "flag": "https://flagcdn.com/md.svg",
+    "gdpPerCapita": 7576,
+    "gdpPerCapitaYear": 2024
   },
   "Madagascar": {
     "name": "Madagascar",
@@ -5880,7 +6662,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "mg",
     "cca3": "MDG",
-    "flag": "https://flagcdn.com/mg.svg"
+    "flag": "https://flagcdn.com/mg.svg",
+    "gdpPerCapita": 545,
+    "gdpPerCapitaYear": 2024
   },
   "Maldives": {
     "name": "Maldives",
@@ -5895,7 +6679,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Asia",
     "cca2": "mv",
     "cca3": "MDV",
-    "flag": "https://flagcdn.com/mv.svg"
+    "flag": "https://flagcdn.com/mv.svg",
+    "gdpPerCapita": 13379,
+    "gdpPerCapitaYear": 2024
   },
   "Mexico": {
     "name": "Mexico",
@@ -5910,7 +6696,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "North America",
     "cca2": "mx",
     "cca3": "MEX",
-    "flag": "https://flagcdn.com/mx.svg"
+    "flag": "https://flagcdn.com/mx.svg",
+    "gdpPerCapita": 14186,
+    "gdpPerCapitaYear": 2024
   },
   "Marshall Islands": {
     "name": "Marshall Islands",
@@ -5925,7 +6713,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Micronesia",
     "cca2": "mh",
     "cca3": "MHL",
-    "flag": "https://flagcdn.com/mh.svg"
+    "flag": "https://flagcdn.com/mh.svg",
+    "gdpPerCapita": 7726,
+    "gdpPerCapitaYear": 2024
   },
   "North Macedonia": {
     "name": "North Macedonia",
@@ -5940,7 +6730,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southeast Europe",
     "cca2": "mk",
     "cca3": "MKD",
-    "flag": "https://flagcdn.com/mk.svg"
+    "flag": "https://flagcdn.com/mk.svg",
+    "gdpPerCapita": 9292,
+    "gdpPerCapitaYear": 2024
   },
   "Mali": {
     "name": "Mali",
@@ -5955,7 +6747,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Africa",
     "cca2": "ml",
     "cca3": "MLI",
-    "flag": "https://flagcdn.com/ml.svg"
+    "flag": "https://flagcdn.com/ml.svg",
+    "gdpPerCapita": 1095,
+    "gdpPerCapitaYear": 2024
   },
   "Malta": {
     "name": "Malta",
@@ -5970,7 +6764,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Europe",
     "cca2": "mt",
     "cca3": "MLT",
-    "flag": "https://flagcdn.com/mt.svg"
+    "flag": "https://flagcdn.com/mt.svg",
+    "gdpPerCapita": 43899,
+    "gdpPerCapitaYear": 2024
   },
   "Myanmar": {
     "name": "Myanmar",
@@ -5985,7 +6781,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South-Eastern Asia",
     "cca2": "mm",
     "cca3": "MMR",
-    "flag": "https://flagcdn.com/mm.svg"
+    "flag": "https://flagcdn.com/mm.svg",
+    "gdpPerCapita": 1359,
+    "gdpPerCapitaYear": 2024
   },
   "Montenegro": {
     "name": "Montenegro",
@@ -6000,7 +6798,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southeast Europe",
     "cca2": "me",
     "cca3": "MNE",
-    "flag": "https://flagcdn.com/me.svg"
+    "flag": "https://flagcdn.com/me.svg",
+    "gdpPerCapita": 13263,
+    "gdpPerCapitaYear": 2024
   },
   "Mongolia": {
     "name": "Mongolia",
@@ -6015,7 +6815,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Asia",
     "cca2": "mn",
     "cca3": "MNG",
-    "flag": "https://flagcdn.com/mn.svg"
+    "flag": "https://flagcdn.com/mn.svg",
+    "gdpPerCapita": 6751,
+    "gdpPerCapitaYear": 2024
   },
   "Northern Mariana Islands": {
     "name": "Northern Mariana Islands",
@@ -6030,7 +6832,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Micronesia",
     "cca2": "mp",
     "cca3": "MNP",
-    "flag": "https://flagcdn.com/mp.svg"
+    "flag": "https://flagcdn.com/mp.svg",
+    "gdpPerCapita": 23786,
+    "gdpPerCapitaYear": 2022
   },
   "Mozambique": {
     "name": "Mozambique",
@@ -6045,7 +6849,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "mz",
     "cca3": "MOZ",
-    "flag": "https://flagcdn.com/mz.svg"
+    "flag": "https://flagcdn.com/mz.svg",
+    "gdpPerCapita": 657,
+    "gdpPerCapitaYear": 2024
   },
   "Mauritania": {
     "name": "Mauritania",
@@ -6060,7 +6866,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Africa",
     "cca2": "mr",
     "cca3": "MRT",
-    "flag": "https://flagcdn.com/mr.svg"
+    "flag": "https://flagcdn.com/mr.svg",
+    "gdpPerCapita": 2110,
+    "gdpPerCapitaYear": 2024
   },
   "Montserrat": {
     "name": "Montserrat",
@@ -6075,7 +6883,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "ms",
     "cca3": "MSR",
-    "flag": "https://flagcdn.com/ms.svg"
+    "flag": "https://flagcdn.com/ms.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Martinique": {
     "name": "Martinique",
@@ -6090,7 +6900,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "mq",
     "cca3": "MTQ",
-    "flag": "https://flagcdn.com/mq.svg"
+    "flag": "https://flagcdn.com/mq.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Mauritius": {
     "name": "Mauritius",
@@ -6105,7 +6917,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "mu",
     "cca3": "MUS",
-    "flag": "https://flagcdn.com/mu.svg"
+    "flag": "https://flagcdn.com/mu.svg",
+    "gdpPerCapita": 11991,
+    "gdpPerCapitaYear": 2024
   },
   "Malawi": {
     "name": "Malawi",
@@ -6120,7 +6934,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "mw",
     "cca3": "MWI",
-    "flag": "https://flagcdn.com/mw.svg"
+    "flag": "https://flagcdn.com/mw.svg",
+    "gdpPerCapita": 523,
+    "gdpPerCapitaYear": 2024
   },
   "Malaysia": {
     "name": "Malaysia",
@@ -6135,7 +6951,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South-Eastern Asia",
     "cca2": "my",
     "cca3": "MYS",
-    "flag": "https://flagcdn.com/my.svg"
+    "flag": "https://flagcdn.com/my.svg",
+    "gdpPerCapita": 11874,
+    "gdpPerCapitaYear": 2024
   },
   "Mayotte": {
     "name": "Mayotte",
@@ -6150,7 +6968,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "yt",
     "cca3": "MYT",
-    "flag": "https://flagcdn.com/yt.svg"
+    "flag": "https://flagcdn.com/yt.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Namibia": {
     "name": "Namibia",
@@ -6165,7 +6985,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Africa",
     "cca2": "na",
     "cca3": "NAM",
-    "flag": "https://flagcdn.com/na.svg"
+    "flag": "https://flagcdn.com/na.svg",
+    "gdpPerCapita": 4413,
+    "gdpPerCapitaYear": 2024
   },
   "New Caledonia": {
     "name": "New Caledonia",
@@ -6180,7 +7002,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Melanesia",
     "cca2": "nc",
     "cca3": "NCL",
-    "flag": "https://flagcdn.com/nc.svg"
+    "flag": "https://flagcdn.com/nc.svg",
+    "gdpPerCapita": 29213,
+    "gdpPerCapitaYear": 2024
   },
   "Niger": {
     "name": "Niger",
@@ -6195,7 +7019,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Africa",
     "cca2": "ne",
     "cca3": "NER",
-    "flag": "https://flagcdn.com/ne.svg"
+    "flag": "https://flagcdn.com/ne.svg",
+    "gdpPerCapita": 735,
+    "gdpPerCapitaYear": 2024
   },
   "Norfolk Island": {
     "name": "Norfolk Island",
@@ -6210,7 +7036,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Australia and New Zealand",
     "cca2": "nf",
     "cca3": "NFK",
-    "flag": "https://flagcdn.com/nf.svg"
+    "flag": "https://flagcdn.com/nf.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Nigeria": {
     "name": "Nigeria",
@@ -6225,7 +7053,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Africa",
     "cca2": "ng",
     "cca3": "NGA",
-    "flag": "https://flagcdn.com/ng.svg"
+    "flag": "https://flagcdn.com/ng.svg",
+    "gdpPerCapita": 1084,
+    "gdpPerCapitaYear": 2024
   },
   "Nicaragua": {
     "name": "Nicaragua",
@@ -6240,7 +7070,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Central America",
     "cca2": "ni",
     "cca3": "NIC",
-    "flag": "https://flagcdn.com/ni.svg"
+    "flag": "https://flagcdn.com/ni.svg",
+    "gdpPerCapita": 2848,
+    "gdpPerCapitaYear": 2024
   },
   "Niue": {
     "name": "Niue",
@@ -6255,7 +7087,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Polynesia",
     "cca2": "nu",
     "cca3": "NIU",
-    "flag": "https://flagcdn.com/nu.svg"
+    "flag": "https://flagcdn.com/nu.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Netherlands": {
     "name": "Netherlands",
@@ -6270,7 +7104,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Europe",
     "cca2": "nl",
     "cca3": "NLD",
-    "flag": "https://flagcdn.com/nl.svg"
+    "flag": "https://flagcdn.com/nl.svg",
+    "gdpPerCapita": 67520,
+    "gdpPerCapitaYear": 2024
   },
   "Norway": {
     "name": "Norway",
@@ -6285,7 +7121,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Europe",
     "cca2": "no",
     "cca3": "NOR",
-    "flag": "https://flagcdn.com/no.svg"
+    "flag": "https://flagcdn.com/no.svg",
+    "gdpPerCapita": 86785,
+    "gdpPerCapitaYear": 2024
   },
   "Nepal": {
     "name": "Nepal",
@@ -6300,7 +7138,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Asia",
     "cca2": "np",
     "cca3": "NPL",
-    "flag": "https://flagcdn.com/np.svg"
+    "flag": "https://flagcdn.com/np.svg",
+    "gdpPerCapita": 1447,
+    "gdpPerCapitaYear": 2024
   },
   "Nauru": {
     "name": "Nauru",
@@ -6315,7 +7155,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Micronesia",
     "cca2": "nr",
     "cca3": "NRU",
-    "flag": "https://flagcdn.com/nr.svg"
+    "flag": "https://flagcdn.com/nr.svg",
+    "gdpPerCapita": 13609,
+    "gdpPerCapitaYear": 2024
   },
   "New Zealand": {
     "name": "New Zealand",
@@ -6330,7 +7172,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Australia and New Zealand",
     "cca2": "nz",
     "cca3": "NZL",
-    "flag": "https://flagcdn.com/nz.svg"
+    "flag": "https://flagcdn.com/nz.svg",
+    "gdpPerCapita": 49205,
+    "gdpPerCapitaYear": 2024
   },
   "Oman": {
     "name": "Oman",
@@ -6345,7 +7189,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Asia",
     "cca2": "om",
     "cca3": "OMN",
-    "flag": "https://flagcdn.com/om.svg"
+    "flag": "https://flagcdn.com/om.svg",
+    "gdpPerCapita": 20285,
+    "gdpPerCapitaYear": 2024
   },
   "Pakistan": {
     "name": "Pakistan",
@@ -6360,7 +7206,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Asia",
     "cca2": "pk",
     "cca3": "PAK",
-    "flag": "https://flagcdn.com/pk.svg"
+    "flag": "https://flagcdn.com/pk.svg",
+    "gdpPerCapita": 1479,
+    "gdpPerCapitaYear": 2024
   },
   "Panama": {
     "name": "Panama",
@@ -6375,7 +7223,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Central America",
     "cca2": "pa",
     "cca3": "PAN",
-    "flag": "https://flagcdn.com/pa.svg"
+    "flag": "https://flagcdn.com/pa.svg",
+    "gdpPerCapita": 19161,
+    "gdpPerCapitaYear": 2024
   },
   "Pitcairn Islands": {
     "name": "Pitcairn Islands",
@@ -6390,7 +7240,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Polynesia",
     "cca2": "pn",
     "cca3": "PCN",
-    "flag": "https://flagcdn.com/pn.svg"
+    "flag": "https://flagcdn.com/pn.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Peru": {
     "name": "Peru",
@@ -6405,7 +7257,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South America",
     "cca2": "pe",
     "cca3": "PER",
-    "flag": "https://flagcdn.com/pe.svg"
+    "flag": "https://flagcdn.com/pe.svg",
+    "gdpPerCapita": 8452,
+    "gdpPerCapitaYear": 2024
   },
   "Philippines": {
     "name": "Philippines",
@@ -6420,7 +7274,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South-Eastern Asia",
     "cca2": "ph",
     "cca3": "PHL",
-    "flag": "https://flagcdn.com/ph.svg"
+    "flag": "https://flagcdn.com/ph.svg",
+    "gdpPerCapita": 3985,
+    "gdpPerCapitaYear": 2024
   },
   "Palau": {
     "name": "Palau",
@@ -6435,7 +7291,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Micronesia",
     "cca2": "pw",
     "cca3": "PLW",
-    "flag": "https://flagcdn.com/pw.svg"
+    "flag": "https://flagcdn.com/pw.svg",
+    "gdpPerCapita": 15611,
+    "gdpPerCapitaYear": 2023
   },
   "Papua New Guinea": {
     "name": "Papua New Guinea",
@@ -6450,7 +7308,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Melanesia",
     "cca2": "pg",
     "cca3": "PNG",
-    "flag": "https://flagcdn.com/pg.svg"
+    "flag": "https://flagcdn.com/pg.svg",
+    "gdpPerCapita": 3007,
+    "gdpPerCapitaYear": 2024
   },
   "Poland": {
     "name": "Poland",
@@ -6465,7 +7325,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Central Europe",
     "cca2": "pl",
     "cca3": "POL",
-    "flag": "https://flagcdn.com/pl.svg"
+    "flag": "https://flagcdn.com/pl.svg",
+    "gdpPerCapita": 25104,
+    "gdpPerCapitaYear": 2024
   },
   "Puerto Rico": {
     "name": "Puerto Rico",
@@ -6480,7 +7342,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "pr",
     "cca3": "PRI",
-    "flag": "https://flagcdn.com/pr.svg"
+    "flag": "https://flagcdn.com/pr.svg",
+    "gdpPerCapita": 39344,
+    "gdpPerCapitaYear": 2024
   },
   "North Korea": {
     "name": "North Korea",
@@ -6495,7 +7359,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Asia",
     "cca2": "kp",
     "cca3": "PRK",
-    "flag": "https://flagcdn.com/kp.svg"
+    "flag": "https://flagcdn.com/kp.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Portugal": {
     "name": "Portugal",
@@ -6510,7 +7376,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Europe",
     "cca2": "pt",
     "cca3": "PRT",
-    "flag": "https://flagcdn.com/pt.svg"
+    "flag": "https://flagcdn.com/pt.svg",
+    "gdpPerCapita": 29292,
+    "gdpPerCapitaYear": 2024
   },
   "Paraguay": {
     "name": "Paraguay",
@@ -6525,7 +7393,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South America",
     "cca2": "py",
     "cca3": "PRY",
-    "flag": "https://flagcdn.com/py.svg"
+    "flag": "https://flagcdn.com/py.svg",
+    "gdpPerCapita": 6416,
+    "gdpPerCapitaYear": 2024
   },
   "Palestine": {
     "name": "Palestine",
@@ -6540,7 +7410,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Asia",
     "cca2": "ps",
     "cca3": "PSE",
-    "flag": "https://flagcdn.com/ps.svg"
+    "flag": "https://flagcdn.com/ps.svg",
+    "gdpPerCapita": 2592,
+    "gdpPerCapitaYear": 2024
   },
   "French Polynesia": {
     "name": "French Polynesia",
@@ -6555,7 +7427,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Polynesia",
     "cca2": "pf",
     "cca3": "PYF",
-    "flag": "https://flagcdn.com/pf.svg"
+    "flag": "https://flagcdn.com/pf.svg",
+    "gdpPerCapita": 22440,
+    "gdpPerCapitaYear": 2024
   },
   "Qatar": {
     "name": "Qatar",
@@ -6570,7 +7444,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Asia",
     "cca2": "qa",
     "cca3": "QAT",
-    "flag": "https://flagcdn.com/qa.svg"
+    "flag": "https://flagcdn.com/qa.svg",
+    "gdpPerCapita": 76689,
+    "gdpPerCapitaYear": 2024
   },
   "Réunion": {
     "name": "Réunion",
@@ -6585,7 +7461,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "re",
     "cca3": "REU",
-    "flag": "https://flagcdn.com/re.svg"
+    "flag": "https://flagcdn.com/re.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Romania": {
     "name": "Romania",
@@ -6600,7 +7478,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southeast Europe",
     "cca2": "ro",
     "cca3": "ROU",
-    "flag": "https://flagcdn.com/ro.svg"
+    "flag": "https://flagcdn.com/ro.svg",
+    "gdpPerCapita": 20080,
+    "gdpPerCapitaYear": 2024
   },
   "Russia": {
     "name": "Russia",
@@ -6615,7 +7495,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Europe",
     "cca2": "ru",
     "cca3": "RUS",
-    "flag": "https://flagcdn.com/ru.svg"
+    "flag": "https://flagcdn.com/ru.svg",
+    "gdpPerCapita": 14889,
+    "gdpPerCapitaYear": 2024
   },
   "Rwanda": {
     "name": "Rwanda",
@@ -6630,7 +7512,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "rw",
     "cca3": "RWA",
-    "flag": "https://flagcdn.com/rw.svg"
+    "flag": "https://flagcdn.com/rw.svg",
+    "gdpPerCapita": 1000,
+    "gdpPerCapitaYear": 2024
   },
   "Saudi Arabia": {
     "name": "Saudi Arabia",
@@ -6645,7 +7529,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Asia",
     "cca2": "sa",
     "cca3": "SAU",
-    "flag": "https://flagcdn.com/sa.svg"
+    "flag": "https://flagcdn.com/sa.svg",
+    "gdpPerCapita": 35122,
+    "gdpPerCapitaYear": 2024
   },
   "Sudan": {
     "name": "Sudan",
@@ -6660,7 +7546,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Africa",
     "cca2": "sd",
     "cca3": "SDN",
-    "flag": "https://flagcdn.com/sd.svg"
+    "flag": "https://flagcdn.com/sd.svg",
+    "gdpPerCapita": 985,
+    "gdpPerCapitaYear": 2024
   },
   "Senegal": {
     "name": "Senegal",
@@ -6675,7 +7563,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Africa",
     "cca2": "sn",
     "cca3": "SEN",
-    "flag": "https://flagcdn.com/sn.svg"
+    "flag": "https://flagcdn.com/sn.svg",
+    "gdpPerCapita": 1773,
+    "gdpPerCapitaYear": 2024
   },
   "Singapore": {
     "name": "Singapore",
@@ -6690,7 +7580,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South-Eastern Asia",
     "cca2": "sg",
     "cca3": "SGP",
-    "flag": "https://flagcdn.com/sg.svg"
+    "flag": "https://flagcdn.com/sg.svg",
+    "gdpPerCapita": 90674,
+    "gdpPerCapitaYear": 2024
   },
   "South Georgia": {
     "name": "South Georgia",
@@ -6705,7 +7597,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "",
     "cca2": "gs",
     "cca3": "SGS",
-    "flag": "https://flagcdn.com/gs.svg"
+    "flag": "https://flagcdn.com/gs.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Svalbard and Jan Mayen": {
     "name": "Svalbard and Jan Mayen",
@@ -6720,7 +7614,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Europe",
     "cca2": "sj",
     "cca3": "SJM",
-    "flag": "https://flagcdn.com/sj.svg"
+    "flag": "https://flagcdn.com/sj.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Solomon Islands": {
     "name": "Solomon Islands",
@@ -6735,7 +7631,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Melanesia",
     "cca2": "sb",
     "cca3": "SLB",
-    "flag": "https://flagcdn.com/sb.svg"
+    "flag": "https://flagcdn.com/sb.svg",
+    "gdpPerCapita": 1934,
+    "gdpPerCapitaYear": 2024
   },
   "Sierra Leone": {
     "name": "Sierra Leone",
@@ -6750,7 +7648,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Africa",
     "cca2": "sl",
     "cca3": "SLE",
-    "flag": "https://flagcdn.com/sl.svg"
+    "flag": "https://flagcdn.com/sl.svg",
+    "gdpPerCapita": 807,
+    "gdpPerCapitaYear": 2024
   },
   "El Salvador": {
     "name": "El Salvador",
@@ -6765,7 +7665,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Central America",
     "cca2": "sv",
     "cca3": "SLV",
-    "flag": "https://flagcdn.com/sv.svg"
+    "flag": "https://flagcdn.com/sv.svg",
+    "gdpPerCapita": 5580,
+    "gdpPerCapitaYear": 2024
   },
   "San Marino": {
     "name": "San Marino",
@@ -6780,7 +7682,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Europe",
     "cca2": "sm",
     "cca3": "SMR",
-    "flag": "https://flagcdn.com/sm.svg"
+    "flag": "https://flagcdn.com/sm.svg",
+    "gdpPerCapita": 59880,
+    "gdpPerCapitaYear": 2023
   },
   "Somalia": {
     "name": "Somalia",
@@ -6795,7 +7699,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "so",
     "cca3": "SOM",
-    "flag": "https://flagcdn.com/so.svg"
+    "flag": "https://flagcdn.com/so.svg",
+    "gdpPerCapita": 630,
+    "gdpPerCapitaYear": 2024
   },
   "Saint Pierre and Miquelon": {
     "name": "Saint Pierre and Miquelon",
@@ -6810,7 +7716,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "North America",
     "cca2": "pm",
     "cca3": "SPM",
-    "flag": "https://flagcdn.com/pm.svg"
+    "flag": "https://flagcdn.com/pm.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Serbia": {
     "name": "Serbia",
@@ -6825,7 +7733,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southeast Europe",
     "cca2": "rs",
     "cca3": "SRB",
-    "flag": "https://flagcdn.com/rs.svg"
+    "flag": "https://flagcdn.com/rs.svg",
+    "gdpPerCapita": 13679,
+    "gdpPerCapitaYear": 2024
   },
   "South Sudan": {
     "name": "South Sudan",
@@ -6840,7 +7750,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Middle Africa",
     "cca2": "ss",
     "cca3": "SSD",
-    "flag": "https://flagcdn.com/ss.svg"
+    "flag": "https://flagcdn.com/ss.svg",
+    "gdpPerCapita": 1080,
+    "gdpPerCapitaYear": 2015
   },
   "São Tomé and Príncipe": {
     "name": "São Tomé and Príncipe",
@@ -6855,7 +7767,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Middle Africa",
     "cca2": "st",
     "cca3": "STP",
-    "flag": "https://flagcdn.com/st.svg"
+    "flag": "https://flagcdn.com/st.svg",
+    "gdpPerCapita": 3491,
+    "gdpPerCapitaYear": 2024
   },
   "Suriname": {
     "name": "Suriname",
@@ -6870,7 +7784,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South America",
     "cca2": "sr",
     "cca3": "SUR",
-    "flag": "https://flagcdn.com/sr.svg"
+    "flag": "https://flagcdn.com/sr.svg",
+    "gdpPerCapita": 6962,
+    "gdpPerCapitaYear": 2024
   },
   "Slovakia": {
     "name": "Slovakia",
@@ -6885,7 +7801,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Central Europe",
     "cca2": "sk",
     "cca3": "SVK",
-    "flag": "https://flagcdn.com/sk.svg"
+    "flag": "https://flagcdn.com/sk.svg",
+    "gdpPerCapita": 25993,
+    "gdpPerCapitaYear": 2024
   },
   "Slovenia": {
     "name": "Slovenia",
@@ -6900,7 +7818,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Central Europe",
     "cca2": "si",
     "cca3": "SVN",
-    "flag": "https://flagcdn.com/si.svg"
+    "flag": "https://flagcdn.com/si.svg",
+    "gdpPerCapita": 34301,
+    "gdpPerCapitaYear": 2024
   },
   "Sweden": {
     "name": "Sweden",
@@ -6915,7 +7835,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Europe",
     "cca2": "se",
     "cca3": "SWE",
-    "flag": "https://flagcdn.com/se.svg"
+    "flag": "https://flagcdn.com/se.svg",
+    "gdpPerCapita": 57117,
+    "gdpPerCapitaYear": 2024
   },
   "Eswatini": {
     "name": "Eswatini",
@@ -6930,7 +7852,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Africa",
     "cca2": "sz",
     "cca3": "SWZ",
-    "flag": "https://flagcdn.com/sz.svg"
+    "flag": "https://flagcdn.com/sz.svg",
+    "gdpPerCapita": 3910,
+    "gdpPerCapitaYear": 2024
   },
   "Sint Maarten": {
     "name": "Sint Maarten",
@@ -6945,7 +7869,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "sx",
     "cca3": "SXM",
-    "flag": "https://flagcdn.com/sx.svg"
+    "flag": "https://flagcdn.com/sx.svg",
+    "gdpPerCapita": 41473,
+    "gdpPerCapitaYear": 2024
   },
   "Seychelles": {
     "name": "Seychelles",
@@ -6960,7 +7886,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "sc",
     "cca3": "SYC",
-    "flag": "https://flagcdn.com/sc.svg"
+    "flag": "https://flagcdn.com/sc.svg",
+    "gdpPerCapita": 17859,
+    "gdpPerCapitaYear": 2024
   },
   "Syria": {
     "name": "Syria",
@@ -6975,7 +7903,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Asia",
     "cca2": "sy",
     "cca3": "SYR",
-    "flag": "https://flagcdn.com/sy.svg"
+    "flag": "https://flagcdn.com/sy.svg",
+    "gdpPerCapita": 1052,
+    "gdpPerCapitaYear": 2022
   },
   "Turks and Caicos Islands": {
     "name": "Turks and Caicos Islands",
@@ -6990,7 +7920,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "tc",
     "cca3": "TCA",
-    "flag": "https://flagcdn.com/tc.svg"
+    "flag": "https://flagcdn.com/tc.svg",
+    "gdpPerCapita": 37507,
+    "gdpPerCapitaYear": 2024
   },
   "Chad": {
     "name": "Chad",
@@ -7005,7 +7937,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Middle Africa",
     "cca2": "td",
     "cca3": "TCD",
-    "flag": "https://flagcdn.com/td.svg"
+    "flag": "https://flagcdn.com/td.svg",
+    "gdpPerCapita": 962,
+    "gdpPerCapitaYear": 2024
   },
   "Togo": {
     "name": "Togo",
@@ -7020,7 +7954,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Africa",
     "cca2": "tg",
     "cca3": "TGO",
-    "flag": "https://flagcdn.com/tg.svg"
+    "flag": "https://flagcdn.com/tg.svg",
+    "gdpPerCapita": 1119,
+    "gdpPerCapitaYear": 2024
   },
   "Thailand": {
     "name": "Thailand",
@@ -7035,7 +7971,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South-Eastern Asia",
     "cca2": "th",
     "cca3": "THA",
-    "flag": "https://flagcdn.com/th.svg"
+    "flag": "https://flagcdn.com/th.svg",
+    "gdpPerCapita": 7347,
+    "gdpPerCapitaYear": 2024
   },
   "Tajikistan": {
     "name": "Tajikistan",
@@ -7050,7 +7988,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Central Asia",
     "cca2": "tj",
     "cca3": "TJK",
-    "flag": "https://flagcdn.com/tj.svg"
+    "flag": "https://flagcdn.com/tj.svg",
+    "gdpPerCapita": 1341,
+    "gdpPerCapitaYear": 2024
   },
   "Tokelau": {
     "name": "Tokelau",
@@ -7065,7 +8005,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Polynesia",
     "cca2": "tk",
     "cca3": "TKL",
-    "flag": "https://flagcdn.com/tk.svg"
+    "flag": "https://flagcdn.com/tk.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Turkmenistan": {
     "name": "Turkmenistan",
@@ -7080,7 +8022,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Central Asia",
     "cca2": "tm",
     "cca3": "TKM",
-    "flag": "https://flagcdn.com/tm.svg"
+    "flag": "https://flagcdn.com/tm.svg",
+    "gdpPerCapita": 6857,
+    "gdpPerCapitaYear": 2024
   },
   "Timor-Leste": {
     "name": "Timor-Leste",
@@ -7095,7 +8039,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South-Eastern Asia",
     "cca2": "tl",
     "cca3": "TLS",
-    "flag": "https://flagcdn.com/tl.svg"
+    "flag": "https://flagcdn.com/tl.svg",
+    "gdpPerCapita": 1332,
+    "gdpPerCapitaYear": 2024
   },
   "Tonga": {
     "name": "Tonga",
@@ -7110,7 +8056,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Polynesia",
     "cca2": "to",
     "cca3": "TON",
-    "flag": "https://flagcdn.com/to.svg"
+    "flag": "https://flagcdn.com/to.svg",
+    "gdpPerCapita": 5652,
+    "gdpPerCapitaYear": 2023
   },
   "Trinidad and Tobago": {
     "name": "Trinidad and Tobago",
@@ -7125,7 +8073,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "tt",
     "cca3": "TTO",
-    "flag": "https://flagcdn.com/tt.svg"
+    "flag": "https://flagcdn.com/tt.svg",
+    "gdpPerCapita": 18733,
+    "gdpPerCapitaYear": 2024
   },
   "Tunisia": {
     "name": "Tunisia",
@@ -7140,7 +8090,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Northern Africa",
     "cca2": "tn",
     "cca3": "TUN",
-    "flag": "https://flagcdn.com/tn.svg"
+    "flag": "https://flagcdn.com/tn.svg",
+    "gdpPerCapita": 4181,
+    "gdpPerCapitaYear": 2024
   },
   "Türkiye": {
     "name": "Türkiye",
@@ -7155,7 +8107,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Asia",
     "cca2": "tr",
     "cca3": "TUR",
-    "flag": "https://flagcdn.com/tr.svg"
+    "flag": "https://flagcdn.com/tr.svg",
+    "gdpPerCapita": 15893,
+    "gdpPerCapitaYear": 2024
   },
   "Tuvalu": {
     "name": "Tuvalu",
@@ -7170,7 +8124,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Polynesia",
     "cca2": "tv",
     "cca3": "TUV",
-    "flag": "https://flagcdn.com/tv.svg"
+    "flag": "https://flagcdn.com/tv.svg",
+    "gdpPerCapita": 6345,
+    "gdpPerCapitaYear": 2023
   },
   "Taiwan": {
     "name": "Taiwan",
@@ -7185,7 +8141,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Asia",
     "cca2": "tw",
     "cca3": "TWN",
-    "flag": "https://flagcdn.com/tw.svg"
+    "flag": "https://flagcdn.com/tw.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Tanzania": {
     "name": "Tanzania",
@@ -7200,7 +8158,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "tz",
     "cca3": "TZA",
-    "flag": "https://flagcdn.com/tz.svg"
+    "flag": "https://flagcdn.com/tz.svg",
+    "gdpPerCapita": 1187,
+    "gdpPerCapitaYear": 2024
   },
   "Uganda": {
     "name": "Uganda",
@@ -7215,7 +8175,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "ug",
     "cca3": "UGA",
-    "flag": "https://flagcdn.com/ug.svg"
+    "flag": "https://flagcdn.com/ug.svg",
+    "gdpPerCapita": 1078,
+    "gdpPerCapitaYear": 2024
   },
   "Ukraine": {
     "name": "Ukraine",
@@ -7230,7 +8192,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Europe",
     "cca2": "ua",
     "cca3": "UKR",
-    "flag": "https://flagcdn.com/ua.svg"
+    "flag": "https://flagcdn.com/ua.svg",
+    "gdpPerCapita": 5389,
+    "gdpPerCapitaYear": 2024
   },
   "United States Minor Outlying Islands": {
     "name": "United States Minor Outlying Islands",
@@ -7245,7 +8209,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "North America",
     "cca2": "um",
     "cca3": "UMI",
-    "flag": "https://flagcdn.com/um.svg"
+    "flag": "https://flagcdn.com/um.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Uruguay": {
     "name": "Uruguay",
@@ -7260,7 +8226,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South America",
     "cca2": "uy",
     "cca3": "URY",
-    "flag": "https://flagcdn.com/uy.svg"
+    "flag": "https://flagcdn.com/uy.svg",
+    "gdpPerCapita": 23907,
+    "gdpPerCapitaYear": 2024
   },
   "United States": {
     "name": "United States",
@@ -7275,7 +8243,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "North America",
     "cca2": "us",
     "cca3": "USA",
-    "flag": "https://flagcdn.com/us.svg"
+    "flag": "https://flagcdn.com/us.svg",
+    "gdpPerCapita": 84534,
+    "gdpPerCapitaYear": 2024
   },
   "Uzbekistan": {
     "name": "Uzbekistan",
@@ -7290,7 +8260,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Central Asia",
     "cca2": "uz",
     "cca3": "UZB",
-    "flag": "https://flagcdn.com/uz.svg"
+    "flag": "https://flagcdn.com/uz.svg",
+    "gdpPerCapita": 3162,
+    "gdpPerCapitaYear": 2024
   },
   "Vatican City": {
     "name": "Vatican City",
@@ -7305,7 +8277,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Europe",
     "cca2": "va",
     "cca3": "VAT",
-    "flag": "https://flagcdn.com/va.svg"
+    "flag": "https://flagcdn.com/va.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Saint Vincent and the Grenadines": {
     "name": "Saint Vincent and the Grenadines",
@@ -7320,7 +8294,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "vc",
     "cca3": "VCT",
-    "flag": "https://flagcdn.com/vc.svg"
+    "flag": "https://flagcdn.com/vc.svg",
+    "gdpPerCapita": 11501,
+    "gdpPerCapitaYear": 2024
   },
   "Venezuela": {
     "name": "Venezuela",
@@ -7335,7 +8311,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South America",
     "cca2": "ve",
     "cca3": "VEN",
-    "flag": "https://flagcdn.com/ve.svg"
+    "flag": "https://flagcdn.com/ve.svg",
+    "gdpPerCapita": 4218,
+    "gdpPerCapitaYear": 2024
   },
   "British Virgin Islands": {
     "name": "British Virgin Islands",
@@ -7350,7 +8328,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "vg",
     "cca3": "VGB",
-    "flag": "https://flagcdn.com/vg.svg"
+    "flag": "https://flagcdn.com/vg.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "United States Virgin Islands": {
     "name": "United States Virgin Islands",
@@ -7365,7 +8345,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "vi",
     "cca3": "VIR",
-    "flag": "https://flagcdn.com/vi.svg"
+    "flag": "https://flagcdn.com/vi.svg",
+    "gdpPerCapita": 44321,
+    "gdpPerCapitaYear": 2022
   },
   "Vietnam": {
     "name": "Vietnam",
@@ -7380,7 +8362,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South-Eastern Asia",
     "cca2": "vn",
     "cca3": "VNM",
-    "flag": "https://flagcdn.com/vn.svg"
+    "flag": "https://flagcdn.com/vn.svg",
+    "gdpPerCapita": 4717,
+    "gdpPerCapitaYear": 2024
   },
   "Vanuatu": {
     "name": "Vanuatu",
@@ -7395,7 +8379,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Melanesia",
     "cca2": "vu",
     "cca3": "VUT",
-    "flag": "https://flagcdn.com/vu.svg"
+    "flag": "https://flagcdn.com/vu.svg",
+    "gdpPerCapita": 3411,
+    "gdpPerCapitaYear": 2024
   },
   "Wallis and Futuna": {
     "name": "Wallis and Futuna",
@@ -7410,7 +8396,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Polynesia",
     "cca2": "wf",
     "cca3": "WLF",
-    "flag": "https://flagcdn.com/wf.svg"
+    "flag": "https://flagcdn.com/wf.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Samoa": {
     "name": "Samoa",
@@ -7425,7 +8413,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Polynesia",
     "cca2": "ws",
     "cca3": "WSM",
-    "flag": "https://flagcdn.com/ws.svg"
+    "flag": "https://flagcdn.com/ws.svg",
+    "gdpPerCapita": 5393,
+    "gdpPerCapitaYear": 2024
   },
   "Yemen": {
     "name": "Yemen",
@@ -7440,7 +8430,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Western Asia",
     "cca2": "ye",
     "cca3": "YEM",
-    "flag": "https://flagcdn.com/ye.svg"
+    "flag": "https://flagcdn.com/ye.svg",
+    "gdpPerCapita": 634,
+    "gdpPerCapitaYear": 2018
   },
   "South Africa": {
     "name": "South Africa",
@@ -7455,7 +8447,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Africa",
     "cca2": "za",
     "cca3": "ZAF",
-    "flag": "https://flagcdn.com/za.svg"
+    "flag": "https://flagcdn.com/za.svg",
+    "gdpPerCapita": 6267,
+    "gdpPerCapitaYear": 2024
   },
   "Zambia": {
     "name": "Zambia",
@@ -7470,7 +8464,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "zm",
     "cca3": "ZMB",
-    "flag": "https://flagcdn.com/zm.svg"
+    "flag": "https://flagcdn.com/zm.svg",
+    "gdpPerCapita": 1187,
+    "gdpPerCapitaYear": 2024
   },
   "Zimbabwe": {
     "name": "Zimbabwe",
@@ -7485,7 +8481,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Eastern Africa",
     "cca2": "zw",
     "cca3": "ZWE",
-    "flag": "https://flagcdn.com/zw.svg"
+    "flag": "https://flagcdn.com/zw.svg",
+    "gdpPerCapita": 2497,
+    "gdpPerCapitaYear": 2024
   },
   "United States of America": {
     "name": "United States",
@@ -7500,7 +8498,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "North America",
     "cca2": "us",
     "cca3": "USA",
-    "flag": "https://flagcdn.com/us.svg"
+    "flag": "https://flagcdn.com/us.svg",
+    "gdpPerCapita": 84534,
+    "gdpPerCapitaYear": 2024
   },
   "Dem. Rep. Congo": {
     "name": "DR Congo",
@@ -7515,7 +8515,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Middle Africa",
     "cca2": "cd",
     "cca3": "COD",
-    "flag": "https://flagcdn.com/cd.svg"
+    "flag": "https://flagcdn.com/cd.svg",
+    "gdpPerCapita": 649,
+    "gdpPerCapitaYear": 2024
   },
   "Dominican Rep.": {
     "name": "Dominican Republic",
@@ -7530,7 +8532,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Caribbean",
     "cca2": "do",
     "cca3": "DOM",
-    "flag": "https://flagcdn.com/do.svg"
+    "flag": "https://flagcdn.com/do.svg",
+    "gdpPerCapita": 10876,
+    "gdpPerCapitaYear": 2024
   },
   "Central African Rep.": {
     "name": "Central African Republic",
@@ -7545,7 +8549,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Middle Africa",
     "cca2": "cf",
     "cca3": "CAF",
-    "flag": "https://flagcdn.com/cf.svg"
+    "flag": "https://flagcdn.com/cf.svg",
+    "gdpPerCapita": 516,
+    "gdpPerCapitaYear": 2024
   },
   "Eq. Guinea": {
     "name": "Equatorial Guinea",
@@ -7560,7 +8566,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Middle Africa",
     "cca2": "gq",
     "cca3": "GNQ",
-    "flag": "https://flagcdn.com/gq.svg"
+    "flag": "https://flagcdn.com/gq.svg",
+    "gdpPerCapita": 6745,
+    "gdpPerCapitaYear": 2024
   },
   "eSwatini": {
     "name": "Eswatini",
@@ -7575,7 +8583,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southern Africa",
     "cca2": "sz",
     "cca3": "SWZ",
-    "flag": "https://flagcdn.com/sz.svg"
+    "flag": "https://flagcdn.com/sz.svg",
+    "gdpPerCapita": 3910,
+    "gdpPerCapitaYear": 2024
   },
   "Bosnia and Herz.": {
     "name": "Bosnia and Herzegovina",
@@ -7590,7 +8600,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Southeast Europe",
     "cca2": "ba",
     "cca3": "BIH",
-    "flag": "https://flagcdn.com/ba.svg"
+    "flag": "https://flagcdn.com/ba.svg",
+    "gdpPerCapita": 9359,
+    "gdpPerCapitaYear": 2024
   },
   "S. Sudan": {
     "name": "South Sudan",
@@ -7605,7 +8617,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Middle Africa",
     "cca2": "ss",
     "cca3": "SSD",
-    "flag": "https://flagcdn.com/ss.svg"
+    "flag": "https://flagcdn.com/ss.svg",
+    "gdpPerCapita": 1080,
+    "gdpPerCapitaYear": 2015
   },
   "Solomon Is.": {
     "name": "Solomon Islands",
@@ -7620,7 +8634,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "Melanesia",
     "cca2": "sb",
     "cca3": "SLB",
-    "flag": "https://flagcdn.com/sb.svg"
+    "flag": "https://flagcdn.com/sb.svg",
+    "gdpPerCapita": 1934,
+    "gdpPerCapitaYear": 2024
   },
   "Falkland Is.": {
     "name": "Falkland Islands",
@@ -7635,7 +8651,9 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "South America",
     "cca2": "fk",
     "cca3": "FLK",
-    "flag": "https://flagcdn.com/fk.svg"
+    "flag": "https://flagcdn.com/fk.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   },
   "Fr. S. Antarctic Lands": {
     "name": "French Southern and Antarctic Lands",
@@ -7650,6 +8668,8 @@ window.COUNTRY_METADATA_BY_NAME = {
     "subregion": "",
     "cca2": "tf",
     "cca3": "ATF",
-    "flag": "https://flagcdn.com/tf.svg"
+    "flag": "https://flagcdn.com/tf.svg",
+    "gdpPerCapita": null,
+    "gdpPerCapitaYear": null
   }
 };

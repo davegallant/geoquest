@@ -29,6 +29,15 @@
         <button id="quizBtn" type="button">Quiz</button>
       </div>
 
+      <form id="countrySearchForm" class="country-search" role="search">
+        <label for="countrySearch">Search country</label>
+        <div>
+          <input id="countrySearch" name="country" type="search" list="countrySearchList" placeholder="e.g. Canada" autocomplete="off">
+          <button type="submit">Search</button>
+        </div>
+        <datalist id="countrySearchList"></datalist>
+      </form>
+
       <section class="score-card" aria-live="polite">
         <div><strong id="score">0/10</strong><span>correct</span></div>
         <div><strong id="question">0/10</strong><span>question</span></div>
@@ -47,12 +56,17 @@
         <dl>
           <div><dt>Capital</dt><dd id="capital">—</dd></div>
           <div><dt>Population</dt><dd id="population">—</dd></div>
+          <div><dt>GDP per person</dt><dd id="gdpPerCapita">—</dd></div>
           <div><dt>Area (km²)</dt><dd id="area">—</dd></div>
           <div><dt>Currency</dt><dd id="currency">—</dd></div>
           <div><dt>Language</dt><dd id="language">—</dd></div>
           <div><dt>Region</dt><dd id="region">—</dd></div>
           <div><dt>Flag</dt><dd id="flagName">—</dd></div>
         </dl>
+        <details class="data-sources">
+          <summary>Data sources</summary>
+          <p>Countries: mledoze/countries. Population: Our World in Data. GDP/person: World Bank current US$.</p>
+        </details>
         <p id="funFact" class="fun-fact">Click a country to load details.</p>
       </section>
     </aside>

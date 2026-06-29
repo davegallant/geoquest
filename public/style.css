@@ -90,6 +90,19 @@ svg.map {
 h1 { margin: 0 0 14px; font-size: clamp(1.45rem, 3vw, 2.15rem); line-height: 1.05; }
 
 .controls { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 14px; }
+.country-search { margin-bottom: 14px; }
+.country-search label { display: block; margin: 0 0 6px; color: var(--muted); font-size: .85rem; font-weight: 800; }
+.country-search div { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; }
+.country-search input {
+  width: 100%;
+  border: 1px solid #d9ddd0;
+  border-radius: 999px;
+  padding: 11px 13px;
+  font: inherit;
+  background: #fff;
+  color: var(--ink);
+}
+.country-search input:focus { outline: 3px solid rgba(247,201,72,.45); border-color: var(--country-hover); }
 button {
   border: 0;
   border-radius: 999px;
@@ -128,7 +141,10 @@ dl { clear: both; display: grid; gap: 8px; margin: 0; }
 dl div { display: grid; grid-template-columns: 110px 1fr; gap: 8px; }
 dt { color: var(--muted); font-weight: 700; }
 dd { margin: 0; }
-.fun-fact { margin: 14px 0 0; padding-top: 12px; border-top: 1px solid #eee; font-style: italic; }
+.data-sources { margin-top: 10px; color: var(--muted); font-size: .78rem; }
+.data-sources summary { cursor: pointer; font-weight: 700; }
+.data-sources p { margin: 6px 0 0; }
+.fun-fact { margin: 10px 0 0; padding-top: 10px; border-top: 1px solid #eee; font-style: italic; }
 
 .fireworks {
   position: fixed;
@@ -154,7 +170,7 @@ dd { margin: 0; }
 }
 
 @media (max-height: 820px) and (min-width: 851px) {
-  .controls, .score-card, .prompt { margin-bottom: 10px; }
+  .controls, .country-search, .score-card, .prompt { margin-bottom: 10px; }
   .prompt { min-height: 48px; padding: 11px; }
   .info-card { padding: 13px; }
   .info-card img { width: 96px; height: 64px; }
