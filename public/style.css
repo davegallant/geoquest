@@ -114,11 +114,11 @@ button {
 }
 button:hover, button.active { background: var(--country-hover); }
 
-.score-card { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+.score-card { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-bottom: 10px; }
 .score-card[hidden] { display: none; }
-.score-card div { background: #fff; border-radius: 16px; padding: 10px; text-align: center; }
-.score-card strong { display: block; font-size: clamp(1.25rem, 2.5vw, 1.8rem); }
-.score-card span { color: var(--muted); font-size: .85rem; }
+.score-card div { background: #fff; border-radius: 12px; padding: 7px 5px; text-align: center; }
+.score-card strong { display: block; font-size: clamp(1rem, 1.7vw, 1.25rem); line-height: 1; }
+.score-card span { color: var(--muted); font-size: .72rem; line-height: 1.1; }
 
 .prompt {
   min-height: 58px;
@@ -131,6 +131,17 @@ button:hover, button.active { background: var(--country-hover); }
 }
 .prompt.correct { background: var(--correct); }
 .prompt.wrong { background: var(--wrong); }
+.prompt-target {
+  display: inline-block;
+  margin: 2px 3px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--country-hover);
+  color: #123;
+  font-size: 1.1em;
+  font-weight: 900;
+  box-shadow: 0 2px 0 rgba(0,0,0,.18);
+}
 .continue-btn { width: 100%; margin: -4px 0 14px; background: var(--country-hover); }
 .continue-btn[hidden] { display: none; }
 

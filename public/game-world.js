@@ -5,6 +5,12 @@ const COUNTRY_METADATA_BY_NAME = window.COUNTRY_METADATA_BY_NAME || {};
 const QUIZ_LENGTH = 10;
 const MAX_TRIES = 3;
 const HIGH_SCORE_KEY = "geoquest-high-score";
+const OECD_COUNTRY_CODES = new Set([
+  "AUS", "AUT", "BEL", "CAN", "CHL", "COL", "CRI", "CZE", "DNK", "EST",
+  "FIN", "FRA", "DEU", "GRC", "HUN", "ISL", "IRL", "ISR", "ITA", "JPN",
+  "KOR", "LVA", "LTU", "LUX", "MEX", "NLD", "NZL", "NOR", "POL", "PRT",
+  "SVK", "SVN", "ESP", "SWE", "CHE", "TUR", "GBR", "USA",
+]);
 
 const state = {
   mode: "learn",
@@ -88,6 +94,10 @@ function flagUrl(feature) {
   return alpha2 ? `https://flagcdn.com/${alpha2}.svg` : "flags/clear.jpg";
 }
 
+function isOecdCountry(feature) {
+  return OECD_COUNTRY_CODES.has(metadataRecord(feature)?.cca3);
+}
+
 function searchableNames(feature) {
   const meta = metadataRecord(feature) || {};
   return [countryName(feature), meta.name, meta.officialName, meta.cca2, meta.cca3].filter(Boolean);
@@ -121,6 +131,14 @@ function play(sound) {
 
 function setPrompt(text, status = "") {
   els.prompt.textContent = text;
+  els.prompt.className = `prompt ${status}`.trim();
+}
+
+function setQuizPrompt(prefix, targetName, suffix = "", status = "") {
+  const target = document.createElement("strong");
+  target.className = "prompt-target";
+  target.textContent = targetName;
+  els.prompt.replaceChildren(document.createTextNode(prefix), target, document.createTextNode(suffix));
   els.prompt.className = `prompt ${status}`.trim();
 }
 
@@ -247,7 +265,7 @@ function startQuiz() {
   state.attempts = 0;
   state.questionNumber = 0;
   state.currentTries = 0;
-  state.quizPool = shuffled(state.countries).slice(0, QUIZ_LENGTH);
+  state.quizPool = shuffled(state.countries.filter(isOecdCountry)).slice(0, QUIZ_LENGTH);
   state.quizActive = true;
   state.advancing = false;
   state.awaitingRevealClick = false;
@@ -296,7 +314,7 @@ function chooseTarget() {
   clearStatusClasses();
   clearCountryInfo();
   updateScore();
-  setPrompt(`Question ${state.questionNumber}/${QUIZ_LENGTH}: Find ${countryName(next)}. You have ${MAX_TRIES} tries.`);
+  setQuizPrompt(`Find `, countryName(next), `. You have ${MAX_TRIES} tries.`);
 }
 
 function setMode(mode) {
@@ -361,7 +379,7 @@ function handleCountryClick(feature) {
     state.score += 1;
     mark(feature, "correct");
     focusCountry(feature);
-    setPrompt(`Correct! That is ${countryName(feature)}. Press Continue when you're ready.`, "correct");
+    setPrompt(`Correct! That is ${countryName(feature)}.`, "correct");
     play(els.correctSound);
     showFireworks();
     state.awaitingRevealClick = true;
@@ -377,10 +395,10 @@ function handleCountryClick(feature) {
       focusCountry(state.target);
       state.awaitingRevealClick = true;
       showContinueButton(true);
-      setPrompt(`Out of tries. The answer is highlighted: ${countryName(state.target)}. Press Continue when you're ready.`, "wrong");
+      setPrompt(`Out of tries. The answer is highlighted.`, "wrong");
       updateScore();
     } else {
-      setPrompt(`Not ${countryName(feature)}. Try ${state.currentTries + 1}/${MAX_TRIES}: find ${countryName(state.target)}.`, "wrong");
+      setQuizPrompt(`Not ${countryName(feature)}. Find `, countryName(state.target), `.`, "wrong");
       updateScore();
     }
   }
