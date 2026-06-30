@@ -107,11 +107,18 @@ function normalizeSearch(value) {
   return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
 }
 
+function findExactCountryByName(query) {
+  const normalized = normalizeSearch(query);
+  if (!normalized) return null;
+
+  return state.countries.find((feature) => searchableNames(feature).some((name) => normalizeSearch(name) === normalized));
+}
+
 function findCountryByName(query) {
   const normalized = normalizeSearch(query);
   if (!normalized) return null;
 
-  return state.countries.find((feature) => searchableNames(feature).some((name) => normalizeSearch(name) === normalized))
+  return findExactCountryByName(query)
     || state.countries.find((feature) => searchableNames(feature).some((name) => normalizeSearch(name).startsWith(normalized)))
     || state.countries.find((feature) => searchableNames(feature).some((name) => normalizeSearch(name).includes(normalized)));
 }
@@ -360,6 +367,13 @@ function handleSearch(event) {
   selectCountry(feature, `${countryName(feature)} found.`);
 }
 
+function handleSearchInput() {
+  if (state.mode !== "learn") return;
+
+  const feature = findExactCountryByName(els.searchInput.value);
+  if (feature) selectCountry(feature, `${countryName(feature)} found.`);
+}
+
 function handleCountryClick(feature) {
   if (state.mode === "learn") {
     selectCountry(feature);
@@ -524,6 +538,7 @@ async function init() {
 els.learnBtn.addEventListener("click", () => setMode("learn"));
 els.quizBtn.addEventListener("click", () => setMode("quiz"));
 els.searchForm.addEventListener("submit", handleSearch);
+els.searchInput.addEventListener("input", handleSearchInput);
 els.continueBtn.addEventListener("click", () => {
   if (!state.awaitingRevealClick || state.advancing) return;
   state.awaitingRevealClick = false;
