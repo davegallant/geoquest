@@ -119,6 +119,8 @@ button:hover, button.active { background: var(--country-hover); }
 .score-card div { background: #fff; border-radius: 12px; padding: 7px 5px; text-align: center; }
 .score-card strong { display: block; font-size: clamp(1rem, 1.7vw, 1.25rem); line-height: 1; }
 .score-card span { color: var(--muted); font-size: .72rem; line-height: 1.1; }
+.score-card div.danger { background: var(--wrong); color: #fff; }
+.score-card div.danger span { color: rgba(255,255,255,.85); }
 
 .prompt {
   min-height: 58px;

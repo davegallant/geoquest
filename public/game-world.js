@@ -150,6 +150,7 @@ function updateScore() {
   els.score.textContent = `${state.score}/${QUIZ_LENGTH}`;
   els.question.textContent = `${state.questionNumber}/${QUIZ_LENGTH}`;
   els.attempts.textContent = state.mode === "quiz" ? `${state.currentTries}/${MAX_TRIES}` : "0/3";
+  els.attempts.parentElement.classList.toggle("danger", state.mode === "quiz" && state.currentTries > 0);
   els.highScore.textContent = `${state.highScore}/${QUIZ_LENGTH}`;
 }
 
